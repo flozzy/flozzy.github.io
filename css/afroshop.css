@@ -1,0 +1,325 @@
+html {
+  scroll-padding-top: 50px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  /*color: #333;*/
+  margin: 0px;
+  font-size: 1.2em;
+  padding-top: 50px;
+  background-image: url("/ux:ui/afroback.jpg");
+  color: rgb(255, 255, 255);
+}
+#about h2 {
+  font-family: "Lato", sans-serif;
+}
+
+#about {
+  margin-left: 100px;
+}
+
+#projects {
+  margin-left: 100px;
+}
+#contact {
+  margin-left: 100px;
+}
+.section {
+  padding: 20px;
+  margin: 25px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+#greeting {
+  float: right;
+  overflow: auto;
+  display: block;
+  max-width: 800px;
+  margin-left: 250px;
+  margin-right: 300px;
+
+  /*margin-left: 160px;
+      position: relative;*/
+}
+.shop img {
+  width: 60%;
+  margin-left: 300px;
+}
+.picshop {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: #048a5f;
+  width: 100%;
+  color: rgb(236, 236, 236);
+}
+
+#projects h2 {
+  font-family: "Lato", sans-serif;
+}
+
+ul.main-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  font-family: "Lato", sans-serif;
+}
+
+.main-menu a:link,
+.main-menu a:visited {
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.main-menu a:hover,
+.main-menu a:active {
+  background-color: rgba(158, 86, 151, 0.418);
+  color: rgb(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* nav styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background: #faf3f7;
+
+  width: 100%;
+  top: 0;
+  /**
+         * This height needs to be the same value as the
+         * value of the padding-top which is applied on the body.
+         * This is needed so that the navigation content and the body
+         * content do not collied with each other.
+         */
+  height: 50px;
+}
+
+nav * {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin: 5px 50px 10px 50px;
+}
+
+.logo a {
+  cursor: pointer;
+  color: rgb(90, 3, 64);
+}
+
+.logo h2 {
+  font-family: "Lobster", cursive;
+}
+
+.main-menu {
+  height: 100%;
+}
+
+.main-menu li {
+  height: 100%;
+  display: inline-block;
+}
+/* end nav styles */
+
+/* header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  /* background-color: #FAF3F7; */
+  width: 100%;
+
+  /**
+         * This is used so that the header content (e.g. image)
+         * does not stretch too much on big screens
+         */
+}
+
+/**
+       * This is a CSS Child Selector (>). Selection all div(s) which are direct children
+       * of a header element. More info can be seen here
+       * https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
+       */
+header > div {
+  flex: 1;
+}
+
+div a {
+  text-decoration: none;
+  color: black;
+}
+
+.full_screen {
+  height: 300%;
+  top: -100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  object-fit: contain;
+}
+.content {
+  margin-left: 500px;
+  display: flex;
+}
+#contact {
+  margin-right: 100px;
+  color: black;
+  padding: 5px;
+  background-color: rgb(252, 230, 247);
+}
+.section {
+  padding: 20px;
+  margin: 25px;
+}
+h2 {
+  font-family: "Julius Sans One", sans-serif;
+}
+h2 {
+  font-size: 1.6em;
+}
+p {
+  font-size: 1.2em;
+}
+
+.img2 img,
+.img2 > div {
+  background-color: #048a5f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 50px;
+  margin-left: -250px;
+  width: 100%;
+}
+
+.img3 img,
+.img3 > div {
+  box-sizing: border-box;
+  background-color: #048a5f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 100px;
+  margin-left: -250px;
+  width: 100%;
+}
+.img4 img,
+.img4 > div {
+  box-sizing: border-box;
+  background-color: #048a5f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 100px;
+  margin-left: -250px;
+  width: 100%;
+}
+.img5 img,
+.img5 > div {
+  box-sizing: border-box;
+  background-color: #048a5f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 100px;
+  margin-left: -250px;
+  width: 100%;
+}
+.img6 img,
+.img6 > div {
+  box-sizing: border-box;
+  background-color: #048a5f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 100px;
+  margin-left: -250px;
+  width: 100%;
+}
+.img7 img,
+.img7 > div {
+  box-sizing: border-box;
+  background-color: #048a5f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 100px;
+  margin-left: -250px;
+  width: 100%;
+}
+.img8 img,
+.img8 > div {
+  box-sizing: border-box;
+  background-color: #048a5f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 100px;
+  margin-left: -250px;
+  width: 100%;
+}
+.img9 img,
+.img9 > div {
+  box-sizing: border-box;
+  background-color: #048a5f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 100px;
+  margin-left: -250px;
+  width: 100%;
+}
+.img10 img,
+.img10 > div {
+  box-sizing: border-box;
+  background-color: #048a5f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 100px;
+  margin-left: -250px;
+  width: 100%;
+}
+.Proto > div,
+video {
+  background-color: #048a5f;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 100px;
+  margin-left: -250px;
+  width: 900px;
+}
