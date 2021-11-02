@@ -194,44 +194,27 @@ div a {
   object-fit: contain;
 }
 .content {
-  margin-left: 160px;
   display: flex;
+  flex-direction: column;
+  margin-left: 400px;
 }
-#contact {
-  margin-left: 100px;
-}
-.img2 img {
-  width: 40%;
-  margin-left: 300px;
-}
-.img2 img:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-  width: 45%;
-}
-.img3 img {
-  width: 40%;
-  margin-left: 300px;
-}
-.img3 img:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-.img4 img {
-  width: 40%;
-  margin-left: 300px;
-}
-.img4 img:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
+.img2 img,
+.img3 img,
+.img4 img,
 .img5 img {
-  width: 40%;
-  margin-left: 300px;
+  width: 60%;
 }
+.img2 img:hover,
+.img3 img:hover,
+.img4 img:hover,
 .img5 img:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+}
+
+#contact {
+  margin-left: 100px;
 }
 
 .section {
