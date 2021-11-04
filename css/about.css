@@ -26,6 +26,7 @@ body {
 }
 #contact {
   margin-left: 100px;
+  padding-top: 50px;
 }
 .section {
   padding: 20px;
@@ -208,16 +209,6 @@ header > div {
   flex: 1;
 }
 
-header img {
-  width: 200%;
-  border-radius: 20px;
-  max-height: 900px;
-  /* learn more about this property
-  here https://css-tricks.com/almanac/properties/o/object-fit/  */
-  object-fit: cover;
-}
-/* end header styles */
-
 .section > h2 {
   text-align: center;
 }
@@ -260,17 +251,26 @@ div a {
   object-fit: contain;
 }
 .content {
-  margin-left: 160px;
   display: flex;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-bottom: 50px;
 }
 
-#main_text {
-  float: right;
+.main_text {
+  flex: 80%;
+  margin-left: 30px;
+  /* float: right;
   overflow: auto;
   display: block;
   max-width: 600px;
   margin-left: -500px;
-  margin-right: 100px;
+  margin-right: 100px;*/
+}
+.main-photo img {
+  flex: 10%;
+  width: 100%;
+  border-radius: 5px;
 }
 
 #education {
@@ -301,8 +301,4 @@ div a {
 }
 .Resume:active {
   background-color: rgb(92, 94, 94);
-}
-.main-photo img {
-  border-radius: 5px;
-  width: 45%;
 }

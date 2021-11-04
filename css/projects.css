@@ -21,15 +21,8 @@ body {
   margin-left: 100px;
 }
 
-#projects {
-  margin-left: 100px;
-}
 #contact {
   margin-left: 100px;
-}
-.section {
-  padding: 20px;
-  margin: 25px;
 }
 
 nav a {
@@ -169,40 +162,19 @@ header {
 header > div {
   flex: 1;
 }
-
-header img {
-  width: 200%;
-  border-radius: 20px;
-  max-height: 900px;
-  /* learn more about this property
-  here https://css-tricks.com/almanac/properties/o/object-fit/  */
-  object-fit: cover;
-}
-/* end header styles */
-
 div a {
   text-decoration: none;
   color: black;
 }
 
-.full_screen {
-  height: 300%;
-  top: -100%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  object-fit: contain;
-}
 .content {
-  display: flex;
-  flex-direction: column;
-  margin-left: 400px;
+  text-align: center;
 }
 .img2 img,
 .img3 img,
 .img4 img,
 .img5 img {
-  width: 60%;
+  width: 50%;
 }
 .img2 img:hover,
 .img3 img:hover,

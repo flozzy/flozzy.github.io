@@ -38,27 +38,19 @@ nav a {
 }
 
 #greeting {
-  float: right;
-  overflow: auto;
-  display: block;
-  max-width: 600px;
-  margin-left: -300px;
-  margin-right: 200px;
-  margin-top: 120px;
-
-  /*margin-left: 160px;
-  position: relative;*/
+  flex: 60%;
+  margin-left: 40px;
 }
 .shop img {
-  width: 30%;
-  margin-left: 180px;
+  flex: 40%;
+  width: 400px;
 }
 .picshop {
-  display: flex;
-  align-items: center;
-  justify-items: center;
+  margin-top: 40px;
   background-color: #f5eaf5;
-  width: 100%;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 20%;
 }
 
 #projects h2 {
@@ -167,29 +159,6 @@ nav * {
 }
 /* end nav styles */
 
-/* header styles */
-header {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  /* background-color: #FAF3F7; */
-  width: 100%;
-
-  /**
-     * This is used so that the header content (e.g. image)
-     * does not stretch too much on big screens
-     */
-}
-
-/**
-   * This is a CSS Child Selector (>). Selection all div(s) which are direct children
-   * of a header element. More info can be seen here
-   * https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
-   */
-header > div {
-  flex: 1;
-}
-
 div a {
   text-decoration: none;
   color: black;
@@ -203,20 +172,14 @@ div a {
   width: 100%;
   object-fit: contain;
 }
-.content {
-  margin-left: 500px;
-  display: flex;
-}
+
 #contact {
   margin-right: 100px;
   color: black;
   padding: 5px;
   background-color: rgb(252, 230, 247);
 }
-.section {
-  padding: 20px;
-  margin: 25px;
-}
+
 h2 {
   font-family: "Julius Sans One", sans-serif;
 }
@@ -226,123 +189,45 @@ h2 {
 p {
   font-size: 1.2em;
 }
-
+.content {
+  padding-right: 100px;
+  padding-left: 200px;
+}
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9,
+.img10,
+.Proto {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 90%;
+  background-color: #f5eaf5;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
 .img2 img,
-.img2 > div {
-  background-color: #f5eaf5;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 50px;
-  margin-left: -250px;
-  width: 100%;
-}
-
 .img3 img,
-.img3 > div {
-  box-sizing: border-box;
-  background-color: #f5eaf5;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img4 img,
-.img4 > div {
-  box-sizing: border-box;
-  background-color: #f5eaf5;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img5 img,
-.img5 > div {
-  box-sizing: border-box;
-  background-color: #f5eaf5;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img6 img,
-.img6 > div {
-  box-sizing: border-box;
-  background-color: #f5eaf5;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img7 img,
-.img7 > div {
-  box-sizing: border-box;
-  background-color: #f5eaf5;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img8 img,
-.img8 > div {
-  box-sizing: border-box;
-  background-color: #f5eaf5;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img9 img,
-.img9 > div {
-  box-sizing: border-box;
-  background-color: #f5eaf5;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img10 img,
-.img10 > div {
-  box-sizing: border-box;
-  background-color: #f5eaf5;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
-.Proto > div,
 video {
-  background-color: #f5eaf5;
-  padding-bottom: 10px;
   padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 900px;
+  padding-bottom: 10px;
+
+  width: 100%;
+  text-align: center;
+}
+div.dec {
+  text-align: left;
+  padding-bottom: 10px;
 }
