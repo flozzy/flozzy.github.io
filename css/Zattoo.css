@@ -53,30 +53,6 @@ nav a {
   text-align: center;
 }
 
-/*#greeting {
-  float: right;
-  overflow: auto;
-  display: block;
-  max-width: 600px;
-  margin-left: -300px;
-  margin-right: 200px;
-
-  margin-left: 160px;
-    position: relative;
-}
-.shop img {
-  width: 70%;
-  margin-left: 320px;
-}
-.picshop {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  background-color: #2d2d2d;
-  width: 100%;
-  color: rgb(236, 236, 236);
-}*/
-
 #projects h2 {
   font-family: "Lato", sans-serif;
 }
@@ -174,37 +150,14 @@ nav * {
   text-align: left;
 }
 
-.dropdown-content a:hover {
+/*.dropdown-content a:hover {
   background-color: #f1f1f1;
   color: black;
-}
+}*/
 .dropdown:hover .dropdown-content {
   display: block;
 }
 /* end nav styles */
-
-/* header styles */
-header {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  /* background-color: #FAF3F7; */
-  width: 100%;
-
-  /**
-       * This is used so that the header content (e.g. image)
-       * does not stretch too much on big screens
-       */
-}
-
-/**
-     * This is a CSS Child Selector (>). Selection all div(s) which are direct children
-     * of a header element. More info can be seen here
-     * https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
-     */
-header > div {
-  flex: 1;
-}
 
 div a {
   text-decoration: none;

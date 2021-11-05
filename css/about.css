@@ -28,10 +28,6 @@ body {
   margin-left: 100px;
   padding-top: 50px;
 }
-.section {
-  padding: 20px;
-  margin: 25px;
-}
 
 nav a {
   text-decoration: none;
@@ -42,17 +38,7 @@ nav a {
   position: relative;
 }
 
-#greeting h1 {
-  font-family: Baskerville, "Baskerville Old Face", Garamond, "Times New Roman",
-    serif;
-}
 #greeting h2 {
-  font-family: "Lato", sans-serif;
-}
-#greeting p {
-  font-family: "Lato", sans-serif;
-}
-#projects h2 {
   font-family: "Lato", sans-serif;
 }
 
@@ -82,7 +68,6 @@ ul.main-menu {
   color: rgb(255, 255, 255);
 }
 
-h1,
 h2,
 h3 {
   font-family: "Julius Sans One", sans-serif;
@@ -163,7 +148,7 @@ nav * {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #ffffff9f;
+  background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -177,41 +162,16 @@ nav * {
   text-align: left;
 }
 
-.dropdown-content a:hover {
+/*.dropdown-content a:hover {
   background-color: #f1f1f1;
   color: black;
-}
+}*/
 .dropdown:hover .dropdown-content {
   display: block;
 }
 /* end nav styles */
 
 /* header styles */
-header {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  /* background-color: #FAF3F7; */
-  width: 100%;
-
-  /**
-   * This is used so that the header content (e.g. image)
-   * does not stretch too much on big screens
-   */
-}
-
-/**
- * This is a CSS Child Selector (>). Selection all div(s) which are direct children
- * of a header element. More info can be seen here
- * https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
- */
-header > div {
-  flex: 1;
-}
-
-.section > h2 {
-  text-align: center;
-}
 
 #education li {
   list-style-type: none;
@@ -242,14 +202,6 @@ div a {
   color: black;
 }
 
-.full_screen {
-  height: 300%;
-  top: -100%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  object-fit: contain;
-}
 .content {
   display: flex;
   padding-right: 100px;
