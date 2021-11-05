@@ -8,10 +8,11 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  color: rgb(255, 255, 255);
+  /*color: #333;*/
   margin: 0px;
   font-size: 1.2em;
   padding-top: 50px;
+  background-image: url("/ux:ui/backsch.jpg");
 }
 #about h2 {
   font-family: "Lato", sans-serif;
@@ -27,32 +28,25 @@ body {
 #contact {
   margin-left: 100px;
 }
-.section {
-  padding: 20px;
-  margin: 25px;
-}
 
 nav a {
   text-decoration: none;
 }
 
 #greeting {
-  margin-left: 160px;
-  position: relative;
-  margin-top: 50px;
+  flex: 70%;
+  margin-left: 40px;
 }
-
-#projects h2 {
-  font-family: "Lato", sans-serif;
+.shop img {
+  flex: 40%;
+  width: 400px;
 }
-
-ul.main-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  overflow-x: auto;
-  font-family: "Lato", sans-serif;
+.picshop {
+  margin-top: 40px;
+  background-color: #fa8538;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .main-menu a:link,
@@ -148,699 +142,69 @@ nav * {
 }
 /* end nav styles */
 
-/* header styles */
-header {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  /* background-color: #FAF3F7; */
-  width: 100%;
-
-  /**
-       * This is used so that the header content (e.g. image)
-       * does not stretch too much on big screens
-       */
-}
-
-/**
-     * This is a CSS Child Selector (>). Selection all div(s) which are direct children
-     * of a header element. More info can be seen here
-     * https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
-     */
-header > div {
-  flex: 1;
-}
-
-header img {
-  width: 200%;
-  border-radius: 20px;
-  max-height: 900px;
-  /* learn more about this property
-      here https://css-tricks.com/almanac/properties/o/object-fit/  */
-  object-fit: cover;
-}
-/* end header styles */
-
 div a {
   text-decoration: none;
   color: black;
 }
 
-.full_screen {
-  height: 300%;
-  top: -100%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  object-fit: contain;
+x #contact {
+  margin-left: 100px;
 }
+
+h2 {
+  font-family: "Julius Sans One", sans-serif;
+}
+h2 {
+  font-size: 1.6em;
+}
+p {
+  font-size: 1.2em;
+}
+
 .content {
-  margin-left: 500px;
-  color: black;
-  
+  padding-right: 100px;
+  padding-left: 200px;
 }
-#contact {
-  margin-left: 100px;
-}
-.section {
-  padding: 20px;
-  margin: 25px;
-}
-h2 {
-  font-family: "Julius Sans One", sans-serif;
-}
-h2 {
-  font-size: 1.6em;
-}
-p {
-  font-size: 1.2em;
-}
-/*
-.img2 img,
-.img2 > div {
-  box-sizing: border-box;
-  background-color: #faf3;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 50px;
-  margin-left: -250px;
-  width: 100%;
-}
-.img3 img,
-.img3 > div {
-  box-sizing: border-box;
-  background-color: #faf3;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
-.img4 img,
-.img4 > div {
-  box-sizing: border-box;
-  background-color: #faf3;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
-.img5 img,
-.img5 > div {
-  box-sizing: border-box;
-  background-color: #faf3;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
-.img6 img,
-.img6 > div {
-  box-sizing: border-box;
-  background-color: #faf3;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
-.img7 img,
-.img7 > div {
-  box-sizing: border-box;
-  background-color: #faf3;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
-.img8 img,
-.img8 > div {
-  box-sizing: border-box;
-  background-color: #faf3;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
-.img9 img,
-.img9 > div {
-  box-sizing: border-box;
-  background-color: #faf3;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
-.img10 img,
-.img10 > div {
-  box-sizing: border-box;
-  background-color: #faf3;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
-.Proto > div,
-video {
-  background-color: #faf3;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 900px;
-}*/
-
-body {
-  font-family: "Lato", sans-serif;
-  /*color: #333;*/
-  margin: 0px;
-  font-size: 1.2em;
-  padding-top: 50px;
-  background-image: url("/ux:ui/backsch.jpg");
-}
-#about h2 {
-  font-family: "Lato", sans-serif;
-}
-
-#about {
-  margin-left: 100px;
-}
-
-#projects {
-  margin-left: 100px;
-}
-#contact {
-  margin-left: 100px;
-}
-.section {
-  padding: 20px;
-  margin: 25px;
-}
-
-nav a {
-  text-decoration: none;
-}
-
-#greeting {
-  float: right;
-  overflow: auto;
-  display: block;
-  max-width: 600px;
-  margin-left: -300px;
-  margin-right: 200px;
-
-  /*margin-left: 160px;
-  position: relative;*/
-}
-.shop img {
-  width: 25%;
-  margin-left: 180px;
-}
-.picshop {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  background-color: #fa8538;
-  width: 100%;
-}
-
-#projects h2 {
-  font-family: "Lato", sans-serif;
-}
-
-ul.main-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  overflow-x: auto;
-  font-family: "Lato", sans-serif;
-}
-
-.main-menu a:link,
-.main-menu a:visited {
-  color: black;
-  padding: 10px 20px;
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9,
+.img10,
+.img11,
+.img12,
+.img13,
+.Proto {
   text-align: center;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  height: 100%;
+  margin-bottom: 60px;
+  width: 90%;
+  background-color: #f5eaf5;
+  padding-right: 10px;
+  padding-left: 10px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 }
-
-.main-menu a:hover,
-.main-menu a:active {
-  background-color: rgba(158, 86, 151, 0.418);
-  color: rgb(255, 255, 255);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* nav styles */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 10;
-  background: #faf3f7;
-
-  width: 100%;
-  top: 0;
-  /**
-     * This height needs to be the same value as the
-     * value of the padding-top which is applied on the body.
-     * This is needed so that the navigation content and the body
-     * content do not collied with each other.
-     */
-  height: 50px;
-}
-
-nav * {
-  margin: 0;
-  padding: 0;
-}
-
-.logo {
-  margin: 5px 50px 10px 50px;
-}
-
-.logo a {
-  cursor: pointer;
-  color: rgb(90, 3, 64);
-}
-
-.logo h2 {
-  font-family: "Lobster", cursive;
-}
-
-.main-menu {
-  height: 100%;
-}
-
-.main-menu li {
-  height: 100%;
-  display: inline-block;
-}
-/* end nav styles */
-
-/* header styles */
-header {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  /* background-color: #FAF3F7; */
-  width: 100%;
-
-  /**
-     * This is used so that the header content (e.g. image)
-     * does not stretch too much on big screens
-     */
-}
-
-/**
-   * This is a CSS Child Selector (>). Selection all div(s) which are direct children
-   * of a header element. More info can be seen here
-   * https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
-   */
-header > div {
-  flex: 1;
-}
-
-header img {
-  width: 200%;
-  border-radius: 20px;
-  max-height: 900px;
-  /* learn more about this property
-    here https://css-tricks.com/almanac/properties/o/object-fit/  */
-  object-fit: cover;
-}
-/* end header styles */
-
-div a {
-  text-decoration: none;
-  color: black;
-}
-
-.full_screen {
-  height: 300%;
-  top: -100%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  object-fit: contain;
-}
-
-#contact {
-  margin-left: -400px;
-  padding: 5px;
-  background-color: rgb(252, 230, 247);;
-  margin-right: 50px;
-}
-.section {
-  padding: 20px;
-  margin: 25px;
-}
-h2 {
-  font-family: "Julius Sans One", sans-serif;
-}
-h2 {
-  font-size: 1.6em;
-}
-p {
-  font-size: 1.2em;
-}
-
-div.img2 {
-  width: 250px;
-  float:left;
-}
-div.img2 img {
-  width: 100%;
-  height: auto; 
-  margin-left: 370px;
-}
-div.desc1 {
-  padding: 10px;
-  background-color: #fa8538;
- padding-left: 10px;
-  margin-left: 370px;
-  margin-right: 320px;
-}
-div.img3 {
-    width: 300px;
-    float:left;
-  }
-  div.img3 img {
-    width: 100%;
-    height: auto; 
-    margin-left: 450px;
-  }
-  div.desc2 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-    margin-left: 450px;
-    margin-right: 390px;
-  }
-
-  div.img4 {
-
-    width: 300px;
-    float:left;
-  }
-  div.img4 img {
-    width: 100%;
-    height: auto; 
-    margin-left: 450px;
-  }
-  div.desc3 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-   margin-left: 450px;
-    margin-right: 390px;
-  }
-
-  div.img5 {
-    width: 250px;
-    float:left;
-  }
-  div.img5 img {
-    width: 100%;
-    height: auto; 
-    margin-left: 370px;
-  }
-  div.desc4 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-   margin-left: 370px;
-   margin-right: 320px;
-  }
-
-  div.img6 {
-    width: 250px;
-    float:left;
-  }
-  div.img6 img {
-    width: 100%;
-    height: auto; 
-    margin-left: 370px;
-  }
-  div.desc5 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-   margin-left: 370px;
-   margin-right: 320px;
-  }
-
-  div.img7 {
-    width: 250px;
-    float:left;
-  }
-  div.img7 img {
-    width: 100%;
-    height: auto; 
-    margin-left: 370px;
-  }
-  div.desc6 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-   margin-left: 370px;
-   margin-right: 320px;
-  }
-
-
-  div.img8 {
-    width: 300px;
-    float:left;
-  }
-  div.img8 img {
-    width: 100%;
-    height: auto; 
-    margin-left: 450px;
-  }
-  div.desc7 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-   margin-left: 450px;
-    margin-right: 390px;
-  }
-
-  div.img9 {
-    width: 300px;
-    float:left;
-  }
-  div.img9 img {
-    width: 100%;
-    height: auto; 
-    margin-left: 450px;
-  }
-  div.desc8 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-   margin-left: 450px;
-    margin-right: 390px;
-  }
-
-  div.img10 {
-    width: 300px;
-    float:left;
-  }
-  div.img10 img {
-    width: 100%;
-    height: auto; 
-    margin-left: 450px;
-  }
-  div.desc9 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-   margin-left: 450px;
-    margin-right: 390px;
-  }
-  div.img11 {
-    width: 300px;
-    float:left;
-  }
-  div.img11 img {
-    width: 100%;
-    height: auto; 
-    margin-left: 450px;
-  }
-  div.desc10 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-   margin-left: 450px;
-    margin-right: 390px;
-  }
-
-  div.img12 {
-    width: 300px;
-    float:left;
-  }
-  div.img12 img {
-    width: 100%;
-    height: auto; 
-    margin-left: 450px;
-  }
-  div.desc11 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-   margin-left: 450px;
-    margin-right: 390px;
-  }
-  div.img13 {
-    width: 300px;
-    float:left;
-  }
-  div.img13 img {
-    width: 100%;
-    height: auto; 
-    margin-left: 450px;
-  }
-  div.desc12 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-   margin-left: 450px;
-    margin-right: 390px;
-  }
-
-  div.video {
-    width: 700px;
-    float:left;
-  }
-  div.video video {
-    width: 100%;
-    height: auto; 
-    margin-left: 400px;
-  }
-  div.desc13 {
-    padding: 10px;
-    background-color: #fa8538;
-   padding-left: 10px;
-   margin-left: 400px;
-    margin-right: 340px;
-  }
-/*div.i
-/*div.img3 {
-    width: 300px;
-    float:left;
-  }
-  div.img3 img {
-    width: 100%;
-    height: auto;
-    margin-left: 250px;
-  }
-  div.desc2 {
-    padding: 10px;
-    background-color: #fa8538;
-    padding-left: 10px;
-    margin-left: 550px;
-    margin-right: 250px;
-  }
-/*.img3 img,
-.img3 > div {
-  box-sizing: border-box;
-  background-color: #fa8538;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
+.img2 img,
+.img3 img,
 .img4 img,
-.img4 > div {
-  box-sizing: border-box;
-  background-color: #fa8538;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img5 img,
-.img5 > div {
-  box-sizing: border-box;
-  background-color: #fa8538;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img6 img,
-.img6 > div {
-  box-sizing: border-box;
-  background-color: #fa8538;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img7 img,
-.img7 > div {
-  box-sizing: border-box;
-  background-color: #fa8538;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img8 img,
-.img8 > div {
-  box-sizing: border-box;
-  background-color: #fa8538;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img9 img,
-.img9 > div {
-  box-sizing: border-box;
-  background-color: #fa8538;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
 .img10 img,
-.img10 > div {
-  box-sizing: border-box;
-  background-color: #fa8538;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 100%;
-}
-.Proto > div,
+.img11 img,
+.img12 img,
+.img13 img,
 video {
-  background-color: #fa8538;
-  padding-bottom: 10px;
   padding-top: 10px;
-  margin-right: 100px;
-  margin-left: -250px;
-  width: 900px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+div.desc {
+  text-align: left;
+  padding-bottom: 10px;
 }

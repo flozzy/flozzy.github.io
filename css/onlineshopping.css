@@ -164,15 +164,6 @@ div a {
   color: black;
 }
 
-.full_screen {
-  height: 300%;
-  top: -100%;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  object-fit: contain;
-}
-
 #contact {
   margin-right: 100px;
   color: black;
