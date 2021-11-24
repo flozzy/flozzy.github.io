@@ -5,196 +5,404 @@ html {
 * {
   scroll-behavior: smooth;
 }
+@media only screen and (min-width: 768px) {
+  body {
+    font-family: "Lato", sans-serif;
+    /*color: #333;*/
+    margin: 0px;
+    font-size: 1.2em;
+    padding-top: 50px;
+    background-image: url("/ux:ui/backsch.jpg");
+  }
 
-body {
-  font-family: "Lato", sans-serif;
-  /*color: #333;*/
-  margin: 0px;
-  font-size: 1.2em;
-  padding-top: 50px;
-  background-image: url("/ux:ui/backsch.jpg");
-}
+  nav a {
+    text-decoration: none;
+  }
 
-nav a {
-  text-decoration: none;
-}
+  #greeting {
+    flex: 70%;
+    margin-left: 40px;
+  }
+  .shop img {
+    flex: 40%;
+    width: 400px;
+  }
+  .picshop {
+    margin-top: 40px;
+    background-color: #fa8538;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
-#greeting {
-  flex: 70%;
-  margin-left: 40px;
-}
-.shop img {
-  flex: 40%;
-  width: 400px;
-}
-.picshop {
-  margin-top: 40px;
-  background-color: #fa8538;
-  display: flex;
-  padding-left: 10%;
-  padding-right: 10%;
-}
+  .main-menu a:link,
+  .main-menu a:visited {
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
 
-.main-menu a:link,
-.main-menu a:visited {
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
+  .main-menu a:hover,
+  .main-menu a:active {
+    background-color: rgba(158, 86, 151, 0.418);
+    color: rgb(255, 255, 255);
+  }
 
-.main-menu a:hover,
-.main-menu a:active {
-  background-color: rgba(158, 86, 151, 0.418);
-  color: rgb(255, 255, 255);
-}
+  * {
+    box-sizing: border-box;
+  }
 
-* {
-  box-sizing: border-box;
-}
+  /* nav styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background: #faf3f7;
 
-/* nav styles */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 10;
-  background: #faf3f7;
-
-  width: 100%;
-  top: 0;
-  /**
+    width: 100%;
+    top: 0;
+    /**
        * This height needs to be the same value as the
        * value of the padding-top which is applied on the body.
        * This is needed so that the navigation content and the body
        * content do not collied with each other.
        */
-  height: 50px;
-}
+    height: 50px;
+  }
 
-nav * {
-  margin: 0;
-  padding: 0;
-}
+  nav * {
+    margin: 0;
+    padding: 0;
+  }
 
-.logo {
-  margin: 5px 50px 10px 50px;
-}
+  .logo {
+    margin: 5px 50px 10px 50px;
+  }
 
-.logo a {
-  cursor: pointer;
-  color: rgb(90, 3, 64);
-}
+  .logo a {
+    cursor: pointer;
+    color: rgb(90, 3, 64);
+  }
 
-.logo h2 {
-  font-family: "Lobster", cursive;
-}
+  .logo h2 {
+    font-family: "Lobster", cursive;
+  }
 
-.main-menu {
-  height: 100%;
-}
+  .main-menu {
+    height: 100%;
+  }
 
-.main-menu li {
-  height: 100%;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
+  .main-menu li {
+    height: 100%;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
 
-/*.dropdown-content a:hover {
+  /*.dropdown-content a:hover {
   background-color: #f1f1f1;
   color: black;
 }*/
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/* end nav styles */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* end nav styles */
 
-div a {
-  text-decoration: none;
+  div a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #contact {
+    margin-right: 100px;
+    margin-left: 100px;
+    color: black;
+    padding: 5px;
+    background-color: rgb(252, 230, 247);
+  }
+
+  h2 {
+    font-family: "Julius Sans One", sans-serif;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+
+  .content {
+    padding-right: 100px;
+    padding-left: 200px;
+  }
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7,
+  .img8,
+  .img9,
+  .img10,
+  .img11,
+  .img12,
+  .img13,
+  .Proto {
+    text-align: center;
+    margin-bottom: 60px;
+    width: 90%;
+    background-color: #fdbc91;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  }
+  .img2 img,
+  .img3 img,
+  .img4 img,
+  .img5 img,
+  .img6 img,
+  .img7 img,
+  .img8 img,
+  .img9 img,
+  .img10 img,
+  .img11 img,
+  .img12 img,
+  .img13 img,
+  video {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  div.desc {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-family: "Lato", sans-serif;
+    /*color: #333;*/
+    margin: 0px;
+    font-size: 1em;
+    padding-top: 50px;
+    background-image: url("/ux:ui/backsch.jpg");
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  #greeting {
+    margin-left: 10px;
+    padding-bottom: 3px;
+  }
+  .shop img {
+    width: 250px;
+  }
+  .picshop {
+    margin-top: 40px;
+    background-color: #fa8538;
+    padding-left: 7%;
+    padding-right: 10%;
+  }
+  ul.main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-family: "Lato", sans-serif;
+  }
+  .main-menu a:link,
+  .main-menu a:visited {
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .main-menu a:hover,
+  .main-menu a:active {
+    background-color: rgba(158, 86, 151, 0.418);
+    color: rgb(255, 255, 255);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* nav styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background: #faf3f7;
+
+    width: 100%;
+    top: 0;
+    /**
+       * This height needs to be the same value as the
+       * value of the padding-top which is applied on the body.
+       * This is needed so that the navigation content and the body
+       * content do not collied with each other.
+       */
+    height: 50px;
+  }
+
+  nav * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    margin: 5px 20px 10px 20px;
+  }
+
+  .logo a {
+    cursor: pointer;
+    color: rgb(90, 3, 64);
+  }
+
+  .logo h2 {
+    font-family: "Lobster", cursive;
+  }
+
+  .main-menu {
+    height: 100%;
+  }
+
+  .main-menu li {
+    height: 100%;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /*.dropdown-content a:hover {
+  background-color: #f1f1f1;
   color: black;
-}
+}*/
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* end nav styles */
 
-#contact {
-  margin-right: 100px;
-  margin-left: 100px;
-  color: black;
-  padding: 5px;
-  background-color: rgb(252, 230, 247);
-}
+  div a {
+    text-decoration: none;
+    color: black;
+  }
 
-h2 {
-  font-family: "Julius Sans One", sans-serif;
-}
-h2 {
-  font-size: 1.6em;
-}
-p {
-  font-size: 1.2em;
-}
+  #contact {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    padding: 5px;
+    background-color: rgb(252, 230, 247);
+  }
 
-.content {
-  padding-right: 100px;
-  padding-left: 200px;
-}
-.img2,
-.img3,
-.img4,
-.img5,
-.img6,
-.img7,
-.img8,
-.img9,
-.img10,
-.img11,
-.img12,
-.img13,
-.Proto {
-  text-align: center;
-  margin-bottom: 60px;
-  width: 90%;
-  background-color: #fdbc91;
-  padding-right: 10px;
-  padding-left: 10px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-}
-.img2 img,
-.img3 img,
-.img4 img,
-.img5 img,
-.img6 img,
-.img7 img,
-.img8 img,
-.img9 img,
-.img10 img,
-.img11 img,
-.img12 img,
-.img13 img,
-video {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%;
-  text-align: center;
-}
-div.desc {
-  text-align: left;
-  padding-bottom: 10px;
+  h2 {
+    font-family: "Julius Sans One", sans-serif;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  #greeting h2 {
+    font-size: 1.8em;
+  }
+  p {
+    font-size: 1em;
+  }
+
+  .content {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .desc p {
+    padding: 4px;
+    font-size: 15px;
+  }
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7,
+  .img8,
+  .img9,
+  .img10,
+  .img11,
+  .img12,
+  .img13,
+  .Proto {
+    text-align: center;
+    margin-bottom: 60px;
+    width: 100%;
+    background-color: #fdbc91;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  }
+  .img2 img,
+  .img3 img,
+  .img4 img,
+  .img5 img,
+  .img6 img,
+  .img7 img,
+  .img8 img,
+  .img9 img,
+  .img10 img,
+  .img11 img,
+  .img12 img,
+  .img13 img,
+  video {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  div.desc {
+    text-align: left;
+    padding-bottom: 10px;
+  }
 }

@@ -5,239 +5,462 @@ html {
 * {
   scroll-behavior: smooth;
 }
+@media only screen and (min-width: 768px) {
+  body {
+    font-family: "Lato", sans-serif;
+    /*color: #333;*/
+    margin: 0px;
+    font-size: 1.2em;
+    padding-top: 50px;
+    background-image: url("/ux:ui/afroback.jpg");
+    color: rgb(255, 255, 255);
+  }
+  #about h2 {
+    font-family: "Lato", sans-serif;
+  }
 
-body {
-  font-family: "Lato", sans-serif;
-  /*color: #333;*/
-  margin: 0px;
-  font-size: 1.2em;
-  padding-top: 50px;
-  background-image: url("/ux:ui/afroback.jpg");
-  color: rgb(255, 255, 255);
-}
-#about h2 {
-  font-family: "Lato", sans-serif;
-}
+  #about {
+    margin-left: 100px;
+  }
 
-#about {
-  margin-left: 100px;
-}
+  #projects {
+    margin-left: 100px;
+  }
+  #contact {
+    margin-left: 100px;
+  }
+  .section {
+    padding: 20px;
+    margin: 25px;
+  }
 
-#projects {
-  margin-left: 100px;
-}
-#contact {
-  margin-left: 100px;
-}
-.section {
-  padding: 20px;
-  margin: 25px;
-}
+  nav a {
+    text-decoration: none;
+  }
 
-nav a {
-  text-decoration: none;
-}
+  #greeting {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .shop img {
+    width: 80%;
+  }
+  .picshop {
+    margin-top: 40px;
+    background-color: #048a5f;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 
-#greeting {
-  padding-left: 200px;
-  padding-right: 200px;
-}
-.shop img {
-  width: 80%;
-}
-.picshop {
-  margin-top: 40px;
-  background-color: #048a5f;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
+  #projects h2 {
+    font-family: "Lato", sans-serif;
+  }
 
-#projects h2 {
-  font-family: "Lato", sans-serif;
-}
+  ul.main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-family: "Lato", sans-serif;
+  }
 
-ul.main-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  overflow-x: auto;
-  font-family: "Lato", sans-serif;
-}
+  .main-menu a:link,
+  .main-menu a:visited {
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
 
-.main-menu a:link,
-.main-menu a:visited {
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
+  .main-menu a:hover,
+  .main-menu a:active {
+    background-color: rgba(158, 86, 151, 0.418);
+    color: rgb(255, 255, 255);
+  }
 
-.main-menu a:hover,
-.main-menu a:active {
-  background-color: rgba(158, 86, 151, 0.418);
-  color: rgb(255, 255, 255);
-}
+  * {
+    box-sizing: border-box;
+  }
 
-* {
-  box-sizing: border-box;
-}
+  /* nav styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background: #faf3f7;
 
-/* nav styles */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 10;
-  background: #faf3f7;
-
-  width: 100%;
-  top: 0;
-  /**
+    width: 100%;
+    top: 0;
+    /**
          * This height needs to be the same value as the
          * value of the padding-top which is applied on the body.
          * This is needed so that the navigation content and the body
          * content do not collied with each other.
          */
-  height: 50px;
-}
+    height: 50px;
+  }
 
-nav * {
-  margin: 0;
-  padding: 0;
-}
+  nav * {
+    margin: 0;
+    padding: 0;
+  }
 
-.logo {
-  margin: 5px 50px 10px 50px;
-}
+  .logo {
+    margin: 5px 50px 10px 50px;
+  }
 
-.logo a {
-  cursor: pointer;
-  color: rgb(90, 3, 64);
-}
+  .logo a {
+    cursor: pointer;
+    color: rgb(90, 3, 64);
+  }
 
-.logo h2 {
-  font-family: "Lobster", cursive;
-}
+  .logo h2 {
+    font-family: "Lobster", cursive;
+  }
 
-.main-menu {
-  height: 100%;
-}
+  .main-menu {
+    height: 100%;
+  }
 
-.main-menu li {
-  height: 100%;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
+  .main-menu li {
+    height: 100%;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
 
-/*.dropdown-content a:hover {
+  /*.dropdown-content a:hover {
   background-color: #f1f1f1;
   color: black;
 }*/
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/* end nav styles */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* end nav styles */
 
-/* header styles */
-header {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  /* background-color: #FAF3F7; */
-  width: 100%;
+  /* header styles */
+  header {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    /* background-color: #FAF3F7; */
+    width: 100%;
 
-  /**
+    /**
          * This is used so that the header content (e.g. image)
          * does not stretch too much on big screens
          */
-}
+  }
 
-/**
+  /**
        * This is a CSS Child Selector (>). Selection all div(s) which are direct children
        * of a header element. More info can be seen here
        * https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
        */
-header > div {
-  flex: 1;
-}
+  header > div {
+    flex: 1;
+  }
 
-div a {
-  text-decoration: none;
-  color: black;
-}
+  div a {
+    text-decoration: none;
+    color: black;
+  }
 
-#contact {
-  margin-right: 100px;
-  color: black;
-  padding: 5px;
-  background-color: rgb(252, 230, 247);
-}
-.section {
-  padding: 20px;
-  margin: 25px;
-}
-h2 {
-  font-family: "Julius Sans One", sans-serif;
-}
-h2 {
-  font-size: 1.6em;
-}
-p {
-  font-size: 1.2em;
-}
+  #contact {
+    margin-right: 100px;
+    color: black;
+    padding: 5px;
+    background-color: rgb(252, 230, 247);
+  }
+  .section {
+    padding: 20px;
+    margin: 25px;
+  }
+  h2 {
+    font-family: "Julius Sans One", sans-serif;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  p {
+    font-size: 1.2em;
+  }
 
-.content {
-  padding-right: 100px;
-  padding-left: 200px;
-}
-.img2,
-.img3,
-.img4,
-.img5,
-.img6,
-.Proto {
-  text-align: center;
-  margin-bottom: 10px;
-  width: 90%;
-  background-color: #048a5f;
-  padding-right: 10px;
-  padding-left: 10px;
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-}
-.img2 img,
-.img3 img,
-.img4 img,
-.img5 img,
-.img6 img,
-video {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  .content {
+    padding-right: 100px;
+    padding-left: 200px;
+  }
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .Proto {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 90%;
+    background-color: #048a5f;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  }
+  .img2 img,
+  .img3 img,
+  .img4 img,
+  .img5 img,
+  .img6 img,
+  video {
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
+  }
+  div.dec {
+    text-align: left;
+    padding-bottom: 10px;
+  }
 }
-div.dec {
-  text-align: left;
-  padding-bottom: 10px;
+@media only screen and (max-width: 768px) {
+  body {
+    font-family: "Lato", sans-serif;
+    /*color: #333;*/
+    margin: 0px;
+    font-size: 1em;
+    padding-top: 50px;
+    background-image: url("/ux:ui/afroback.jpg");
+    color: rgb(255, 255, 255);
+  }
+  #about h2 {
+    font-family: "Lato", sans-serif;
+  }
+
+  #contact {
+    margin-left: 10px;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  #greeting {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .shop img {
+    width: 100%;
+  }
+  .picshop {
+    margin-top: 40px;
+    background-color: #048a5f;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul.main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-family: "Lato", sans-serif;
+  }
+
+  .main-menu a:link,
+  .main-menu a:visited {
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .main-menu a:hover,
+  .main-menu a:active {
+    background-color: rgba(158, 86, 151, 0.418);
+    color: rgb(255, 255, 255);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* nav styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background: #faf3f7;
+
+    width: 100%;
+    top: 0;
+    /**
+           * This height needs to be the same value as the
+           * value of the padding-top which is applied on the body.
+           * This is needed so that the navigation content and the body
+           * content do not collied with each other.
+           */
+    height: 50px;
+  }
+
+  nav * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo {
+    margin: 5px 20px 10px 20px;
+  }
+
+  .logo a {
+    cursor: pointer;
+    color: rgb(90, 3, 64);
+  }
+
+  .logo h2 {
+    font-family: "Lobster", cursive;
+  }
+
+  .main-menu {
+    height: 100%;
+  }
+
+  .main-menu li {
+    height: 100%;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /*.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }*/
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* end nav styles */
+
+  /* header styles */
+  header {
+    align-items: center;
+    justify-items: center;
+    /* background-color: #FAF3F7; */
+    width: 100%;
+
+    /**
+           * This is used so that the header content (e.g. image)
+           * does not stretch too much on big screens
+           */
+  }
+
+  /**
+         * This is a CSS Child Selector (>). Selection all div(s) which are direct children
+         * of a header element. More info can be seen here
+         * https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
+         */
+  header > div {
+    flex: 1;
+  }
+
+  div a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #contact {
+    margin-right: 10px;
+    color: black;
+    padding: 5px;
+    background-color: rgb(252, 230, 247);
+  }
+
+  h2 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1.3em;
+  }
+  #greeting h2 {
+    font-size: 1.3em;
+  }
+  p {
+    font-size: 1em;
+  }
+
+  .content {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .dec {
+    padding: 4px;
+    font-size: 15px;
+  }
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .Proto {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #048a5f;
+    padding-right: 5px;
+    padding-left: 5px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  }
+  .img2 img,
+  .img3 img,
+  .img4 img,
+  .img5 img,
+  .img6 img,
+  video {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  div.dec {
+    text-align: left;
+    padding-bottom: 10px;
+  }
 }
