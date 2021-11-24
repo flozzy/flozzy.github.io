@@ -196,10 +196,6 @@ html {
     background-image: url("../images\ for\ Porfoilo/unn-logo-en.png");
   }
 
-  .section h2 {
-    text-align: left;
-  }
-
   div a {
     text-decoration: none;
     color: black;
@@ -268,16 +264,10 @@ html {
     font-size: 1em;
     padding-top: 50px;
   }
-  #about {
-    margin-left: 100px;
-  }
 
-  #projects {
-    margin-left: 100px;
-  }
   #contact {
     margin-left: 20px;
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   nav a {
@@ -454,11 +444,11 @@ html {
   .content {
     padding-right: 10px;
     padding-left: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 4px;
   }
 
   .main_text {
-    margin-left: 5px;
+    margin-left: 13px;
 
     /* float: right;
   overflow: auto;
@@ -472,11 +462,12 @@ html {
     border-radius: 5px;
     text-align: center;
   }
-  div p {
-    font-size: 0.9em;
+
+  .main_text p {
+    font-size: 1em;
     font-weight: bold;
-    height: 290px;
-    width: 290px;
+    height: 320px;
+    width: 370px;
     overflow: scroll;
   }
 
