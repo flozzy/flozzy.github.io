@@ -261,12 +261,13 @@ html {
     margin-top: 40px;
   }
   .shop img {
-    width: 250px;
+    width: 100%;
   }
   .picshop {
     margin-top: 40px;
     background-color: #f5eaf5;
     padding-left: 7%;
+    padding-right: 7%;
   }
 
   ul.main-menu {
@@ -394,10 +395,11 @@ html {
   p {
     font-size: 0.9em;
     color: black;
+    padding-bottom: 7px;
   }
   .content {
     padding-right: 5px;
-    padding-left: px;
+    padding-left: 0px;
   }
   .dec p {
     padding: 4px;

@@ -219,13 +219,13 @@ html {
     padding-bottom: 3px;
   }
   .shop img {
-    width: 250px;
+    width: 100%;
   }
   .picshop {
     margin-top: 40px;
     background-color: #fa8538;
     padding-left: 7%;
-    padding-right: 10%;
+    padding-right: 7%;
   }
   ul.main-menu {
     list-style-type: none;
@@ -343,15 +343,16 @@ html {
 
   h2 {
     font-family: "Julius Sans One", sans-serif;
-  }
-  h2 {
     font-size: 1.2em;
+    font-weight: bold;
   }
+
   #greeting h2 {
     font-size: 1.8em;
   }
   p {
     font-size: 1em;
+    font-weight: bold;
   }
 
   .content {
@@ -361,6 +362,7 @@ html {
   .desc p {
     padding: 4px;
     font-size: 15px;
+    font-weight: bold;
   }
   .img2,
   .img3,
