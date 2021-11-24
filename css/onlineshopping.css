@@ -396,6 +396,7 @@ html {
     font-size: 0.9em;
     color: black;
     padding-bottom: 7px;
+    font-weight: bold;
   }
   .content {
     padding-right: 5px;
