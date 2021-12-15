@@ -150,7 +150,7 @@ html {
     display: block;
     text-align: left;
   }
-  span {
+  #greeting span {
     color: blue;
   }
   /*.dropdown-content a:hover {

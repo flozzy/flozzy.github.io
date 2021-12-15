@@ -191,7 +191,6 @@ html {
   .BTH {
     background-image: url("../images\ for\ Porfoilo/bth_logo.png");
   }
-
   .Nizhny {
     background-image: url("../images\ for\ Porfoilo/unn-logo-en.png");
   }
@@ -256,6 +255,7 @@ html {
   }
 }
 
+/* for phone*/
 @media only screen and (max-width: 768px) {
   body {
     font-family: "Lato", sans-serif;
