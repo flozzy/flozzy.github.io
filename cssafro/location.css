@@ -1,0 +1,454 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+/* for desktop*/
+@media only screen and (min-width: 768px) {
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    padding-right: 10px;
+    margin-left: 210px;
+  }
+
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .navbars {
+    padding-top: 13px;
+    margin-left: 170px;
+  }
+
+  .logo:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  /* Right-aligned link */
+  .navbars a.right {
+    padding-top: 13px;
+    float: right;
+  }
+  .fa-map-marker {
+    width: 15px;
+    color: #148339;
+  }
+  .fa-phone {
+    width: 15px;
+  }
+  /* Change color on hover */
+  .navbars a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid currentColor;
+    border-color: rgb(36, 172, 138);
+  }
+
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  .searchTerm {
+    width: 60%;
+    border: 3px solid rgb(112, 255, 219);
+    border-right: none;
+    padding: 5px;
+    height: 30px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: #000000;
+    background-color: rgb(112, 255, 219);
+  }
+
+  .searchTerm:focus {
+    color: rgb(112, 255, 219);
+  }
+
+  .searchButton {
+    width: 50px;
+    height: 30px;
+    border: 1px solid rgb(112, 255, 219);
+    background: rgb(112, 255, 219);
+    text-align: center;
+    color: rgb(55, 156, 117);
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  /*Resize the wrap to see the search bar change!*/
+  .wrap {
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  h2 {
+    text-align: center;
+    margin-left: 0px;
+    font-size: 18px;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 20px;
+    margin-bottom: inherit;
+  }
+
+  h1 {
+    font-size: 55px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid rgb(190, 190, 190);
+    margin-bottom: 40px;
+  }
+  .side {
+    flex: 10%;
+    background-color: #ffffff;
+  }
+  /* Main column */
+  .main {
+    flex: 45%;
+    background-color: rgb(253, 253, 253);
+    padding-left: 8px;
+    padding-bottom: 1px;
+  }
+
+  .pic {
+    flex: 15%;
+    background-color: rgb(253, 253, 253);
+    margin-top: 129px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .pic img {
+    padding-left: 0%;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  div .side ul {
+    list-style-type: none;
+    padding-right: 0px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+    margin-left: -30px;
+  }
+  div .side ul li {
+    /*border-bottom: 1px solid rgb(190, 190, 190);*/
+    color: black;
+    margin-left: -50px;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 7px;
+    padding-left: 70px;
+    margin-bottom: inherit;
+  }
+  div .side ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  div .side ul li :hover {
+    text-decoration: none;
+    margin-left: -30px;
+    color: rgb(36, 172, 138);
+    /* background: linear-gradient(
+    to right,
+    rgb(26, 167, 101) 26%,
+    rgb(255, 255, 255) 25%
+  );*/
+    padding: 6px;
+    padding-left: 30px;
+  }
+
+  .open {
+    margin-left: 129px;
+  }
+  #footer {
+    display: flex;
+    padding: 5px;
+    padding-left: 130px;
+    color: white;
+    background: #a8a8a8;
+    margin-top: 30px;
+  }
+  .left {
+    flex: 30%;
+  }
+  div .contct {
+    flex-wrap: wrap;
+    margin-top: 35px;
+  }
+  .facebook {
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+  }
+  .youtube {
+    float: left;
+    color: #000000;
+    font-size: 31px;
+  }
+  .middle {
+    flex: 30%;
+  }
+  div .contct2 {
+    font-weight: lighter;
+    margin-top: 35px;
+  }
+
+  .right {
+    flex: 40%;
+  }
+  div .pay img {
+    float: left;
+    width: 350px;
+    height: 150px;
+  }
+}
+/* for phone*/
+@media only screen and (max-width: 768px) {
+  /* Style the header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .myslides {
+    display: none;
+  }
+  .logo img {
+    width: 60px;
+    height: 30.5px;
+  }
+  /* Style the top navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    padding-right: 2px;
+    margin-left: 1.5%;
+    font-size: 60%;
+  }
+
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 1% 0.5%;
+    text-decoration: none;
+  }
+  .navbars {
+    padding-top: 10px;
+    margin-left: 3%;
+  }
+  .fa-map-marker {
+    width: 8px;
+    color: #148339;
+  }
+  .fa-phone {
+    width: 8px;
+  }
+  /* Right-aligned link */
+  .navbars a.right {
+    padding-top: 3px;
+    float: right;
+  }
+
+  /* Change color on hover */
+  .navbars a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 3px solid currentColor;
+    border-color: rgb(36, 172, 138);
+  }
+  .search {
+    width: 90%;
+    position: relative;
+    display: flex;
+  }
+
+  .searchTerm {
+    width: 50%;
+    border: 1px solid rgb(112, 255, 219);
+    border-right: none;
+    padding: 5px;
+    height: 15px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: #000000;
+    background-color: rgb(112, 255, 219);
+    font-size: 10px;
+  }
+
+  .searchTerm:focus {
+    color: rgb(112, 255, 219);
+  }
+
+  .searchButton {
+    width: 20%;
+    height: 15px;
+    border: 1px solid rgb(112, 255, 219);
+    background: rgb(112, 255, 219);
+    text-align: center;
+    color: rgb(55, 156, 117);
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 10px;
+  }
+
+  .wrap {
+    width: 30%;
+    position: absolute;
+    top: 2.8%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+  h2 {
+    text-align: center;
+    margin-left: 0px;
+    font-size: 12px;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 6px;
+    margin-bottom: inherit;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid rgb(190, 190, 190);
+    margin-bottom: 50px;
+  }
+  /* side column */
+  .side {
+    flex: 10%;
+    background-color: #ffffff;
+    width: 10%;
+  }
+  /* Main column */
+  .main {
+    flex: 70%;
+    background-color: rgb(253, 253, 253);
+    padding-left: 3px;
+    padding-bottom: 1px;
+    width: 40%;
+  }
+  .open {
+    font-size: 60%;
+  }
+  .ifame {
+    width: 5%;
+    height: auto;
+  }
+  .pic img {
+    padding-left: 10%;
+    width: 90%;
+    height: auto;
+  }
+  div .side ul {
+    list-style-type: none;
+    padding-right: 0px;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.24), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
+    margin-left: -50px;
+    font-size: 8px;
+  }
+  div .side ul li {
+    /*border-bottom: 1px solid rgb(190, 190, 190);*/
+    color: black;
+    margin-left: -50px;
+    border: 1px solid rgb(190, 190, 190);
+    padding: 5px;
+    padding-left: 70px;
+    margin-bottom: inherit;
+  }
+  div .side ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  div .side ul li :hover {
+    text-decoration: none;
+    margin-left: -30px;
+    color: rgb(36, 172, 138);
+    /* background: linear-gradient(
+    to right,
+    rgb(26, 167, 101) 26%,
+    rgb(255, 255, 255) 25%
+  );*/
+    padding: 6px;
+    padding-left: 30px;
+  }
+
+  /* Footer */
+  #footer {
+    display: flex;
+    padding: 3px;
+    padding-left: 10px;
+    color: white;
+    background: #a8a8a8;
+    margin-top: 20px;
+  }
+  .left {
+    flex: 30%;
+    margin-right: 2%;
+  }
+  div .contct {
+    flex-wrap: wrap;
+    margin-top: 35px;
+  }
+  .facebook {
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  .youtube {
+    float: left;
+    color: #000000;
+    font-size: 21px;
+  }
+  .middle {
+    flex: 30%;
+    margin-right: 2%;
+  }
+  div .contct2 {
+    font-weight: lighter;
+    margin-top: 35px;
+  }
+
+  .right {
+    flex: 40%;
+  }
+  div .pay img {
+    float: left;
+    width: 170px;
+    height: 80px;
+  }
+  p {
+    font-size: 9px;
+  }
+}

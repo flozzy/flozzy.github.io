@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Karlskrona Afroshop</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link href="/css/afro.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo"><a href="afro.html">
+        <img src="afropics/afro.png" alt="afro logo" 
+      /></a>
+       </div>
+
+       <div class="navbars">
+      <a href="salon.html">Salon</a>
+      <a href="groceries.html">Groceries</a>
+
+      <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="Search for products here">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+
+     </div>
+     
+
+     <a href="#footer" class="right"> <i class="fa fa-phone"></i>Contact Info</a>
+     <a href="location.html" class="right"><i class="fa fa-map-marker"></i>Locate the store</a>
+     
+    </div>
+    </div>
+
+    <div class="header">
+      <div class="slide" >
+        <img class="mySlides" src="afropics/Group 131.png" style="width:288%">
+        <img class="mySlides" src="afropics/Group 130.png" style="width:288%">
+        <img class="mySlides" src="afropics/Group 123.png" style="width:288%">
+        <img class="mySlides" src="afropics/Group 147.png" style="width:288%">
+        <img class="mySlides" src="afropics/Group 124.png" style="width:288%">
+        <img class="mySlides" src="afropics/Group 146.png" style="width:288%">
+        <img class="mySlides" src="afropics/afro3.png" style="width:288%">
+        <img class="mySlides" src="afropics/Group 129.png" style="width:288%">
+        <img class="mySlides" src="afropics/Group 128.png" style="width:288%">
+        <img class="mySlides" src="afropics/Group 126.png" style="width:288%">
+
+      </div>
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); // Change image every 5 seconds
+      }
+      </script>
+    
+
+    <div class="row">
+      <div class="side">
+        <h2>All Categories</h2>
+        <ul>
+          <li> <a href="freshfood.html"> Fresh Food</a> </li>
+          <li><a href="dryfood.html">Dry Products</a></li>
+          <li><a href="instantfood.html">Instant Products</a></li>
+   
+          <li><a href="beverages.html">Beverages</a></li>
+          <li><a href="frozenpro.html">Frozen Products</a></li>
+          <li><a href="oils.html">Oils</a></li>
+          <li><a href="Milkpowder.html">Milk Powder</a></li>
+          <li><a href="snacks.html">Snacks</a></li>
+          <li><a href="seasoning.html">Seasonings</a></li>
+          <li><a href="Fufu.html">Fufu</a></li>
+          <li><a href="flour.html">Grains</a></li>
+          <li><a href="salon.html">Cosmetices and hair</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="gallery">
+          <div id="myNav" class="overlay">
+            
+            <div class="overlay-content">
+              <div class="intro">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="afro.html">Home  /</a>
+              <a href="#">Milk Powder  /</a>
+              <a href="#">Peak Milk</a>
+              <p>Peak Milk</p>
+</div>
+<div class="overrow">
+<div class="productpic">
+<img src="afropics/Malt.jpeg" alt="Malt" width="200" height="100" />
+</div>
+<div class="productinfo">
+<p><b>70 Kr</b></p>
+
+<div class="Kg">
+ <p>99Kg</p>
+</div>
+<h6>Avg:10</h6>
+
+<div class="info">
+<p>Product Information</p>
+
+<span>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Ut euismod porttitor enim. Pellentesque habitant morbi tristique 
+  
+</span>
+<p>
+  NUTRITIONAL VALUES
+</p>
+<P>
+  Nutritional value per 100 grams
+</P>
+
+<table class="nurval">
+  <tr>
+    <td>Energy</td>
+    <td>4354Kilojoules</td>
+  </tr>
+  <tr>
+    <td>Energy</td>
+    <td>4354Kilojoules</td>
+  </tr>
+  <tr>
+    <td>Energy</td>
+    <td>4354Kilojoules</td>
+  </tr>
+</table>
+<!--<ul>
+  <li>Energy               4354Kilojoules</li>
+  <li>Energy 4354Kilojoules</li>
+  <li>Energy 4354Kilojoules</li>
+</ul>
+-->
+<p>Country of Manufacture</p>
+<h5>Ghana</h5>
+</div>
+
+</div>
+</div>
+            </div>
+            
+          </div>
+          <span onclick="openNav()"><img src="afropics/Malt.jpeg" alt="Malt"/></span>
+          
+          <script>
+            function openNav() {
+              document.getElementById("myNav").style.display = "block";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.display = "none";
+            }
+            </script>
+          <div class="desc">
+           <span><h4> <b>15kr </h4>
+            <h5> Maltina </h5>
+            <h6> 33CL </h6>
+          </span> 
+          </div>
+        </div>
+        
+        <div class="gallery">
+          <div id="myNav1" class="overlay">
+            
+            <div class="overlay-content">
+              <div class="intro">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+              <a href="afro.html">Home  /</a>
+              <a href="#">Milk Powder  /</a>
+              <a href="#">Peak Milk</a>
+
+              <p>Peak Milk</p>
+</div>
+<div class="overrow">
+<div class="productpic">
+ <img src="afropics/milk.jpeg" alt="Malt"/>
+</div>
+<div class="productinfo">
+<p><b>70 Kr</b></p>
+
+<div class="Kg">
+ <p>99Kg</p>
+</div>
+<h6>Avg:10</h6>
+
+<div class="info">
+<p>Product Information</p>
+
+<span>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Ut euismod porttitor enim. Pellentesque habitant morbi tristique 
+  senectus et netus et malesuada fames ac turpis egestas. Curabitur 
+  et justo sit amet lorem lobortis bibendum. Phasellus blandit 
+  fringilla odio et dictum. Phasellus non odio ex. Quisque auctor va
+</span>
+<p>
+  NUTRITIONAL VALUES
+</p>
+<P>
+  Nutritional value per 100 grams
+</P>
+
+<table class="nurval">
+  <tr>
+    <td>Energy</td>
+    <td>4354Kilojoules</td>
+  </tr>
+  <tr>
+    <td>Energy</td>
+    <td>4354Kilojoules</td>
+  </tr>
+  <tr>
+    <td>Energy</td>
+    <td>4354Kilojoules</td>
+  </tr>
+</table>
+<!--<ul>
+  <li>Energy               4354Kilojoules</li>
+  <li>Energy 4354Kilojoules</li>
+  <li>Energy 4354Kilojoules</li>
+</ul>
+-->
+<p>Country of Manufacture</p>
+<h5>Ghana</h5>
+</div>
+
+</div>
+</div>
+            </div>
+            
+          </div>
+          <span onclick="openNav1()"><img src="afropics/milk.jpeg" alt="Malt"/></span>
+          
+          <script>
+            function openNav1() {
+              document.getElementById("myNav1").style.display = "block";
+            }
+            
+            function closeNav1() {
+              document.getElementById("myNav1").style.display = "none";
+            }
+            </script>
+            
+          <div class="desc">
+            <p><h4> <b>120kr </h4></p>
+            <p><h5> Peak Milk Powder</h5></p> 
+            <p><h6> 900g </h6></p> 
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div id="myNav" class="overlay">
+            
+            <div class="overlay-content">
+              <div class="intro">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="afro.html">Home  /</a>
+              <a href="#">Milk Powder  /</a>
+              <a href="#">Peak Milk</a>
+
+              <p>Peak Milk</p>
+</div>
+<div class="overrow">
+<div class="productpic">
+<img src="afropics/coco.jpeg" alt="Malt" width="200" height="100" />
+</div>
+<div class="productinfo">
+<p><b>70 Kr</b></p>
+
+<div class="Kg">
+ <p>99Kg</p>
+</div>
+<h6>Avg:10</h6>
+
+<div class="info">
+<p>Product Information</p>
+
+<span>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+  Ut euismod porttitor enim. Pellentesque habitant morbi tristique 
+  senectus et netus et malesuada fames ac turpis egestas. Curabitur 
+  et justo sit amet lorem lobortis bibendum. Phasellus blandit 
+  fringilla odio et dictum. Phasellus non odio ex. Quisque auctor va
+</span>
+<p>
+  NUTRITIONAL VALUES
+</p>
+<P>
+  Nutritional value per 100 grams
+</P>
+
+<table class="nurval">
+  <tr>
+    <td>Energy</td>
+    <td>4354Kilojoules</td>
+  </tr>
+  <tr>
+    <td>Energy</td>
+    <td>4354Kilojoules</td>
+  </tr>
+  <tr>
+    <td>Energy</td>
+    <td>4354Kilojoules</td>
+  </tr>
+</table>
+<!--<ul>
+  <li>Energy               4354Kilojoules</li>
+  <li>Energy 4354Kilojoules</li>
+  <li>Energy 4354Kilojoules</li>
+</ul>
+-->
+<p>Country of Manufacture</p>
+<h5>Ghana</h5>
+</div>
+
+</div>
+</div>
+            </div>
+            
+          </div>
+          <span onclick="openNav()"><img src="afropics/coco.jpeg" alt="Malt"/></span>
+          
+          <script>
+            function openNav() {
+              document.getElementById("myNav").style.display = "block";
+            }
+            
+            function closeNav() {
+              document.getElementById("myNav").style.display = "none";
+            }
+            </script>
+          <div class="desc">
+            <p><h4> <b>100kr </h4></p>
+            <p><h5> Coco Butter Formula </h5></p> 
+            <p><h6> 270g/9.5 oz</h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/Drypics/1196-2.jpeg" alt="Malt" width="200" height="100" />
+          </a>
+          <div class="desc">
+            <p>
+            <h4> <b>25kr </h4>
+              <h5> Ugu leaves</h5>
+              <h6> 25g </h6>
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/drinkspics/4344-6.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>15kr </h4></p>
+            <p><h5> Malta Guinness</h5>
+           
+            <p><h6> 230g</h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/snackspics/825-10.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>25kr </h4></p>
+            <p><h5> Peanut Coconut Coated </h5></p> 
+            <p><h6> 110g  </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/drinkspics/4651-4.jpeg" alt="pic" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>13kr </h4></p>
+            <p><h5> Chupa Chups </h5></p> 
+            <p><h6> 345ml </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/Freshpics/UG04.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>from 30kr </h4></p>
+            <p><h5> Avacado </h5></p> 
+            <p><h6> for one </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/snackspics/825-20.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>40kr </h4></p>
+            <p><h5> Peanut Coconut Coated </h5></p> 
+            <p><h6> 230g  </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/oilspics/6307.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>30kr </h4></p>
+            <p><h5> Palm oil</h5></p> 
+            <p><h6> 500ml </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/7462.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>5kr </h4></p>
+            <p><h5> Chicken instant noodles </h5></p> 
+            <p><h6> 80g </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/fufupics/7793.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>70kr </h4></p>
+            <p><h5> Poundo Iyan </h5></p> 
+            <p><h6> 0.91kg </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/fufupics/7794.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>160kr </h4></p>
+            <p><h5> Poundo Iyan  </h5></p> 
+            <p><h6> 1.5kg </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/fufupics/7795-1.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>from 350kr </h4></p>
+            <p><h5> Poundo Iyan </h5></p> 
+            <p><h6> 9kg </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/drypics/9075-9.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>not aval 0kr </h4></p>
+            <p><h5> Stockfish Trimmings </h5></p> 
+            <p><h6> 250g </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/Drypics/9078-1.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>35kr </h4></p>
+            <p><h5> Whole Crayfish </h5></p> 
+            <p><h6> 40g </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/hairpics/COS3051.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>80kr </h4></p>
+            <p><h5> Olive oil Relaxer kids </h5></p> 
+            <p><h6> g </h6></p> 
+          </div>
+        </div>
+        <div class="gallery">
+          <a target="" href="#">
+            <img src="afropics/hairpics/COS3055.jpeg" alt="Malt" width="600" height="400" />
+          </a>
+          <div class="desc">
+            <p><h4> <b>145kr </h4></p>
+            <p><h5> Olive oil Relaxer </h5></p> 
+            <p><h6> g </h6></p> 
+          </div>
+        </div>
+      
+    <div class="gallery">
+      <a target="" href="#">
+        <img src="afropics/hairpics/COS3077.jpeg" alt="Malt" width="600" height="400" />
+      </a>
+      <div class="desc">
+        <p><h4> <b>not aval. from 100kr </h4></p>
+        <p><h5> Shea Sutter Moisturizer </h5></p> 
+        <p><h6> g  </h6></p> 
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="" href="#">
+        <img src="afropics/hairpics/COS3416.jpeg" alt="Malt" width="600" height="400" />
+      </a>
+      <div class="desc">
+        <p><h4> <b>175kr </h4></p>
+        <p><h5> olive oil Moisturizer </h5></p> 
+        <p><h6> 680ml </h6></p> 
+      </div>
+    </div>
+
+    <div class="gallery">
+      <a target="" href="#">
+        <img src="afropics/Snackspics/848-9.jpeg" alt="Malt" width="600" height="400" />
+      </a>
+      <div class="desc">
+        <p><h4> <b>30kr </h4></p>
+        <p><h5> Bontea Green Lemon </h5></p> 
+        <p><h6> g </h6></p> 
+      </div>
+    </div>
+  <div class="gallery">
+    <a target="" href="#">
+      <img src="afropics/hairpics/COS4402.jpeg" alt="Malt" width="600" height="400" />
+    </a>
+    <div class="desc">
+      <p><h4> <b>85kr </h4></p>
+      <p><h5> Cocoa Butter cream </h5></p> 
+      <p><h6> g </h6></p> 
+    </div>
+  </div>
+ <div class="gallery">
+  <a target="" href="#">
+    <img src="afropics/hairpics/COS4404.jpeg" alt="Malt" width="600" height="400" />
+  </a>
+  <div class="desc">
+    <p><h4> <b>not aval.from 55kr </h4></p>
+    <p><h5> Cocoa Butter Lotion </h5></p> 
+    <p><h6> g </h6></p> 
+  </div>
+</div>
+<div class="gallery">
+  <a target="" href="#">
+    <img src="afropics/Frozenpic/DV1832-4.jpeg" alt="Malt" width="600" height="400" />
+  </a>
+  <div class="desc">
+    <p><h4> <b>45kr </h4></p>
+    <p><h5> Mackere l </h5></p> 
+    <p><h6> per kg </h6></p> 
+  </div>
+</div>
+<div class="gallery">
+  <a target="" href="#">
+    <img src="afropics/Frozenpic/DV2610.jpeg" alt="Malt" width="600" height="400" />
+  </a>
+  <div class="desc">
+    <p><h4> <b>from 80kr </h4></p>
+    <p><h5> Barracuda </h5></p> 
+    <p><h6> per kg </h6></p> 
+  </div>
+  </div>
+  </div>
+</div>
+<div class="pages">
+  
+  <a href="#" class="back">‹ Previous</a>
+  <a href="#" class="num">1</a>
+  <a href="afro2.html" class="num">2</a>
+  <a href="afro3.html" class="num">3</a>
+  <a href="afro4.html" class="num">4</a>
+  <a href="afro5.html" class="num">5</a>
+  <a href="afro6.html" class="num">6</a>
+  <a href="afro2.html" class="next">Next ›  </a>
+  
+</div>
+    <div id="footer">
+      <div class="left">
+      <p> 
+        Follow us at:
+      </p>
+      <div class="contct">
+      <a target="blank" href="https://www.facebook.com/karlskrona.afroshop" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <br><br> 
+      <br>
+      <a target="blank" href="https://youtu.be/wXUrV5bsB68" class="youtube"><i class="fa fa-youtube"></i></a> 
+    
+    </div> 
+  </div>
+
+    <div class="middle">
+      <p> 
+        Contacts:
+      </p>
+      <div class="contct2">
+       <P> Email: afroshopkarlskrona@gmail.com</P>
+       <P>Tele/Whatsapp: +46767425324</P> 
+    </div>
+  </div>
+
+    <div class=" right">
+      <div class="pay">
+<p>For more inquiry and information call the shop</p>
+<br>
+<img src="afropics/paymentm.png" alt="Malt" width="600" height="400" />
+  </div>
+</div>
+</div>
+  </body>
+</html>
