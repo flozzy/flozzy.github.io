@@ -132,7 +132,7 @@ body {
   .main {
     flex: 80%;
     background-color: rgb(253, 253, 253);
-    padding-right: 10px;
+    padding-right: 5px;
     padding-bottom: 10px;
   }
 
