@@ -480,7 +480,7 @@ body {
   .wrap {
     width: 30%;
     position: absolute;
-    top: 2.8%;
+    top: 2.4%;
     left: 55%;
     transform: translate(-50%, -50%);
   }
@@ -504,7 +504,7 @@ body {
   }
   /* side column */
   .side {
-    flex: 10%;
+    flex: 20%;
     background-color: #ffffff;
     width: 20%;
   }
