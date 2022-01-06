@@ -512,7 +512,7 @@ body {
   .main {
     flex: 80%;
     background-color: rgb(253, 253, 253);
-    padding-left: 10px;
+    padding-left: 5%;
     padding-top: 5px;
   }
 
