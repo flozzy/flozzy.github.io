@@ -381,6 +381,12 @@ body {
     width: 350px;
     height: 150px;
   }
+  .design {
+    background: #a8a8a8;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 0.8em;
+  }
 }
 
 /* for phone*/
@@ -678,8 +684,8 @@ body {
     box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.24),
       0px 4px 3px 0px rgba(0, 0, 0, 0.19);
     border-radius: 10px;
-    margin-right: 40px;
-    margin-left: 30px;
+    margin-right: 15%;
+    margin-left: 20%;
   }
   .pages a {
     text-decoration: none;
@@ -769,5 +775,11 @@ body {
   }
   p {
     font-size: 9px;
+  }
+  .design {
+    background: #a8a8a8;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 0.7em;
   }
 }
