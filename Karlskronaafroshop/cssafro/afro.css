@@ -421,7 +421,7 @@ body {
     float: left;
     color: rgb(0, 0, 0);
     align-items: center;
-    padding: 1% 0.5%;
+    padding: 1% 1.2%;
     text-decoration: none;
   }
   .navbars {
@@ -438,6 +438,8 @@ body {
   /* Right-aligned link */
   .navbars a.right {
     padding-top: 3px;
+    margin-left: 0.4%;
+    margin-right: 3%;
     float: right;
   }
 
