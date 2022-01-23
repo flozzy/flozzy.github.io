@@ -266,6 +266,12 @@ body {
     width: 30px;
     margin-top: 0px;
   }
+  .design {
+    background: #a8a8a8;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 0.8em;
+  }
 }
 
 /* for phone*/
@@ -655,5 +661,11 @@ body {
   }
   p {
     font-size: 9px;
+  }
+  .design {
+    background: #a8a8a8;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 0.7em;
   }
 }
