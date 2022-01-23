@@ -415,8 +415,9 @@ body {
     float: left;
     color: rgb(0, 0, 0);
     align-items: center;
-    padding: 1% 0.5%;
+    padding: 1% 0%;
     text-decoration: none;
+    margin-left: 2%;
   }
   .navbars {
     padding-top: 10px;
@@ -432,6 +433,8 @@ body {
   /* Right-aligned link */
   .navbars a.right {
     padding-top: 3px;
+    margin-left: -0.8%;
+    margin-right: 3%;
     float: right;
   }
 
@@ -679,7 +682,7 @@ body {
       0px 4px 3px 0px rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     margin-right: 20%;
-    margin-left: 20%;
+    margin-left: 15%;
   }
   .pages a {
     text-decoration: none;
