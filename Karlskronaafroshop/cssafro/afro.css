@@ -680,6 +680,7 @@ body {
     text-align: left;
     margin-left: -5px;
     line-height: 1px;
+    margin-right: -10px;
     font-size: 9px;
   }
   .pages {
@@ -695,9 +696,16 @@ body {
     font-size: 9px;
     text-align: center;
   }
+  .pages :active {
+    background-color: rgb(36, 172, 138);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 9px;
+    text-align: center;
+  }
   .back:hover,
   .next:hover {
-    background-color: #ddd;
+    background-color: rgb(36, 172, 138);
     color: black;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
   }
