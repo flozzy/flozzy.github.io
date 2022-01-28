@@ -521,7 +521,7 @@ body {
   .main {
     flex: 80%;
     background-color: rgb(253, 253, 253);
-    padding-left: 2%;
+    padding-left: 1%;
     padding-top: 5px;
   }
 
@@ -680,7 +680,6 @@ body {
     text-align: left;
     margin-left: -5px;
     line-height: 1px;
-
     font-size: 9px;
   }
   .pages {
