@@ -20,6 +20,9 @@ body {
   .myslides {
     display: none;
   }
+  .slide img {
+    width: 100%;
+  }
   .logo img {
     width: 80px;
     height: 40.5px;
@@ -114,9 +117,6 @@ body {
     margin-bottom: inherit;
   }
 
-  .slide {
-    width: 34.7%;
-  }
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -403,6 +403,9 @@ body {
   .myslides {
     display: none;
   }
+  .slide img {
+    width: 100%;
+  }
   .logo img {
     width: 60px;
     height: 30.5px;
@@ -502,9 +505,6 @@ body {
     margin-bottom: inherit;
   }
 
-  .slide {
-    width: 34.7%;
-  }
   .row {
     display: flex;
     flex-wrap: wrap;

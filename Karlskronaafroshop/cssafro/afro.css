@@ -20,6 +20,9 @@ body {
   .myslides {
     display: none;
   }
+  .slide img {
+    width: 100%;
+  }
   .logo img {
     width: 80px;
     height: 40.5px;
@@ -114,9 +117,6 @@ body {
     margin-bottom: inherit;
   }
 
-  .slide {
-    width: 34.7%;
-  }
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -403,6 +403,9 @@ body {
   .myslides {
     display: none;
   }
+  .slide img {
+    width: 100%;
+  }
   .logo img {
     width: 60px;
     height: 30.5px;
@@ -451,6 +454,7 @@ body {
     border-bottom: 3px solid currentColor;
     border-color: rgb(36, 172, 138);
   }
+
   .search {
     width: 90%;
     position: relative;
@@ -502,9 +506,6 @@ body {
     margin-bottom: inherit;
   }
 
-  .slide {
-    width: 34.7%;
-  }
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -696,7 +697,8 @@ body {
     font-size: 9px;
     text-align: center;
   }
-  .pages :active {
+  .pages a :link,
+  .pages a :visited {
     background-color: rgb(36, 172, 138);
     text-decoration: none;
     display: inline-block;
