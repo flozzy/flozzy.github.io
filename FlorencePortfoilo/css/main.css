@@ -5,6 +5,7 @@ html {
 * {
   scroll-behavior: smooth;
 }
+
 /* for desktop*/
 @media only screen and (min-width: 768px) {
   body {
@@ -79,13 +80,22 @@ html {
     align-items: center;
     height: 100%;
   }
-
   .main-menu a:hover,
   .main-menu a:active {
     background-color: rgba(158, 86, 151, 0.418);
     color: rgb(255, 255, 255);
+    transition: 0.5s;
   }
 
+  .checkbn {
+    color: rgb(90, 3, 64);
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
   h1,
   h2,
   h3 {
@@ -356,31 +366,38 @@ html {
   }
 
   ul.main-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow-x: auto;
-    font-family: "Lato", sans-serif;
+    position: absolute;
+    width: 100%;
+    background: rgba(158, 86, 151, 0.418);
+    top: 50px;
+    left: 0%;
+    text-align: center;
   }
-
+  nav ul li {
+    display: block;
+  }
   .main-menu a:link,
   .main-menu a:visited {
     color: black;
-    padding: 10px 20px;
-    text-align: center;
+    padding: 10px 10px;
+    display: inline-block;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    height: 100%;
   }
-
   .main-menu a:hover,
   .main-menu a:active {
     background-color: rgba(158, 86, 151, 0.418);
     color: rgb(255, 255, 255);
   }
+  .checkbn {
+    display: block;
+    margin-right: 5px;
+    color: rgb(90, 3, 64);
+    float: right;
+  }
 
+  #check {
+    display: none;
+  }
   h1,
   h2,
   h3 {
@@ -418,7 +435,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: absolute;
     z-index: 10;
     background: #faf3f7;
     width: 100%;
@@ -450,20 +467,15 @@ html {
     font-family: "Lobster", cursive;
   }
 
-  .main-menu {
-    height: 100%;
-  }
-
-  .main-menu li {
-    height: 100%;
-    display: inline-block;
-  }
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0);
+    width: 7%;
+    height: 100%;
+    margin-left: 37%;
+    background-color: rgb(226, 226, 226);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
     z-index: 1;
   }
 
@@ -472,7 +484,7 @@ html {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 
   /*.dropdown-content a:hover {
@@ -491,7 +503,7 @@ html {
     justify-items: center;
     background-color: #f1e9f1;
     width: 100%;
-
+    margin-top: 205px;
     /**
      * This is used so that the header content (e.g. image)
      * does not stretch too much on big screens
@@ -524,7 +536,7 @@ html {
   }
   @keyframes pic {
     from {
-      top: -100px;
+      top: -90px;
     }
     to {
       top: 0px;

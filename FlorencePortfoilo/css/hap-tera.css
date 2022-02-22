@@ -83,6 +83,9 @@ html {
     background-color: rgba(158, 86, 151, 0.418);
     color: rgb(255, 255, 255);
   }
+  #check {
+    display: none;
+  }
 
   * {
     box-sizing: border-box;
@@ -283,6 +286,7 @@ html {
   }
 
   ul.main-menu {
+    position: absolute;
     list-style-type: none;
     margin: 0;
     padding: 0;
