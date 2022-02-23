@@ -258,7 +258,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 0%;
-    text-decoration: none;
+    font-size: 1em;
   }
   .left {
     text-decoration: none;
