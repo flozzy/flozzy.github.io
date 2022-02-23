@@ -52,7 +52,11 @@ body {
     border-bottom: 3px solid currentColor;
     border-color: rgb(36, 172, 138);
   }
-
+  .left1,
+  .left2,
+  .right1 {
+    display: none;
+  }
   .search {
     width: 100%;
     position: relative;
@@ -294,6 +298,20 @@ body {
     border-bottom: 3px solid currentColor;
     border-color: rgb(36, 172, 138);
   }
+  .left,
+  .right {
+    display: none;
+  }
+
+  div.navbars .left1,
+  .navbar.left2 {
+    padding: 0% 5% 0% 3%;
+  }
+
+  div.navbars .right1 {
+    float: right;
+    padding: 1% 2% 0% 3%;
+  }
   .search {
     width: 90%;
     position: relative;
@@ -301,7 +319,7 @@ body {
   }
 
   .searchTerm {
-    width: 50%;
+    width: 60%;
     border: 1px solid rgb(112, 255, 219);
     border-right: none;
     padding: 5px;
@@ -314,11 +332,11 @@ body {
   }
 
   .searchTerm:focus {
-    color: rgb(112, 255, 219);
+    color: rgb(0, 0, 0);
   }
 
   .searchButton {
-    width: 20%;
+    width: 10%;
     height: 15px;
     border: 1px solid rgb(112, 255, 219);
     background: rgb(112, 255, 219);
@@ -330,10 +348,10 @@ body {
   }
 
   .wrap {
-    width: 30%;
+    width: 60%;
     position: absolute;
-    top: 2.4%;
-    left: 55%;
+    top: 18.4px;
+    left: 70%;
     transform: translate(-50%, -50%);
   }
   h2 {
@@ -415,50 +433,52 @@ body {
 
   /* Footer */
   #footer {
-    display: flex;
-    padding: 3px;
-    padding-left: 10px;
+    padding: 1% 1% 1% 2%;
     color: white;
     background: #a8a8a8;
-    margin-top: 20px;
+    margin-top: 0px;
+    font-size: 0.6em;
+  }
+
+  .foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
   }
   .left {
-    flex: 30%;
-    margin-right: 2%;
+    flex: 20%;
+    width: 100%;
+    margin-top: 0%;
   }
-  div .contct {
-    flex-wrap: wrap;
-    margin-top: 35px;
-  }
+
   .facebook {
-    float: left;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    text-decoration: none;
+    font-size: 120%;
   }
-  .youtube {
-    float: left;
+  .instagram {
     color: #000000;
-    font-size: 21px;
+    text-decoration: none;
+    font-size: 120%;
   }
   .middle {
     flex: 30%;
-    margin-right: 2%;
+    width: 100%;
+    margin-top: 0%;
   }
   div .contct2 {
     font-weight: lighter;
-    margin-top: 35px;
   }
 
   .right {
     flex: 40%;
+    width: 100%;
+    margin-top: 0%;
   }
   div .pay img {
-    float: left;
-    width: 170px;
-    height: 80px;
-  }
-  p {
-    font-size: 9px;
+    width: 70%;
+    height: 10%;
   }
   .design {
     background: #a8a8a8;
