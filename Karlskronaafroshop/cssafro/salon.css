@@ -481,13 +481,13 @@ body {
     padding: 1% 2% 0% 3%;
   }
   .search {
-    width: 90%;
+    width: 120%;
     position: relative;
     display: flex;
   }
 
   .searchTerm {
-    width: 60%;
+    width: 80%;
     border: 1px solid rgb(112, 255, 219);
     border-right: none;
     padding: 5px;
@@ -504,7 +504,7 @@ body {
   }
 
   .searchButton {
-    width: 10%;
+    width: 20%;
     height: 15px;
     border: 1px solid rgb(112, 255, 219);
     background: rgb(112, 255, 219);
@@ -516,10 +516,10 @@ body {
   }
 
   .wrap {
-    width: 60%;
+    width: 30%;
     position: absolute;
     top: 18.4px;
-    left: 70%;
+    left: 55%;
     transform: translate(-50%, -50%);
   }
 
