@@ -181,6 +181,8 @@ body {
   .open {
     margin-left: 129px;
   }
+
+  /* Footer */
   #footer {
     padding: 1% 1% 1% 2%;
     color: white;
@@ -434,9 +436,12 @@ body {
   .map {
     display: none;
   }
+  p {
+    font-size: 79%;
+  }
   .open {
-    margin-left: 23.9%;
-    font-size: 99%;
+    margin-left: 28.9%;
+    font-size: 76%;
   }
   /* Footer */
   #footer {
@@ -444,7 +449,7 @@ body {
     color: white;
     background: #a8a8a8;
     margin-top: 0px;
-    font-size: 0.6em;
+    font-size: 0.75em;
   }
 
   .foot {
@@ -462,12 +467,12 @@ body {
   .facebook {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 120%;
+    font-size: 100%;
   }
   .youtube {
     color: #000000;
     text-decoration: none;
-    font-size: 120%;
+    font-size: 100%;
   }
   .middle {
     flex: 30%;
