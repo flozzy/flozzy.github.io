@@ -465,11 +465,15 @@ html {
   }
 
   .content {
-    padding-right: 0px;
-    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ux {
+    padding: 0% 5% 0% 5%;
   }
   .dec {
-    padding: 4px;
+    padding: 0% 5% 0% 4%;
     font-size: 15px;
   }
   .img2,
@@ -479,7 +483,7 @@ html {
   .img6,
   .Proto {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     width: 100%;
     background-color: #ca752f;
     padding-right: 5px;
@@ -492,8 +496,8 @@ html {
   .img5 img,
   .img6 img,
   video {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 0px;
     width: 100%;
     text-align: center;
   }
