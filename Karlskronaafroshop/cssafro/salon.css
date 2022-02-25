@@ -433,7 +433,7 @@ body {
   .navbar {
     overflow: hidden;
     background-color: rgb(255, 255, 255);
-    padding-right: 2px;
+    padding-right: 5%;
     margin-left: 1.5%;
     font-size: 60%;
   }
@@ -458,6 +458,7 @@ body {
   .fa-phone {
     width: 8px;
   }
+  /* Right-aligned link */
 
   /* Change color on hover */
   .navbars a:hover {
@@ -466,20 +467,31 @@ body {
     border-bottom: 3px solid currentColor;
     border-color: rgb(36, 172, 138);
   }
+
   .left,
   .right {
     display: none;
   }
 
-  div.navbars .left1,
+  .navbars .left1,
   .navbar.left2 {
-    padding: 0% 5% 0% 3%;
+    padding: 0% 3% 0% 3%;
+  }
+  .navbars .left1 {
+    font-size: 180%;
+  }
+  .navbars .left2 {
+    font-size: 150%;
   }
 
-  div.navbars .right1 {
+  .navbars .right1 {
+    font-size: 160%;
+  }
+  .navbars .right1 {
     float: right;
     padding: 1% 2% 0% 3%;
   }
+
   .search {
     width: 120%;
     position: relative;
@@ -491,7 +503,7 @@ body {
     border: 1px solid rgb(112, 255, 219);
     border-right: none;
     padding: 5px;
-    height: 15px;
+    height: 20px;
     border-radius: 20px 0 0 20px;
     outline: none;
     color: #000000;
@@ -505,7 +517,7 @@ body {
 
   .searchButton {
     width: 20%;
-    height: 15px;
+    height: 20px;
     border: 1px solid rgb(112, 255, 219);
     background: rgb(112, 255, 219);
     text-align: center;
@@ -518,13 +530,10 @@ body {
   .wrap {
     width: 30%;
     position: absolute;
-    top: 18.4px;
+    top: 20.4px;
     left: 55%;
     transform: translate(-50%, -50%);
   }
-
-  /*end of navigation bar links*/
-
   h2 {
     text-align: center;
     margin-left: 0px;

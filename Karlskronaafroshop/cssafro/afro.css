@@ -475,9 +475,18 @@ body {
 
   .navbars .left1,
   .navbar.left2 {
-    padding: 0% 5% 0% 3%;
+    padding: 0% 3% 0% 3%;
+  }
+  .navbars .left1 {
+    font-size: 180%;
+  }
+  .navbars .left2 {
+    font-size: 150%;
   }
 
+  .navbars .right1 {
+    font-size: 160%;
+  }
   .navbars .right1 {
     float: right;
     padding: 1% 2% 0% 3%;
@@ -494,7 +503,7 @@ body {
     border: 1px solid rgb(112, 255, 219);
     border-right: none;
     padding: 5px;
-    height: 15px;
+    height: 20px;
     border-radius: 20px 0 0 20px;
     outline: none;
     color: #000000;
@@ -508,7 +517,7 @@ body {
 
   .searchButton {
     width: 20%;
-    height: 15px;
+    height: 20px;
     border: 1px solid rgb(112, 255, 219);
     background: rgb(112, 255, 219);
     text-align: center;
@@ -521,7 +530,7 @@ body {
   .wrap {
     width: 30%;
     position: absolute;
-    top: 18.4px;
+    top: 20.4px;
     left: 55%;
     transform: translate(-50%, -50%);
   }
