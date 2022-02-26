@@ -361,12 +361,13 @@ html {
     display: none;
     position: absolute;
     width: 7%;
-    height: 100%;
-    margin-left: 37%;
+    height: 125%;
+    margin-left: 30%;
     background-color: rgb(226, 226, 226);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
     z-index: 1;
+    text-align: left;
   }
 
   .dropdown-content a {
@@ -374,7 +375,6 @@ html {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: center;
   }
 
   #greeting span {
@@ -413,12 +413,17 @@ html {
     padding-bottom: 7px;
     font-weight: bold;
   }
+
   .content {
-    padding-right: 5px;
-    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .dec p {
-    padding: 4px;
+  .ux {
+    padding: 0% 5% 0% 5%;
+  }
+  .dec {
+    padding: 0% 5% 0% 4%;
     font-size: 15px;
   }
   .img2,
@@ -432,13 +437,14 @@ html {
   .img10,
   .Proto {
     text-align: center;
-    margin-bottom: 10px;
-    width: 102%;
+    margin-bottom: 25px;
+    width: 100%;
     background-color: #f5eaf5;
-    padding-right: 3px;
-    padding-left: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
   }
+
   .img2 img,
   .img3 img,
   .img4 img,
