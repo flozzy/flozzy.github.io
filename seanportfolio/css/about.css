@@ -1,0 +1,409 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* for desktop*/
+@media only screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background: #aad0fa;
+    width: 100%;
+    top: 0;
+    margin-top: 0px;
+    height: 50px;
+  }
+
+  nav * {
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    float: left;
+    margin: 5px 0px 10px 10px;
+  }
+
+  .logo a {
+    cursor: pointer;
+    color: rgb(48, 71, 204);
+  }
+  .logo h2 {
+    font-family: "Lobster", cursive;
+    font-weight: bolder;
+    font-size: 2em;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  ul.navbar {
+    display: flex;
+    float: right;
+    list-style-type: none;
+    padding: 1.5% 10% 1.5% 1%;
+    margin-left: 60%;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-right: 0%;
+  }
+  .navbar li {
+    padding: 5% 7% 5% 7%;
+  }
+  .navbar a:link,
+  .navbar a:visited {
+    color: black;
+    padding: 0% 0%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+  }
+  .navbar a:hover,
+  .navbar a:active {
+    color: rgb(8, 8, 8);
+    background-color: rgb(100, 119, 224);
+    padding: 10%;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .main {
+    flex: 50%;
+  }
+  .pics {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    animation-timing-function: linear;
+  }
+
+  .pics img {
+    width: 60%;
+    border-radius: 12px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  .text {
+    flex: 50%;
+  }
+  .text1 {
+    padding: 10%;
+    padding-right: 20%;
+  }
+  h1 {
+    font-size: 3.2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+  h5 {
+    background-color: #333;
+    border-radius: 28px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    width: fit-content;
+    letter-spacing: 0.01em;
+    display: inline;
+    margin: 10% 0% 10% 0%;
+    color: #f3f3f3;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+  #education {
+    margin-top: 10%;
+    margin-left: 160px;
+  }
+  #education li {
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 300px;
+    padding-left: 320px;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    margin-bottom: 50px;
+    margin-right: 100px;
+  }
+
+  .benin {
+    background-image: url("../pic/beni.png");
+  }
+  .abuja {
+    background-image: url("../pic/uniabu.png");
+  }
+
+  #work {
+    margin-top: 10%;
+    margin-left: 160px;
+    margin-bottom: 7%;
+  }
+  #work li {
+    list-style-type: none;
+
+    margin-bottom: 10px;
+    margin-right: 100px;
+  }
+
+  ul li .ex {
+    list-style-type: none;
+
+    margin-bottom: 50px;
+    margin-right: 10px;
+    padding-left: 6%;
+  }
+
+  .Resume {
+    background-color: rgb(44, 44, 44);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .Resume:hover {
+    background-color: rgb(92, 94, 94);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-size: 130%;
+  }
+  .Resume:active {
+    background-color: rgb(92, 94, 94);
+  }
+  #skills {
+    margin-left: 160px;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  #contact a {
+    text-decoration: none;
+    color: black;
+  }
+  #contact {
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+}
+/* for phones*/
+@media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background: #aad0fa;
+    width: 100%;
+    top: 0;
+    margin-top: 0px;
+    height: 50px;
+  }
+
+  nav * {
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    float: left;
+    margin: 5px 0px 10px 10px;
+  }
+
+  .logo a {
+    cursor: pointer;
+    color: rgb(48, 71, 204);
+  }
+  .logo h2 {
+    font-family: "Lobster", cursive;
+    font-weight: bolder;
+    font-size: 2em;
+  }
+  nav a {
+    text-decoration: none;
+    color: black;
+  }
+  ul.navbar {
+    display: flex;
+    float: right;
+    list-style-type: none;
+    padding: 1.5% 10% 1.5% 1%;
+    margin-left: 5%;
+    white-space: nowrap;
+    margin-right: 0%;
+  }
+  .navbar li {
+    padding: 5% 4% 5% 4%;
+  }
+  .navbar a:link,
+  .navbar a:visited {
+    color: black;
+    padding: 0% 0%;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+  }
+  .navbar a:hover,
+  .navbar a:active {
+    color: rgb(8, 8, 8);
+    background-color: rgb(100, 119, 224);
+    padding: 10%;
+  }
+  .row {
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .main {
+    flex: 50%;
+  }
+  .pics {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    animation-timing-function: linear;
+  }
+
+  .pics img {
+    margin-top: 10%;
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+  .text {
+    flex: 50%;
+  }
+  .text1 {
+    padding: 10%;
+    padding-right: 20%;
+  }
+  h1 {
+    font-size: 3.2em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+  h5 {
+    background-color: #333;
+    border-radius: 28px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    width: fit-content;
+    letter-spacing: 0.01em;
+    display: inline;
+    margin: 10% 0% 10% 0%;
+    color: #f3f3f3;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+  #education {
+    margin-top: 10%;
+    margin-left: 40px;
+  }
+  #education li {
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 130px;
+    padding-left: 150px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
+
+  .benin {
+    background-image: url("../pic/beni.png");
+  }
+  .abuja {
+    background-image: url("../pic/uniabu.png");
+  }
+
+  #work {
+    margin-top: 10%;
+    margin-left: 50px;
+    margin-bottom: 10%;
+  }
+  #work li {
+    list-style-type: none;
+
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+
+  ul li .ex {
+    list-style-type: none;
+
+    margin-bottom: 50px;
+    margin-right: 10px;
+    padding-left: 6%;
+  }
+  .Resume {
+    background-color: rgb(44, 44, 44);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .Resume:hover {
+    background-color: rgb(92, 94, 94);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+      0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-size: 130%;
+  }
+  .Resume:active {
+    background-color: rgb(92, 94, 94);
+  }
+
+  #skills {
+    margin-left: 50px;
+    width: 80%;
+    margin-bottom: 10%;
+  }
+
+  #contact a {
+    text-decoration: none;
+    color: black;
+  }
+  #contact {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+}
