@@ -93,7 +93,7 @@ body {
   }
 
   .pics img {
-    width: 60%;
+    width: 80%;
     border-radius: 12px;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
       0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -151,13 +151,12 @@ body {
   }
 
   #work {
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 160px;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
   }
   #work li {
     list-style-type: none;
-
     margin-bottom: 10px;
     margin-right: 100px;
   }
@@ -179,7 +178,6 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-
     border-radius: 5px;
     cursor: pointer;
   }
@@ -195,7 +193,7 @@ body {
   #skills {
     margin-left: 160px;
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
   #contact a {
@@ -203,9 +201,16 @@ body {
     color: black;
   }
   #contact {
-    margin-top: 50px;
-    margin-left: 40px;
+    margin-top: 0px;
+    margin-left: 160px;
     margin-bottom: 10px;
+  }
+  .design {
+    background: #a8a8a8;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 0.8em;
   }
 }
 /* for phones*/
@@ -246,31 +251,50 @@ body {
     color: black;
   }
   ul.navbar {
-    display: flex;
-    float: right;
-    list-style-type: none;
-    padding: 1.5% 10% 1.5% 1%;
-    margin-left: 5%;
-    white-space: nowrap;
-    margin-right: 0%;
+    display: none;
   }
-  .navbar li {
-    padding: 5% 4% 5% 4%;
+  ul.navbar {
+    position: absolute;
+    width: 100%;
+    background: #aad0fa;
+    top: 50px;
+    left: 0%;
+    text-align: center;
+    flex-direction: column;
   }
+
   .navbar a:link,
   .navbar a:visited {
-    color: black;
-    padding: 0% 0%;
-    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    display: inline-block;
     text-decoration: none;
-    align-items: center;
-    height: 100%;
   }
   .navbar a:hover,
-  .navbar a:active {
-    color: rgb(8, 8, 8);
-    background-color: rgb(100, 119, 224);
-    padding: 10%;
+  .navbara:active {
+    background-color: rgb(48, 71, 204);
+    color: rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+  .icon {
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    display: flex;
+  }
+  .icon .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
   }
   .row {
     justify-content: center;
@@ -280,7 +304,7 @@ body {
     margin-top: 5%;
   }
   .main {
-    flex: 50%;
+    flex: 60%;
   }
   .pics {
     margin-top: 25px;
@@ -292,13 +316,13 @@ body {
 
   .pics img {
     margin-top: 10%;
-    width: 90%;
+    width: 93%;
     border-radius: 12px;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
       0 17px 50px 0 rgba(0, 0, 0, 0.19);
   }
   .text {
-    flex: 50%;
+    flex: 40%;
   }
   .text1 {
     padding: 10%;
@@ -334,7 +358,7 @@ body {
     list-style-type: none;
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 130px;
+    background-size: 140px;
     padding-left: 150px;
     border-bottom: 1px solid;
     border-top: 1px solid;
@@ -405,5 +429,12 @@ body {
     margin-top: 50px;
     margin-left: 30px;
     margin-bottom: 10px;
+  }
+  .design {
+    background: #a8a8a8;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 0.8em;
   }
 }

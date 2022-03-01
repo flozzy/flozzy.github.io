@@ -118,16 +118,24 @@ body {
     padding: 10%;
     padding-right: 20%;
   }
-
+  .space {
+    height: 20px;
+  }
   #contact a {
     text-decoration: none;
     color: black;
   }
   #contact {
-    float: right;
-    margin-top: 50px;
-    margin-right: 440px;
+    padding-left: 56%;
+    padding-right: 20%;
     margin-bottom: 10px;
+  }
+  .design {
+    background: #a8a8a8;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 0.8em;
   }
 }
 
@@ -169,31 +177,50 @@ body {
     color: black;
   }
   ul.navbar {
-    display: flex;
-    float: right;
-    list-style-type: none;
-    padding: 1.5% 10% 1.5% 1%;
-    margin-left: 5%;
-    white-space: nowrap;
-    margin-right: 0%;
+    display: none;
   }
-  .navbar li {
-    padding: 5% 4% 5% 4%;
+  ul.navbar {
+    position: absolute;
+    width: 100%;
+    background: #aad0fa;
+    top: 50px;
+    left: 0%;
+    text-align: center;
+    flex-direction: column;
   }
+
   .navbar a:link,
   .navbar a:visited {
-    color: black;
-    padding: 0% 0%;
-    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    display: inline-block;
     text-decoration: none;
-    align-items: center;
-    height: 100%;
   }
   .navbar a:hover,
-  .navbar a:active {
-    color: rgb(8, 8, 8);
-    background-color: rgb(100, 119, 224);
-    padding: 10%;
+  .navbara:active {
+    background-color: rgb(48, 71, 204);
+    color: rgb(255, 255, 255);
+    width: 100%;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+  .icon {
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    display: flex;
+  }
+  .icon .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
   }
 
   .row {
@@ -248,9 +275,14 @@ body {
     color: black;
   }
   #contact {
-    float: right;
-    margin-top: 0px;
-    margin-right: 40px;
+    margin-left: 40px;
     margin-bottom: 10px;
+  }
+  .design {
+    background: #a8a8a8;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 0.8em;
   }
 }

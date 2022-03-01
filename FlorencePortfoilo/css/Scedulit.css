@@ -19,11 +19,15 @@ html {
   nav a {
     text-decoration: none;
   }
-
-  #greeting {
-    flex: 70%;
-    margin-left: 40px;
+  div.ux1 {
+    display: flex;
   }
+  #greeting {
+    flex: 60%;
+    margin-left: 30px;
+    margin-top: 70px;
+  }
+
   .shop img {
     flex: 40%;
     width: 400px;
@@ -31,7 +35,6 @@ html {
   .picshop {
     margin-top: 40px;
     background-color: #fa8538;
-    display: flex;
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -53,15 +56,6 @@ html {
     color: rgb(255, 255, 255);
   }
 
-  .checkbn {
-    color: rgb(90, 3, 64);
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check {
-    display: none;
-  }
   * {
     box-sizing: border-box;
   }
@@ -230,29 +224,31 @@ html {
     padding-bottom: 3px;
   }
   .shop img {
-    width: 100%;
+    width: 60%;
   }
   .picshop {
-    margin-top: 40px;
+    text-align: center;
+    margin-top: 10px;
     background-color: #fa8538;
     padding-left: 7%;
     padding-right: 7%;
-    margin-top: 156px;
+  }
+  ul.main-menu {
+    display: none;
   }
   ul.main-menu {
     position: absolute;
     width: 100%;
-    background: rgba(158, 86, 151, 0.418);
+    background: #faf3f7;
     top: 50px;
     left: 0%;
     text-align: center;
+    flex-direction: column;
   }
-  nav ul li {
-    display: block;
-  }
+
   .main-menu a:link,
   .main-menu a:visited {
-    color: black;
+    color: rgb(73, 1, 52);
     padding: 10px 10px;
     display: inline-block;
     text-decoration: none;
@@ -261,20 +257,31 @@ html {
   .main-menu a:active {
     background-color: rgba(158, 86, 151, 0.418);
     color: rgb(255, 255, 255);
-  }
-  .checkbn {
-    display: block;
-    margin-right: 5px;
-    color: rgb(90, 3, 64);
-    float: right;
+    width: 100%;
   }
 
-  #check {
-    display: none;
+  .main-menu.active {
+    display: flex;
   }
-
   * {
     box-sizing: border-box;
+  }
+
+  .icon {
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    display: flex;
+  }
+  .icon .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
   }
 
   /* nav styles */
@@ -296,7 +303,9 @@ html {
        */
     height: 50px;
   }
-
+  #greeting span {
+    color: blue;
+  }
   nav * {
     margin: 0;
     padding: 0;
@@ -318,9 +327,9 @@ html {
   .dropdown-content {
     display: none;
     position: absolute;
-    width: 7%;
-    height: 100%;
-    margin-left: 37%;
+    width: 20%;
+    height: 150%;
+    margin-left: 38%;
     background-color: rgb(226, 226, 226);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);

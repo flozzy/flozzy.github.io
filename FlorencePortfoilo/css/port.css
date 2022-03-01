@@ -5,25 +5,15 @@ html {
 * {
   scroll-behavior: smooth;
 }
-/* for desktop*/
+/*for desktop*/
 @media only screen and (min-width: 768px) {
   body {
     font-family: "Lato", sans-serif;
-    color: #333;
+    /*color: #333;*/
     margin: 0px;
     font-size: 1.2em;
     padding-top: 50px;
-  }
-  #about h2 {
-    font-family: "Lato", sans-serif;
-  }
-
-  #about {
-    margin-left: 100px;
-  }
-
-  #contact {
-    margin-left: 100px;
+    background-image: url("/ux:ui/backsch.jpg");
   }
 
   nav a {
@@ -31,18 +21,23 @@ html {
   }
 
   #greeting {
-    margin-left: 160px;
-    position: relative;
-    font-size: 1.7em;
+    flex: 70%;
+    margin-left: 50px;
   }
 
-  ul.main-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow-x: auto;
-    font-family: "Lato", sans-serif;
+  .shop img {
+    width: 70%;
+  }
+  .shop {
+    flex: 40%;
+    text-align: center;
+  }
+  .picshop {
+    margin-top: 40px;
+    background-color: #78b1fc;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .main-menu a:link,
@@ -61,6 +56,7 @@ html {
     background-color: rgba(158, 86, 151, 0.418);
     color: rgb(255, 255, 255);
   }
+
   .checkbn {
     color: rgb(90, 3, 64);
     margin-right: 40px;
@@ -73,7 +69,9 @@ html {
   * {
     box-sizing: border-box;
   }
-
+  .icon {
+    display: none;
+  }
   /* nav styles */
   nav {
     display: flex;
@@ -86,11 +84,11 @@ html {
     width: 100%;
     top: 0;
     /**
-   * This height needs to be the same value as the
-   * value of the padding-top which is applied on the body.
-   * This is needed so that the navigation content and the body
-   * content do not collied with each other.
-   */
+         * This height needs to be the same value as the
+         * value of the padding-top which is applied on the body.
+         * This is needed so that the navigation content and the body
+         * content do not collied with each other.
+         */
     height: 50px;
   }
 
@@ -138,67 +136,27 @@ html {
   }
 
   /*.dropdown-content a:hover {
-  background-color: #f1f1f1;
-  color: black;
-}*/
+    background-color: #f1f1f1;
+    color: black;
+  }*/
   .dropdown:hover .dropdown-content {
     display: block;
   }
   /* end nav styles */
 
-  /* header styles */
-  header {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    /* background-color: #FAF3F7; */
-    width: 100%;
-
-    /**
-   * This is used so that the header content (e.g. image)
-   * does not stretch too much on big screens
-   */
-  }
-
-  /**
- * This is a CSS Child Selector (>). Selection all div(s) which are direct children
- * of a header element. More info can be seen here
- * https://redi-school.github.io/nrw-html-and-css-2021-spring/lesson20/#2-css-combinator-selectors
- */
-  header > div {
-    flex: 1;
-  }
   div a {
     text-decoration: none;
     color: black;
   }
 
-  div.proj {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .img2,
-  .img3,
-  .img4,
-  .img5 {
-    width: 50%;
-    margin-bottom: 20px;
-  }
-  img:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-      0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    transform: scale(1.1);
-  }
-
   #contact {
-    margin-left: 100px;
+    margin-right: 100px;
+    margin-left: 0px;
+    color: black;
+    padding: 10px;
+    background-color: rgb(252, 230, 247);
   }
 
-  .section {
-    padding: 20px;
-    margin: 25px;
-  }
   h2 {
     font-family: "Julius Sans One", sans-serif;
   }
@@ -208,20 +166,65 @@ html {
   p {
     font-size: 1.2em;
   }
+
+  .content {
+    padding-right: 100px;
+    padding-left: 200px;
+  }
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7,
+  .img8,
+  .img9,
+  .img10,
+  .img11,
+  .img12,
+  .img13,
+  .Proto {
+    text-align: center;
+    margin-bottom: 60px;
+    width: 90%;
+    background-color: #78b1fc;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  }
+  .img2 img,
+  .img3 img,
+  .img4 img,
+  .img5 img,
+  .img6 img,
+  .img7 img,
+  .img8 img,
+  .img9 img,
+  .img10 img,
+  .img11 img,
+  .img12 img,
+  .img13 img,
+  video {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  div.desc {
+    text-align: left;
+    padding-bottom: 10px;
+  }
 }
 
-/* for phone*/
+/*phones*/
 @media only screen and (max-width: 768px) {
   body {
     font-family: "Lato", sans-serif;
-    color: #333;
+    /*color: #333;*/
     margin: 0px;
     font-size: 1em;
     padding-top: 50px;
-  }
-
-  #contact {
-    margin-left: 20px;
+    background-image: url("/ux:ui/backsch.jpg");
   }
 
   nav a {
@@ -229,12 +232,19 @@ html {
   }
 
   #greeting {
-    margin-left: 30px;
-    position: relative;
-    font-size: 1.4em;
-    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 3px;
   }
-
+  .shop img {
+    width: 100%;
+  }
+  .picshop {
+    margin-top: 40px;
+    background-color: #78b1fc;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-top: 6px;
+  }
   ul.main-menu {
     display: none;
   }
@@ -298,11 +308,11 @@ html {
     width: 100%;
     top: 0;
     /**
-     * This height needs to be the same value as the
-     * value of the padding-top which is applied on the body.
-     * This is needed so that the navigation content and the body
-     * content do not collied with each other.
-     */
+         * This height needs to be the same value as the
+         * value of the padding-top which is applied on the body.
+         * This is needed so that the navigation content and the body
+         * content do not collied with each other.
+         */
     height: 50px;
   }
 
@@ -358,32 +368,81 @@ html {
     color: black;
   }
 
-  div.proj {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .img2,
-  .img3,
-  .img4,
-  .img5 {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-  img:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-      0 17px 50px 0 rgba(0, 0, 0, 0.19);
-    transform: scale(1.1);
+  #contact {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    padding: 5px;
+    background-color: rgb(252, 230, 247);
   }
 
   h2 {
     font-family: "Julius Sans One", sans-serif;
-  }
-  h2 {
     font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  #greeting h2 {
+    font-size: 1.8em;
   }
   p {
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: bold;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ux {
+    padding: 0% 5% 0% 5%;
+  }
+  .dec {
+    padding: 0% 5% 0% 4%;
+    font-size: 15px;
+  }
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7,
+  .img8,
+  .img9,
+  .img10,
+  .img11,
+  .img12,
+  .img13,
+  .Proto {
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+    background-color: #78b1fc;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  }
+  .img2 img,
+  .img3 img,
+  .img4 img,
+  .img5 img,
+  .img6 img,
+  .img7 img,
+  .img8 img,
+  .img9 img,
+  .img10 img,
+  .img11 img,
+  .img12 img,
+  .img13 img,
+  video {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  div.desc {
+    text-align: left;
+    padding-bottom: 10px;
   }
 }

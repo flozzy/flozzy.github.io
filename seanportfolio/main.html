@@ -23,6 +23,20 @@
         <li><a href="about.html">About me</a></li>
         <li><a href="#contact">Contact Info</a></li>
       </ul>
+      <a href="#" class="icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+
+      <script>
+        const togglebutton = document.getElementsByClassName("icon")[0];
+        const mainmenu = document.getElementsByClassName("navbar")[0];
+
+        togglebutton.addEventListener("click", () => {
+          mainmenu.classList.toggle("active");
+        });
+      </script>
     </nav>
 
     <div class="row">
@@ -34,7 +48,7 @@
       <div class="text">
         <div class="text1">
           <h1>Hi there!</h1>
-          <p>I'm Sean Israel Izuchukwu Madubuike, welcome to my portfolio.</p>
+          <p>I'm Israel Izuchukwu Madubuike, welcome to my portfolio.</p>
           <p>
             A graduate of international Relations and a member of the Nigerian
             Institute of Management. Aimed with extensive professional skills
@@ -46,6 +60,7 @@
         </div>
       </div>
     </div>
+    <div class="space"></div>
     <section id="contact">
       <div>
         <h2>
@@ -64,5 +79,17 @@
         ></a>
       </div>
     </section>
+
+    <div class="space1"></div>
+
+    <div class="design">
+      Designed and developed by
+      <a
+        target="_blank"
+        href="https://flozzy.github.io/FlorencePortfoilo/main.html"
+      >
+        <b>@Flozzy. </b></a
+      >
+    </div>
   </body>
 </html>

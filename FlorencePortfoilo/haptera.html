@@ -44,15 +44,27 @@
               <a href="zattoo.html">Zattoo</a>
               <a href="aforshop.html">Karlskrona Afroshop</a>
               <a href="haptera.html">Hap-Tera Mum</a>
+              <a href="seanportfolio.html">Sean Portfolio</a>
             </div>
           </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbn">
-        <i class="material-icons">&#xe5d2;</i>
-      </label>
-      </b>
+        <a href="#" class="icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </a>
+      
+           
+            </b>
+            <script> 
+            const togglebutton = document.getElementsByClassName('icon')[0]
+            const mainmenu = document.getElementsByClassName('main-menu')[0]
+      
+            togglebutton.addEventListener('click', () =>{
+              mainmenu.classList.toggle('active')
+            })
+             </script>
     </nav>
   </head>
  

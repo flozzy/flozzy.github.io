@@ -246,27 +246,28 @@ html {
     width: 100%;
   }
   .picshop {
-    margin-top: 20px;
+    margin-top: 0px;
     background-color: #2d2d2d;
     flex-direction: column;
     text-align: center;
-    margin-top: 118px;
   }
 
   ul.main-menu {
+    display: none;
+  }
+  ul.main-menu {
     position: absolute;
     width: 100%;
-    background: rgba(158, 86, 151, 0.418);
+    background: #faf3f7;
     top: 50px;
     left: 0%;
     text-align: center;
+    flex-direction: column;
   }
-  nav ul li {
-    display: block;
-  }
+
   .main-menu a:link,
   .main-menu a:visited {
-    color: black;
+    color: rgb(73, 1, 52);
     padding: 10px 10px;
     display: inline-block;
     text-decoration: none;
@@ -275,20 +276,31 @@ html {
   .main-menu a:active {
     background-color: rgba(158, 86, 151, 0.418);
     color: rgb(255, 255, 255);
-  }
-  .checkbn {
-    display: block;
-    margin-right: 5px;
-    color: rgb(90, 3, 64);
-    float: right;
+    width: 100%;
   }
 
-  #check {
-    display: none;
+  .main-menu.active {
+    display: flex;
   }
-
   * {
     box-sizing: border-box;
+  }
+
+  .icon {
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    display: flex;
+  }
+  .icon .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
   }
 
   /* nav styles */
@@ -332,14 +344,13 @@ html {
   .dropdown-content {
     display: none;
     position: absolute;
-    width: 7%;
-    height: 125%;
-    margin-left: 30%;
+    width: 20%;
+    height: 150%;
+    margin-left: 38%;
     background-color: rgb(226, 226, 226);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
     z-index: 1;
-    text-align: left;
   }
 
   .dropdown-content a {
@@ -347,6 +358,7 @@ html {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: center;
   }
 
   /*.dropdown-content a:hover {
