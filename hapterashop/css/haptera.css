@@ -562,7 +562,7 @@ body {
   }
   /* Footer */
   #footer {
-    padding: 3% 1% 1% 2%;
+    padding: 0% 1% 1% 2%;
     color: white;
     background: #a8a8a8;
     margin-top: 20px;
@@ -573,13 +573,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 1%;
-    margin-top: -5%;
+    padding-top: 0%;
   }
   .left {
     flex: 10%;
     width: 100%;
-    margin-top: 0%;
+    margin-top: -30px;
   }
 
   .facebook {
@@ -595,7 +594,7 @@ body {
   .middle {
     flex: 30%;
     width: 100%;
-    margin-top: 0%;
+    margin-top: -11px;
   }
 
   .right {
