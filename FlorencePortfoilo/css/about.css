@@ -70,15 +70,7 @@ html {
     background-color: rgba(158, 86, 151, 0.418);
     color: rgb(255, 255, 255);
   }
-  .checkbn {
-    color: rgb(90, 3, 64);
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check {
-    display: none;
-  }
+
   h2,
   h3 {
     font-family: "Julius Sans One", sans-serif;
@@ -215,7 +207,7 @@ html {
     display: flex;
     padding-right: 100px;
     padding-left: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
 
   .main_text {
@@ -228,6 +220,15 @@ html {
   margin-left: -500px;
   margin-right: 100px;*/
   }
+
+  .main_text p {
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 80%;
+    width: 400px;
+    overflow: scroll;
+  }
+
   .main-photo img {
     flex: 10%;
     width: 100%;
@@ -242,6 +243,7 @@ html {
     margin-left: 160px;
     width: 100%;
   }
+
   .Resume {
     background-color: rgb(3, 3, 3);
     border: none;
@@ -526,6 +528,7 @@ html {
   #skills p {
     font-weight: bold;
   }
+
   .Resume {
     background-color: rgb(3, 3, 3);
     border: none;

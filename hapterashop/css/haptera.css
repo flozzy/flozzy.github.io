@@ -562,10 +562,10 @@ body {
   }
   /* Footer */
   #footer {
-    padding: 1% 1% 1% 2%;
+    padding: 3% 1% 1% 2%;
     color: white;
     background: #a8a8a8;
-    margin-top: 0px;
+    margin-top: 20px;
     font-size: 0.6em;
   }
 
@@ -573,31 +573,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0%;
+    padding-top: 1%;
+    margin-top: -5%;
   }
   .left {
-    flex: 20%;
+    flex: 10%;
     width: 100%;
     margin-top: 0%;
   }
 
   .facebook {
     color: rgb(0, 0, 0);
+    font-size: 100%;
     text-decoration: none;
-    font-size: 120%;
   }
   .instagram {
     color: #000000;
+    font-size: 110%;
     text-decoration: none;
-    font-size: 120%;
   }
   .middle {
     flex: 30%;
     width: 100%;
     margin-top: 0%;
-  }
-  div .contct2 {
-    font-weight: lighter;
   }
 
   .right {
@@ -606,7 +604,7 @@ body {
     margin-top: 0%;
   }
   div .pay img {
-    width: 70%;
+    width: 100%;
     height: 10%;
   }
   .design {
