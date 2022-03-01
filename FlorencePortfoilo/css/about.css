@@ -466,9 +466,13 @@ html {
   .BTH {
     background-image: url("../images\ for\ Porfoilo/bth_logo.png");
   }
-  .BTH p h2 {
+  .BTH p,
+  .BTH h3,
+  .Nizhny p,
+  .Nizhny h2 {
     font-weight: bold;
   }
+
   .Nizhny {
     background-image: url("../images\ for\ Porfoilo/unn-logo-en.png");
   }
