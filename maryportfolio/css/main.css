@@ -48,10 +48,10 @@ body {
     display: flex;
     float: right;
     list-style-type: none;
-    padding: 1.5% 10% 1.5% 1%;
+    padding: 0%;
     margin-left: 60%;
     white-space: nowrap;
-    overflow-x: auto;
+
     margin-right: 0%;
   }
   .navbar li {
@@ -103,7 +103,7 @@ body {
     }
   }
   .pics img {
-    width: 50%;
+    width: 55%;
     border-radius: 12px;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
       0 17px 50px 0 rgba(0, 0, 0, 0.19);
