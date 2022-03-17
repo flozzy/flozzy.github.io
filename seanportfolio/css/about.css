@@ -49,21 +49,21 @@ body {
     display: flex;
     float: right;
     list-style-type: none;
-    padding: 1.5% 10% 1.5% 1%;
-    margin-left: 60%;
+    padding: 1.5% 0% 1.5% 1%;
+    margin-left: 50%;
     white-space: nowrap;
-
     margin-right: 0%;
   }
   .navbar li {
-    padding: 5% 7% 5% 7%;
+    padding: 5% 0% 5% 0%;
   }
   .navbar a:link,
   .navbar a:visited {
     color: black;
-    padding: 0% 0%;
+    padding: 16px 15px;
     text-align: center;
     text-decoration: none;
+    display: flex;
     align-items: center;
     height: 100%;
   }
@@ -71,7 +71,6 @@ body {
   .navbar a:active {
     color: rgb(8, 8, 8);
     background-color: rgb(100, 119, 224);
-    padding: 10%;
   }
   .row {
     display: flex;
