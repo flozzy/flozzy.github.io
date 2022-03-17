@@ -1,3 +1,4 @@
-Welcome to my Portfolio
+Welcome 
 
-This shows my portfolio and my projects.
+Here are projects that I have created.
+
