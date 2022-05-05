@@ -552,18 +552,19 @@ body {
 
   .overlay-content {
     position: relative;
-    top: 25%;
+    top: 20%;
     padding-left: 20px;
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 0px;
-    background-color: rgb(247, 247, 247);
-    padding-top: 30px;
-    padding-bottom: 20px;
+    background-color: rgba(247, 247, 247, 0.712);
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .overlay a {
-    padding: 0px;
+    padding: 4px;
     text-decoration: none;
     font-size: 16px;
     color: #020202;
