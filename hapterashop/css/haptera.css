@@ -687,25 +687,16 @@ body {
     font-size: 9px;
     text-align: center;
   }
-  .pages a :link,
-  .pages a :visited {
-    background-color: rgb(36, 172, 138);
-    text-decoration: none;
-    display: inline-block;
-    font-size: 9px;
-    text-align: center;
-  }
+
   .back:hover,
-  .next:hover {
+  .next:hover,
+  .num:hover,
+  .num:active {
     background-color: #c66d25;
     color: black;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
   }
-  .num:hover {
-    background-color: #c66d25;
-    color: rgb(0, 0, 0);
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-  }
+
   .back,
   .next {
     border-radius: 10px;
