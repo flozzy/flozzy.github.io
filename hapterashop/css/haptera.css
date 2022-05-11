@@ -398,12 +398,12 @@ body {
   /* Style the header */
 
   .logo {
-    padding: 3% 1% 1% 1%;
+    padding: 1% 1% 1% 1%;
   }
   .logo img {
     margin-left: 10%;
-    width: 8%;
-    height: 8%;
+    width: 9%;
+    height: 9%;
   }
   /* Style the top navigation bar */
   .nav {
@@ -486,7 +486,7 @@ body {
     border: 3px solid #f3c83d;
     border-right: none;
     padding: 4px;
-    height: 26px;
+    height: 23px;
     border-radius: 20px 0 0 20px;
     outline: none;
     color: #000000;
@@ -499,7 +499,7 @@ body {
 
   .searchButton {
     width: 50px;
-    height: 26px;
+    height: 23px;
     border: 1px solid #f3c83d;
     background: #f3c83d;
     text-align: center;
