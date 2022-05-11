@@ -691,7 +691,8 @@ body {
   .back:hover,
   .next:hover,
   .num:hover,
-  .num:active {
+  .num:active,
+  .num:focus {
     background-color: #c66d25;
     color: black;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
