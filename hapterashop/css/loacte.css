@@ -510,3 +510,261 @@ body {
     font-size: 0.6em;
   }
 }
+
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+  /* Style the header */
+
+  .logo {
+    padding: 3% 1% 1% 1%;
+  }
+  .logo img {
+    margin-left: 10%;
+    width: 8%;
+    height: 8%;
+  }
+  /* Style the top navigation bar */
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background: #faf3f7;
+    width: 100%;
+    top: 0;
+    margin-top: 50px;
+
+    /**
+ * This height needs to be the same value as the
+ * value of the padding-top which is applied on the body.
+ * This is needed so that the navigation content and the body
+ * content do not collied with each other.
+ */
+    height: 50px;
+  }
+
+  nav * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Style the navigation bar links */
+  .nav a {
+    text-decoration: none;
+  }
+  ul.navbars {
+    float: right;
+    list-style-type: none;
+    margin-top: -9.1%;
+    white-space: nowrap;
+    overflow-x: auto;
+    font-family: "Lato", sans-serif;
+    font-size: 0.8em;
+    padding-right: 5%;
+    text-decoration: none;
+  }
+
+  .navbars a:link,
+  .navbars a:visited {
+    color: black;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  /* Change color on hover */
+  .navbars a:hover,
+  .navbars a:active {
+    color: rgb(8, 8, 8);
+    border-bottom: 3px solid currentColor;
+    border-color: #bd651e;
+  }
+
+  .navbars li {
+    height: 100%;
+    display: inline-block;
+  }
+  .navbars li .right {
+    color: #000000;
+    display: none;
+  }
+
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #f3c83d;
+    border-right: none;
+    padding: 4px;
+    height: 26px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: #000000;
+    background-color: #f3c83d;
+  }
+
+  .searchTerm:focus {
+    color: rgb(0, 0, 0);
+  }
+
+  .searchButton {
+    width: 50px;
+    height: 26px;
+    border: 1px solid #f3c83d;
+    background: #f3c83d;
+    text-align: center;
+    color: #c66d25;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .wrap {
+    width: 50%;
+    position: absolute;
+    top: 3.2%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Style the header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+  }
+  .myslides {
+    display: none;
+  }
+  .slide {
+    flex: 100%;
+  }
+  .slide img {
+    width: 100%;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 0px;
+  }
+  /* side column */
+  .side {
+    flex: 10%;
+    background-color: #ffffff;
+    width: 10%;
+  }
+  /* Main column */
+  .main {
+    flex: 70%;
+    background-color: rgb(253, 253, 253);
+    padding: 3px 9px 10px 10px;
+    width: 40%;
+  }
+  .open {
+    margin-left: 24.9%;
+    font-size: 80%;
+  }
+  .map1 {
+    display: none;
+  }
+  .pic img {
+    padding-left: 10%;
+    width: 60%;
+    height: auto;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 1% 1% 1% 2%;
+    color: white;
+    background: #a8a8a8;
+    margin-top: 0px;
+  }
+
+  .foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+  }
+  .left {
+    text-decoration: none;
+    flex: 30%;
+    font-size: 0.7em;
+    margin-top: -51px;
+  }
+
+  .facebook {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 100%;
+  }
+  .instagram {
+    color: #000000;
+    text-decoration: none;
+    font-size: 100%;
+  }
+  .middle {
+    flex: 30%;
+    width: 100%;
+    margin-top: -28px;
+    margin-left: -25px;
+    margin-right: 9px;
+    font-size: 0.7em;
+  }
+  div .contct2 {
+    font-weight: lighter;
+  }
+
+  .right {
+    flex: 40%;
+    width: 100%;
+    margin-top: 0%;
+    font-size: 0.7em;
+  }
+  .paym {
+    padding-top: 0.008px;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    background-color: white;
+    font-size: 0.7em;
+  }
+  .payme {
+    padding-top: 0.5%;
+    display: flex;
+    padding-right: 2%;
+  }
+  .payme h4 {
+    font-size: 0.5rem;
+  }
+  div .pay img {
+    width: 60%;
+    margin: 0% 0% 6% 0%;
+  }
+  .design {
+    background: #a8a8a8;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 0.6em;
+  }
+}

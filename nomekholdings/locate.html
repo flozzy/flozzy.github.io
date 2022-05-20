@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nomek Holdings Location</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
+        <link href="css/locate.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Ranga:wght@700&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Ranga:wght@400;700&family=Rosarivo:ital@1&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <script
+          src="https://kit.fontawesome.com/8cb073c96b.js"
+          crossorigin="anonymous"
+        ></script>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Ranga:wght@400;700&family=Roboto:wght@100&family=Rosarivo:ital@1&family=Sintony&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <div class="navbar">
+          <div class="logo">
+            <a href="main.html"> <img src="pics/logo.png" alt="afro logo" /></a>
+          </div>
+    
+          <div class="navbars">
+            <div class="wrap">
+              <div class="search">
+                <div class="dropdown">
+                  <p>All Categories</p>
+                    <i class="fa-solid fa-angle-down" style="font-size: 17px"></i>
+                  <div class="catedrop">
+                    <ul class="womendrop">
+                      <h3>Women</h3>
+                      <li class="dropwoemn">Dresses</li>
+                      <li class="dropwoemn">Skirts</li>
+                      <li class="dropwoemn">Blouses</li>
+                      <li class="dropwoemn">Jackets</li>
+                      <li class="dropwoemn">Shorts</li>
+                      <li class="dropwoemn">Trousers</li>
+                      <li class="dropwoemn">Jumpsuits</li>
+                      <li class="dropwoemn">Bridal Dresses</li>
+                      <li class="dropwoemn">Bridesmaid Dresses</li>
+                    </ul>
+                    <ul class="mendrop">
+                      <h3>Men</h3>
+                      <li class="dropwoemn">Suits</li>
+                      <li class="dropwoemn">Trousers</li>
+                      <li class="dropwoemn">Jackets</li>
+                      <li class="dropwoemn">Shorts</li>
+                      <li class="dropwoemn">Grooms Suits</li>
+                      <li class="dropwoemn">Bestmen Suits</li>
+                    </ul>
+                    <ul class="kidsdrop">
+                      <h3>Kids</h3>
+                      <li class="dropwoemn">Dresses</li>
+                      <li class="dropwoemn">Skirts</li>
+                      <li class="dropwoemn">Tops</li>
+                      <li class="dropwoemn">Jackets</li>
+                      <li class="dropwoemn">Shorts</li>
+                      <li class="dropwoemn">Trousers</li>
+                      <li class="dropwoemn">Suits</li>
+                    </ul>
+                    <div class="hotpic">
+                      <img
+                        src="pics/244390724_382414970282861_5648699312343823268_n.jpeg"
+                      alt="fashion"/>
+                      <img
+                        src="pics/244390724_382414970282861_5648699312343823268_n.jpeg"
+                        alt="fashion"/>
+    
+                      <h2>THE HOTTEST TRENDS</h2>
+                    </div>
+                  </div>
+                  <script>
+                    const togglebutton =
+                      document.getElementsByClassName("fa-angle-down")[0];
+                    const mainmenu = document.getElementsByClassName("catedrop")[0];
+    
+                    togglebutton.addEventListener("click", () => {
+                      mainmenu.classList.toggle("active");
+                    });
+                  </script>
+                </div>
+                <input
+                  type="text"
+                  class="searchTerm"
+                  placeholder="Search for products here"
+                />
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+    
+            <a href="#footer" class="right">
+              <i class="fa fa-phone"></i>Contact Info</a
+            >
+            <a href="locate.html" class="right"
+              ><i class="fa fa-map-marker"></i>Locate the store</a
+            >
+            <div>
+              <a href="#footer" class="right1"> <i class="fa fa-phone"></i></a>
+              <a href="locate.html" class="right1"
+                ><i class="fa fa-map-marker"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+
+    <div class="row">
+     
+      <div class="main">
+        <h1>Locate the store</h1>
+        <p>
+          Here you can see the location of the store, the opening hours and
+          contact information. <br><br>
+        </p>
+
+         <div class="map">
+            <div class="mapin">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1212.1309781838115!2d25.670414862848563!3d-25.226759475609263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebccb29cfa2e473%3A0x4bc8eb19bcce75d0!2sNomek%20Tailors%20and%20Pawn%20Shop!5e0!3m2!1sen!2sse!4v1646944572243!5m2!1sen!2sse"
+                width="750"
+                height="550"
+                style="border: 0"
+                allowfullscreen="0"
+                loading="lazy"
+              ></iframe>
+            </div>
+          <div>
+            <p>
+              Address: Plot 222 near Old Barclays, Lobatse, Botswana
+              <a href="https://goo.gl/maps/6VoxEcy1PVcqcd3w9">
+                Use Google map</a
+              >
+            </p>
+            <p>
+              Opening Days / Hours: 
+             Sunday Closed
+              <ul class="open">
+              Saturday 08:30am–13:30pm <br />
+              <br />Monday 08:30am–17:30pm <br />
+              <br />Tuesday 08:30am–17:30pm <br />
+              <br />Wednesday 08:30am–17:30pm <br />
+              <br />Thursday 08:30am–17:30pm<br/>
+              <br /> Friday 08:30–17:30pm <br /></ul>
+            </p>
+            <p>Holidays we are closed</p>
+          </div>
+        </div>
+
+
+        <div class="map1">
+          <div class="mapin">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1212.1309781838115!2d25.670414862848563!3d-25.226759475609263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebccb29cfa2e473%3A0x4bc8eb19bcce75d0!2sNomek%20Tailors%20and%20Pawn%20Shop!5e0!3m2!1sen!2sse!4v1646944572243!5m2!1sen!2sse"
+              width="376"
+              height="350"
+              style="border: 0"
+              allowfullscreen="0"
+              loading="lazy"
+            ></iframe>
+          </div>
+        <div>
+          <p>
+            Address: Plot 222 near Old Barclays, Lobatse, Botswana
+            <a href="https://goo.gl/maps/6VoxEcy1PVcqcd3w9">
+              Use Google map</a
+            >
+          </p>
+          <p>
+            Opening Days / Hours: 
+           Sunday Closed
+            <ul class="open">
+            Saturday 09am–6pm <br />
+            <br />Monday 09am–6pm <br />
+            <br />Tuesday 09am–6pm <br />
+            <br />Wednesday 09am–6pm <br />
+            <br />Thursday 10am–6pm<br/>
+            <br /> Friday 09am–6pm <br /></ul>
+          </p>
+        </div>
+      </div>
+
+
+
+      </div>
+      <div class="pic">
+        <img
+          src="pics/WhatsApp Image 2022-02-28 at 6.31.44 PM.jpeg"
+          alt="Shop"
+        
+        />
+        <img
+          src="pics/WhatsApp Image 2022-02-28 at 6.31.45 PM.jpeg"
+          alt="Shop"
+        
+        />
+
+      </div>
+    </div>
+
+    
+    <div id="footer">
+        <div class="foot">
+          <div class="left3">
+            <p>Follow us at:</p>
+            <div class="contct">
+              <a
+                target="blank"
+                href="https://www.facebook.com/nomektailors"
+                class="facebook"
+                ><i class="fa fa-facebook"></i> Facebook</a
+              >
+              <br /><br />
+              <!--<br>
+            <a target="blank" href="https://www.instagram.com/hapterakiddies/" class="instagram"><i class="fa fa-instagram"></i>   Instagram</a>-->
+            </div>
+          </div>
+  
+          <div class="middle">
+            <p>Contacts:</p>
+            <div class="contct2">
+              <p>Email: ...............@gmail.com</p>
+              <p>Tele: +267 530 6797</p>
+              <p>Post Box: P.O Box 792</p>
+            </div>
+          </div>
+  
+          <div class="right3">
+            <div class="pay">
+              <p>For more inquiry and information call the shop</p>
+              <br />
+              <div class="paym">
+                <h3>Payment options at the shop</h3>
+                <img src="pics/Group.png" alt="Malt" />
+                <h4>Cash</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="design">
+      Designed and developed by <a target="_blank" href="https://flozzy.github.io/FlorencePortfoilo/main.html" > <b>@Flozzy. </b></a>
+    </div>
+  </body>
+</html>

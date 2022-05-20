@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nomek Holdings</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranga:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranga:wght@400;700&family=Rosarivo:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/8cb073c96b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ranga:wght@400;700&family=Roboto:wght@100&family=Rosarivo:ital@1&family=Sintony&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="main.html"> <img src="pics/logo.png" alt="afro logo" /></a>
+      </div>
+
+      <div class="navbars">
+        <div class="wrap">
+          <div class="search">
+            <div class="dropdown">
+              <p><b>All Categories</b></p>
+              <button type="submit" class="arrowbutton">
+                <i class="fa-solid fa-angle-down" style="font-size: 17px"></i>
+              </button>
+              <div class="catedrop">
+                <div class="hotpic1">
+                  <img src="pics/images (1).jpeg" />
+                  <img src="pics/images (1).jpeg" />
+
+                  <h2>THE HOTTEST TRENDS</h2>
+                </div>
+                <div class="womendrop">
+                  <h3>Women</h3>
+                  <li class="dropwoemn"><a href="women.html">Dresses</a></li>
+                  <li class="dropwoemn"><a href="#">Skirts</a></li>
+                  <li class="dropwoemn"><a href="#">Blouses</a></li>
+                  <li class="dropwoemn"><a href="#">Jackets</a></li>
+                  <li class="dropwoemn"><a href="#">Shorts</a></li>
+                  <li class="dropwoemn"><a href="#">Trousers</a></li>
+                  <li class="dropwoemn"><a href="#">Jumpsuits</a></li>
+                  <li class="dropwoemn"><a href="#">Bridal Dresses</a></li>
+                  <li class="dropwoemn"><a href="#">Bridesmaid Dresses</a></li>
+                </div>
+                <div class="mendrop">
+                  <h3>Men</h3>
+                  <li class="dropwoemn"><a href="#">Suits</a></li>
+                  <li class="dropwoemn"><a href="#">Trousers</a></li>
+                  <li class="dropwoemn"><a href="#">Jackets</a></li>
+                  <li class="dropwoemn"><a href="#">Shorts</a></li>
+                  <li class="dropwoemn"><a href="#">Grooms Suits</a></li>
+                  <li class="dropwoemn"><a href="#">Bestmen Suits</a></li>
+                </div>
+                <div class="kidsdrop">
+                  <h3>Kids</h3>
+                  <li class="dropwoemn"><a href="#">Dresses</a></li>
+                  <li class="dropwoemn"><a href="#">Skirts</a></li>
+                  <li class="dropwoemn"><a href="#">Tops</a></li>
+                  <li class="dropwoemn"><a href="#">Jackets</a></li>
+                  <li class="dropwoemn"><a href="#">Shorts</a></li>
+                  <li class="dropwoemn"><a href="#">Trousers</a></li>
+                  <li class="dropwoemn"><a href="#">Suits</a></li>
+                </div>
+                <div class="hotpic">
+                  <img
+                    src="pics/244390724_382414970282861_5648699312343823268_n.jpeg"
+                  />
+                  <img
+                    src="pics/241864082_115372137540489_8262664779592721550_n.jpeg"
+                  />
+
+                  <h2>THE HOTTEST TRENDS</h2>
+                </div>
+              </div>
+              <script>
+                const togglebutton =
+                  document.getElementsByClassName("fa-angle-down")[0];
+                const mainmenu = document.getElementsByClassName("catedrop")[0];
+
+                togglebutton.addEventListener("click", () => {
+                  mainmenu.classList.toggle("active");
+                });
+              </script>
+            </div>
+            <input
+              type="text"
+              class="searchTerm"
+              placeholder="Search for products here"
+            />
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search" style="font-size: 16px"></i>
+            </button>
+          </div>
+        </div>
+
+        <a href="#footer" class="right">Contact Info</a>
+        <a href="locate.html" class="right">Locate the store</a>
+        <div>
+          <a href="#footer" class="right1"> <i class="fa fa-phone"></i></a>
+          <a href="locate.html" class="right1"
+            ><i class="fa fa-map-marker"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="slide">
+        <img class="mySlides" src="pics/Group 16.png" />
+        <img class="mySlides" src="pics/Frame 14.png" />
+        <img class="mySlides" src="pics/Frame 3.png" />
+      </div>
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 3 seconds
+      }
+    </script>
+
+    <div class="acco">
+      <div class="women">
+        <div class="wome">
+          <p>Women</p>
+        </div>
+        <div class="wom">
+          <img
+            src="pics/244390724_382414970282861_5648699312343823268_n.jpeg"
+          />
+        </div>
+      </div>
+
+      <div class="men">
+        <div class="mens">
+          <p>Men</p>
+        </div>
+        <div class="mans">
+          <img src="pics/images (1).jpeg" />
+        </div>
+      </div>
+
+      <div class="kids">
+        <div class="kidd">
+          <p>Kids</p>
+        </div>
+        <div class="kidds">
+          <img
+            src="pics/241179511_122059940174248_8133453836701850158_n.jpeg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <section id="prod">
+        <div class="pi">
+          <img
+            src="pics/117396760_167613634938451_6728310039216915712_n.jpeg"
+          />
+        </div>
+        <div class="mov">
+          <p class="fri">
+            Looking for bridal and bridesmaid set look no further.
+          </p>
+          <p class="fri1">
+            Your one stop designer shop. We make both bridal and bridesmaid
+            dresses and grooms and bestmen suits.
+          </p>
+          <i class="fa-solid fa-angles-right"></i>
+        </div>
+      </section>
+
+      <section id="prod1">
+        <div class="mov1">
+          <p class="fri">Stylishly designed and tailored to heart desire.</p>
+          <p class="fri1">
+            Your one stop designer shop. We make good quality couples clothes.
+          </p>
+          <i class="fa-solid fa-angles-right"></i>
+        </div>
+        <div class="pi1">
+          <img
+            src="pics/269786721_133711425735042_3188711033511910528_n.jpeg"
+          />
+        </div>
+      </section>
+
+      <section id="prod2">
+        <div class="pi2">
+          <img
+            src="pics/263237407_128849702887881_8175204240065832080_n.jpeg"
+          />
+        </div>
+        <div class="mov2">
+          <p class="fri">Looking for personally designed outfit.</p>
+          <p class="fri1">
+            Your one stop designer shop. You can bring in your own
+            materials/designs or you can select from the ones at the shop.
+          </p>
+          <i class="fa-solid fa-angles-right"></i>
+        </div>
+      </section>
+    </div>
+
+    <div id="footer">
+      <div class="foot">
+        <div class="left3">
+          <p>Follow us at:</p>
+          <div class="contct">
+            <a
+              target="blank"
+              href="https://www.facebook.com/nomektailors"
+              class="facebook"
+              ><i class="fa fa-facebook"></i> Facebook</a
+            >
+            <br /><br />
+            <!--<br>
+          <a target="blank" href="https://www.instagram.com/hapterakiddies/" class="instagram"><i class="fa fa-instagram"></i>   Instagram</a>-->
+          </div>
+        </div>
+
+        <div class="middle">
+          <p>Contacts:</p>
+          <div class="contct2">
+            <p>Email: ...............@gmail.com</p>
+            <p>Tele: +267 530 6797</p>
+            <p>Post Box: P.O Box 792</p>
+          </div>
+        </div>
+
+        <div class="right3">
+          <div class="pay">
+            <p>For more inquiry and information call the shop</p>
+            <br />
+            <div class="paym">
+              <h3>Payment options at the shop</h3>
+              <img src="pics/Group.png" alt="Malt" />
+              <h4>Cash</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="design">
+      Designed and developed by
+      <a
+        target="_blank"
+        href="https://flozzy.github.io/FlorencePortfoilo/main.html"
+      >
+        <b>@Flozzy. </b></a
+      >
+    </div>
+    <script src="nomek.js"></script>
+  </body>
+</html>
