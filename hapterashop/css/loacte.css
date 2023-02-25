@@ -262,8 +262,8 @@ body {
   }
   .logo img {
     margin-left: 10%;
-    width: 8%;
-    height: 8%;
+    width:11%;
+    height: 11%;
   }
   /* Style the top navigation bar */
   .nav {
@@ -274,7 +274,7 @@ body {
     z-index: 10;
     background: #faf3f7;
     width: 100%;
-    top: 0;
+    top: 4;
     margin-top: 50px;
 
     /**
