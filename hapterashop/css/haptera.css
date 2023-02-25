@@ -641,7 +641,7 @@ body {
   .wrap {
     width: 43%;
     position: absolute;
-    top: 3.4%;
+    top: 3.6%;
     left: 49%;
     transform: translate(-50%, -50%);
   }
@@ -789,11 +789,31 @@ body {
     margin-left: 5px;
     padding-bottom: 2px;
   }
+  
+  div.gallery1 {
+      margin: 0px 0px 0px 0px;
+      border: 9px solid rgb(255, 255, 255);
+      
+      width: 29.4%;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+   
+  
+    div.gallery1 img {
+      padding-top: 0px;
+      height: auto;
+      align-items: center;
+      width: 100%;
+      margin-left: 0px;
+      padding-bottom: 0px;
+    }
   .main1 {
     display: flex;
       justify-content: center;
       align-items: center;
       font-size:  0.8em;
+      padding-top: 10px;
+      padding-bottom: 4%;
   }
   
     div.gallery2 {
@@ -806,36 +826,21 @@ body {
   
   
     div.gallery2 img {
-      padding-top: 10px;
+      padding-top: 0px;
       height: auto;
       align-items: center;
       width: 100%;
       margin-left: 0px;
       padding-bottom: 0px;
-    }
-    div.gallery1 {
-      margin: 0px 0px 0px 0px;
-      border: 9px solid rgb(255, 255, 255);
-      
-      width: 29.4%;
-      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
     }
    
-  
-    div.gallery1 img {
-      padding-top: 10px;
-      height: auto;
-      align-items: center;
-      width: 100%;
-      margin-left: 0px;
-      padding-bottom: 0px;
-    }
   .main2{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 4%;
-    padding-bottom: 4%;
+    padding-bottom: 8%;
+    
     font-size:  0.8em;
     
   }
@@ -861,7 +866,7 @@ body {
       display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 3%;
+        padding-bottom: 7%;
        
     }
   
