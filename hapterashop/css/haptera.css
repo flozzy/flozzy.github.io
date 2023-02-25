@@ -793,7 +793,7 @@ body {
     display: flex;
       justify-content: center;
       align-items: center;
-      
+      font-size:  0.8em;
   }
   
     div.gallery2 {
@@ -836,13 +836,14 @@ body {
     align-items: center;
     padding-top: 4%;
     padding-bottom: 4%;
+    font-size:  0.8em;
     
   }
   
     div.gallery3 {
       text-align: center;
       border: 9px solid rgb(255, 255, 255);
-      width: 90%;
+      width: 100%;
       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
     }
    
@@ -861,6 +862,7 @@ body {
         justify-content: center;
         align-items: center;
         padding-bottom: 3%;
+       
     }
   
   
@@ -881,7 +883,10 @@ body {
       margin-left: 0px;
       padding-bottom: 0px;
     }
-  
+    div.gallery4 {
+      
+      font-size:  0.9em;
+    }  
   
     div.gallery5 {
       margin: 0px 0px 0px 10px;
@@ -889,9 +894,9 @@ body {
       width: 40%;
       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
     }
-   div.p.gallery5 {
-      font-weight: lighter;
-      font-size:  100em;
+   div.gallery5 {
+      
+      font-size:  0.739em;
     }  
     div.gallery5 img {
       padding-top: 0px;
@@ -902,7 +907,11 @@ body {
       padding-bottom: 0px;
       
     }
-  
+
+   div.gallery6 {
+      
+      font-size:  0.71em;
+    }  
   
     div.gallery6 {
       margin: 0px 0px 0px 10px;
@@ -910,7 +919,6 @@ body {
       width: 40%;
       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
     }
-  
   
     div.gallery6 img {
       padding-top: 0px;
