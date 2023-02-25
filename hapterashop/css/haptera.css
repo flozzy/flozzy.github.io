@@ -641,7 +641,7 @@ body {
   .wrap {
     width: 50%;
     position: absolute;
-    top: 3.2%;
+    top: 3.6%;
     left: 49%;
     transform: translate(-50%, -50%);
   }
@@ -811,13 +811,13 @@ body {
       align-items: center;
       width: 100%;
       margin-left: 0px;
-      padding-bottom: 10px;
+      padding-bottom: 0px;
     }
     div.gallery1 {
       margin: 0px 0px 0px 0px;
       border: 9px solid rgb(255, 255, 255);
       
-      width: 31%;
+      width: 29.4%;
       box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
     }
    
@@ -828,7 +828,7 @@ body {
       align-items: center;
       width: 100%;
       margin-left: 0px;
-      padding-bottom: 10px;
+      padding-bottom: 0px;
     }
   .main2{
     display: flex;
@@ -854,7 +854,7 @@ body {
       align-items: center;
       width: 100%;
       margin-left: 0px;
-      padding-bottom: 10px;
+      padding-bottom: 1px;
     }
   
     .main3 {
@@ -896,7 +896,7 @@ body {
     }
    div.gallery5 {
       
-      font-size:  0.739em;
+      font-size:  0.7em;
     }  
     div.gallery5 img {
       padding-top: 0px;
