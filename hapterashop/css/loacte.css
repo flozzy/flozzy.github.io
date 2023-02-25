@@ -358,8 +358,7 @@ body {
   }
 
   .searchButton {
-    width: 50px;
-    height: 26px;
+    width: 20%;
     border: 1px solid #f3c83d;
     background: #f3c83d;
     text-align: center;
@@ -370,7 +369,7 @@ body {
   }
 
   .wrap {
-    width: 50%;
+    width: 43%;
     position: absolute;
     top: 3.9%;
     left: 49%;
