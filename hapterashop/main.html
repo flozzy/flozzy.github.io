@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hap-tera Shop</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type" />
+    <link href="css/haptera.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <nav>
+        <div class="logo"><a href="main.html">
+            <img src="pics/logo.png" alt=" logo" /></a>
+      </div>
+      <div class="wrap">
+        <div class="search">
+          <input
+            type="text"
+            class="searchTerm"
+            placeholder="Search for products here"
+          />
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <ul class="navbars">
+        <li>
+          <a href="#footer" class="right">
+            <i class="fa fa-phone"></i> Contact Info</a
+          >
+        </li>
+        <li>
+          <a href="locate.html" class="right"
+            ><i class="fa fa-map-marker"></i> Locate the store</a
+          >
+        </li>
+        <li>
+          <a href="#footer" class="right1"> <i class="fa fa-phone"></i></a>
+        </li>
+        <li>
+          <a href="locate.html" class="right1"
+            ><i class="fa fa-map-marker"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header">
+      <div class="slide">
+        <img class="mySlides" src="pics/slide5.png" />
+        <img class="mySlides" src="pics/slide.png" />
+        <img class="mySlides" src="pics/slide1.png" />
+        <img class="mySlides" src="pics/slide2.png" />
+        <img
+          class="mySlides"
+          src="pics/WhatsApp Image 2022-01-29 at 15.01 4.png"
+        />
+        <img class="mySlides" src="pics/slide3.png" />
+        <img class="mySlides" src="pics/slide4.png" />
+      </div>
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 5000); // Change image every 5 seconds
+      }
+    </script>
+
+    <div class="row1">
+      <div class="main1">
+        <div class="gallery1">
+          <div class="main-photo">
+            <a href="pics/pro04.jpeg" target="_blank">
+              <img src="pics/pro04.jpeg" alt="Lunch Bag" />
+            </a>
+            <p><h4> Lunch bag </h4></p> 
+            <p><h5> Shop the best Lunch bags </h5></p> 
+          </div>
+        </div>
+        <div class="gallery2">
+            <div class="main-photo">
+              <a href="pics/pro00013.jpeg" target="_blank">
+                <img src="pics/pro00013.jpeg" alt="Lunch Bag" />
+              </a>
+              <p><h4>  Food flask </h4></p> 
+              <p><h5> Shop the best  Food flask</h5></p> 
+            </div>
+          </div>
+      </div>
+      <div class="main2">
+        <div class="gallery3">
+            <a href="pics/oyemike-princewill-9NjAL0iTtVs-unsplash (1).jpg" target="_blank">
+                <img src="pics/oyemike-princewill-9NjAL0iTtVs-unsplash (1).jpg" alt="Lunch Bag" />
+              </a>
+              <p><h4> Get your baby the best clothes, Cream, Utensil, and ETC.</h4></p> 
+        </div>
+      </div>
+      <div class="main3">
+        <div class="gallery4">
+          <div class="main-photo">
+            <a href="pics/mon-petit-chou-photography-b2ADHvvhC5Y-unsplash.jpg" target="_blank">
+              <img src="pics/mon-petit-chou-photography-b2ADHvvhC5Y-unsplash.jpg" alt="Lunch Bag" />
+            </a>
+            <p><h4> Baby shoes </h4></p> 
+            <p><h5> Get your baby shoes at yours truly. </h5></p> 
+          </div>
+        </div>
+        <div class="gallery5">
+            <div class="main-photo">
+              <a href="pics/sincerely-media-9s7EOmv2HDA-unsplash.jpg" target="_blank">
+                <img src="pics/sincerely-media-9s7EOmv2HDA-unsplash.jpg" alt="Lunch Bag" />
+              </a>
+              <p><h4>  Having a baby</h4></p> 
+              <p><h5> Don't worry we got you, you can shop all your baby essentials</h5></p> 
+            </div>
+          </div>
+          <div class="gallery6">
+            <div class="main-photo">
+              <a href="pics/valeria-zoncoll-AVGc87j_vNA-unsplash.jpg" target="_blank">
+                <img src="pics/valeria-zoncoll-AVGc87j_vNA-unsplash.jpg" alt="Lunch Bag" />
+              </a>
+              <p><h4>  Having a vaccation with your baby</h4></p> 
+              <p><h5> Come check out the different varieties of toys. </h5></p> 
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="foot">
+        <div class="left">
+          <p>Follow us at:</p>
+          <div class="contct">
+            <a
+              target="blank"
+              href="https://www.facebook.com/hapterakiddies"
+              class="facebook"
+              ><i class="fa fa-facebook"></i> Facebook</a
+            >
+            <br /><br />
+            <br />
+            <a
+              target="blank"
+              href="https://www.instagram.com/hapterakiddies/"
+              class="instagram"
+              ><i class="fa fa-instagram"></i> Instagram</a
+            >
+          </div>
+        </div>
+
+        <div class="middle">
+          <p>Contacts:</p>
+          <div class="contct2">
+            <p>Email: hapteramums@gmail.com</p>
+            <p>Tele: +234 703-639-2492 / +234 902-000-6209</p>
+          </div>
+        </div>
+
+        <div class="right">
+          <p>For more inquiry and information call the shop</p>
+
+          <div class="pay">
+            <div class="paym">
+              <h3>Payment options at the shop.</h3>
+              <div class="payme">
+                <div>
+                  <img src="pics/Group1.png" alt="Picture" />
+                  <h4>Bank Transfer</h4>
+                </div>
+                <div>
+                  <img src="pics/Group 182.png" alt="Picture" />
+                  <h4>Cash</h4>
+                </div>
+                <div>
+                  <img src="pics/Group 156.png" alt="Picture" />
+                  <h4>Moblie Transfer</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="design">
+      Designed and developed by
+      <a
+        target="_blank"
+        href="https://flozzy.github.io/FlorencePortfoilo/main.html"
+      >
+        <b>@Flozzy. </b></a
+      >
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

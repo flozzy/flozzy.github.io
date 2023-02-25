@@ -124,7 +124,7 @@ body {
   .wrap {
     width: 30%;
     position: absolute;
-    top: 7%;
+    margin-top: -3%;
     left: 45%;
     transform: translate(-50%, -50%);
   }

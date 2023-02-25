@@ -122,9 +122,10 @@ body {
   }
 
   .wrap {
+    
     width: 30%;
     position: absolute;
-    top: 8%;
+    margin-top: -3%;
     left: 45%;
     transform: translate(-50%, -50%);
   }
@@ -253,7 +254,135 @@ body {
     margin-left: 10px;
     padding-bottom: 10px;
   }
+.main1 {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+  div.gallery2 {
+    margin: 0px 0px 0px 40px;
+    border: 9px solid rgb(255, 255, 255);
+    
+    width: 40%;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  div.gallery2 img {
+    padding-top: 10px;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    padding-bottom: 10px;
+  }
+  div.gallery1 {
+    margin: 0px 0px 0px 0px;
+    border: 9px solid rgb(255, 255, 255);
+    
+    width: 31%;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+  }
+ 
+
+  div.gallery1 img {
+    padding-top: 10px;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    padding-bottom: 10px;
+  }
+.main2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  
+}
+
+  div.gallery3 {
+    text-align: center;
+    border: 9px solid rgb(255, 255, 255);
+    width: 90%;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+  }
+ 
+
+  div.gallery3 img {
+    padding-top: 10px;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    padding-bottom: 10px;
+  }
+
+  .main3 {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 3%;
+  }
+
+
+  div.gallery4 {
+    margin: 0px 0px 0px 40px;
+    border: 9px solid rgb(255, 255, 255);
+    
+    width: 40%;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  div.gallery4 img {
+    padding-top: 10px;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    padding-bottom: 10px;
+  }
+
+
+  div.gallery5 {
+    margin: 0px 0px 0px 40px;
+    border: 9px solid rgb(255, 255, 255);
+    
+    width: 33%;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  div.gallery5 img {
+    padding-top: 10px;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    padding-bottom: 10px;
+  }
+
+
+  div.gallery6 {
+    margin: 0px 0px 0px 40px;
+    border: 9px solid rgb(255, 255, 255);
+    width: 40%;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  div.gallery6 img {
+    padding-top: 10px;
+    height: auto;
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+    padding-bottom: 10px;
+  }
   div.desc {
     margin-bottom: -20px;
     text-align: left;
@@ -498,15 +627,15 @@ body {
   }
 
   .searchButton {
-    width: 50px;
-    height: 23px;
+    width: 20%;
+    
     border: 1px solid #f3c83d;
     background: #f3c83d;
     text-align: center;
     color: #c66d25;
     border-radius: 0 20px 20px 0;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .wrap {
@@ -660,7 +789,137 @@ body {
     margin-left: 5px;
     padding-bottom: 2px;
   }
-
+  .main1 {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  
+    div.gallery2 {
+      margin: 0px 0px 0px 20px;
+      border: 9px solid rgb(255, 255, 255);
+      
+      width: 40%;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+  
+  
+    div.gallery2 img {
+      padding-top: 10px;
+      height: auto;
+      align-items: center;
+      width: 100%;
+      margin-left: 0px;
+      padding-bottom: 10px;
+    }
+    div.gallery1 {
+      margin: 0px 0px 0px 0px;
+      border: 9px solid rgb(255, 255, 255);
+      
+      width: 31%;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+   
+  
+    div.gallery1 img {
+      padding-top: 10px;
+      height: auto;
+      align-items: center;
+      width: 100%;
+      margin-left: 0px;
+      padding-bottom: 10px;
+    }
+  .main2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    
+  }
+  
+    div.gallery3 {
+      text-align: center;
+      border: 9px solid rgb(255, 255, 255);
+      width: 90%;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+   
+  
+    div.gallery3 img {
+      padding-top: 10px;
+      height: auto;
+      align-items: center;
+      width: 100%;
+      margin-left: 0px;
+      padding-bottom: 10px;
+    }
+  
+    .main3 {
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 3%;
+    }
+  
+  
+    div.gallery4 {
+      margin: 0px 0px 0px 0px;
+      border: 9px solid rgb(255, 255, 255);
+      
+      width: 40%;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+  
+  
+    div.gallery4 img {
+      padding-top: 0px;
+      height: auto;
+      align-items: center;
+      width: 100%;
+      margin-left: 0px;
+      padding-bottom: 0px;
+    }
+  
+  
+    div.gallery5 {
+      margin: 0px 0px 0px 10px;
+      border: 9px solid rgb(255, 255, 255);
+      width: 40%;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+   div.p.gallery5 {
+      font-weight: lighter;
+      font-size:  100em;
+    }  
+    div.gallery5 img {
+      padding-top: 0px;
+      height: auto;
+      align-items: center;
+      width: 100%;
+      margin-left: 0px;
+      padding-bottom: 0px;
+      
+    }
+  
+  
+    div.gallery6 {
+      margin: 0px 0px 0px 10px;
+      border: 9px solid rgb(255, 255, 255);
+      width: 40%;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+    }
+  
+  
+    div.gallery6 img {
+      padding-top: 0px;
+      height: auto;
+      align-items: center;
+      width: 100%;
+      margin-left: 0px;
+      padding-bottom: 0px;
+    }
   div.desc {
     margin-bottom: -18px;
     text-align: left;
