@@ -19,15 +19,9 @@ html {
     font-family: "Lato", sans-serif;
   }
 
-  #about {
-    margin-left: 100px;
-  }
 
-  #projects {
-    margin-left: 100px;
-  }
   #contact {
-    margin-left: 100px;
+    margin-left: 360px;
     padding-top: 50px;
   }
 
@@ -36,7 +30,7 @@ html {
   }
 
   #greeting {
-    margin-left: 160px;
+    margin-left: 360px;
     position: relative;
   }
 
@@ -104,6 +98,9 @@ html {
   * {
     box-sizing: border-box;
   }
+
+
+
 
    /* nav styles */
  nav {
@@ -211,6 +208,7 @@ color: black;
     align-items: center;
     padding-right: 100px;
     padding-left: 100px;
+    margin-left: 260px;
   }
 
   .main_text {
@@ -229,6 +227,7 @@ color: black;
     flex: 50%;
   }
   .main_text p {
+    margin-top: -150px;
     font-size: 1em;
     font-weight: bolder;
     height: 100%;
@@ -242,11 +241,15 @@ color: black;
   }
 
   #education {
-    margin-left: 160px;
+    margin-top: 100px;
+    margin-left: 360px;
+    margin-right: 150px;
   }
 
   #skills {
-    margin-left: 160px;
+    margin-top: 100px;
+    margin-left: 360px;
+    margin-right: 150px;
     width: 80%;
   }
 
@@ -259,7 +262,7 @@ color: black;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin-left: 170px;
+    margin-left: 360px;
     border-radius: 5px;
     cursor: pointer;
   }

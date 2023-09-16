@@ -24,13 +24,14 @@ html {
     flex-direction: column;
     padding-right: 30%;
     padding-left: 100px;
+    margin-left: 250px;
   }
 
   #projects {
     margin-left: 100px;
   }
   #contact {
-    margin-left: 100px;
+    margin-left: 350px;
   }
   .section {
     padding: 20px;
@@ -42,7 +43,7 @@ html {
   }
 
   #greeting {
-    margin-left: 80px;
+    margin-left: 350px;
     position: relative;
     margin-top: 30px;
   }
@@ -230,7 +231,7 @@ color: black;
   }
 
   header img {
-    width: 70%;
+    width: 50%;
     border-radius: 1000px;
     max-height: 600px;
     margin-top: 60px;
@@ -240,6 +241,7 @@ color: black;
   here https://css-tricks.com/almanac/properties/o/object-fit/  */
     object-fit: cover;
   }
+  
   #main-photo {
     position: relative;
     animation: pic 2s 1;
@@ -255,6 +257,10 @@ color: black;
   }
   /* end header styles */
 
+
+
+
+  
   .section > h2 {
     text-align: center;
   }

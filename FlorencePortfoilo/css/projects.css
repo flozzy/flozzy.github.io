@@ -23,7 +23,7 @@ html {
   }
 
   #contact {
-    margin-left: 100px;
+    margin-left: 350px;
   }
 
   nav a {
@@ -188,9 +188,6 @@ html {
     transform: scale(1.1);
   }
 
-  #contact {
-    margin-left: 100px;
-  }
 
   .section {
     padding: 20px;

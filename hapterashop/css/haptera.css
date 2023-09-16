@@ -467,74 +467,87 @@ body {
     width: 30px;
     margin-top: 0px;
   }
+
+
+
+
+
+  s
   /* Footer */
-  #footer {
-    padding: 1% 1% 1% 5%;
-    color: white;
-    background: #a8a8a8;
-    margin-top: 0px;
-  }
+ #footer {
+  padding: 1% 1% 1% 5%;
+  color: white;
+  background: #a8a8a8;
+  margin-top: 0px;
+}
 
-  .foot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0%;
-  }
-  .left {
-    text-decoration: none;
-    flex: 30%;
-    font-size: 0.8em;
-    margin-top: -103px;
-  }
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1400px;
+margin: 0 auto;
+margin-left: 150px;
+text-align: center;
+}
+.left {
+  text-decoration: none;
+  flex: 30%;
+  font-size: 0.8em;
+  margin-top: -103px;
+}
 
-  .facebook {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 100%;
-  }
-  .instagram {
-    color: #000000;
-    text-decoration: none;
-    font-size: 100%;
-  }
-  .middle {
-    flex: 30%;
-    width: 100%;
-    margin-top: -105px;
-    font-size: 0.8em;
-  }
-  div .contct2 {
-    font-weight: lighter;
-  }
+.facebook {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 100%;
+  padding-left: 4%;
+}
+.instagram {
+  color: #000000;
+  text-decoration: none;
+  font-size: 100%;
+  padding-left: 4%;
+}
+.middle {
+  flex: 30%;
+  width: 100%;
+  margin-top: -105px;
+  text-align: left;
+  font-size: 0.8em;
+}
+div .contct2 {
+  font-weight: lighter;
+  text-align: left;
+}
 
-  .right {
-    flex: 40%;
-    width: 100%;
-    margin-top: 0%;
-    font-size: 0.8em;
-  }
-  .paym {
-    padding-top: 0.008px;
-    width: 85%;
-    text-align: center;
-    color: #000000;
-    background-color: white;
-    font-size: 1.2em;
-  }
-  .payme {
-    padding-top: 0.5%;
-    display: flex;
-    padding-right: 2%;
-  }
-  .payme h4 {
-    font-size: 0.7rem;
-  }
-  div .pay img {
-    width: 40%;
-    margin: 0% 0% 6% 0%;
-  }
-
+.right {
+  flex: 40%;
+  width: 100%;
+  margin-top: -1.5%;
+  font-size: 0.8em;
+  text-align: left;
+}
+.paym {
+  padding-top: 0.008px;
+  width: 85%;
+  text-align: center;
+  color: #000000;
+  background-color: white;
+  font-size: 1.2em;
+}
+.payme {
+  padding-top: 0.5%;
+  display: flex;
+  padding-right: 2%;
+}
+.payme h4 {
+  font-size: 0.7rem;
+}
+div .pay img {
+  width: 40%;
+  margin: 0% 0% 6% 0%;
+}
   .design {
     background: #a8a8a8;
     text-align: center;
