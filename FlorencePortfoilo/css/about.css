@@ -45,24 +45,27 @@ html {
     font-size: 50px;
   }
 
-  ul.main-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow-x: auto;
-    font-family: "Lato", sans-serif;
-  }
-
   .main-menu a:link,
   .main-menu a:visited {
     color: black;
     padding: 10px 20px;
+    padding-right: 20px;
     text-align: center;
     text-decoration: none;
     display: flex;
     align-items: center;
     height: 100%;
+  }
+
+
+  .main-menu a:hover,
+  .main-menu a:active {
+    background-color: rgba(158, 86, 151, 0.418);
+    color: rgb(255, 255, 255);
+  }
+
+  * {
+    box-sizing: border-box;
   }
 
   .main-menu a:hover,
@@ -102,77 +105,79 @@ html {
     box-sizing: border-box;
   }
 
-  /* nav styles */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 10;
-    background: #faf3f7;
+   /* nav styles */
+ nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background: #faf3f7;
 
-    width: 100%;
-    top: 0;
-    /**
-   * This height needs to be the same value as the
-   * value of the padding-top which is applied on the body.
-   * This is needed so that the navigation content and the body
-   * content do not collied with each other.
-   */
-    height: 50px;
-  }
+  width: 100%;
+  top: 0;
+  /**
+     * This height needs to be the same value as the
+     * value of the padding-top which is applied on the body.
+     * This is needed so that the navigation content and the body
+     * content do not collied with each other.
+     */
+  height: 50px;
+}
 
-  nav * {
-    margin: 0;
-    padding: 0;
-  }
+nav * {
+  margin: 0;
+  padding: 0;
+}
 
-  .logo {
-    margin: 5px 50px 10px 50px;
-  }
+.logo {
+  margin: 5px 50px 10px 300px;
+}
 
-  .logo a {
-    cursor: pointer;
-    color: rgb(90, 3, 64);
-  }
+.logo a {
+  cursor: pointer;
+  color: rgb(90, 3, 64);
+}
 
-  .logo h2 {
-    font-family: "Lobster", cursive;
-  }
+.logo h2 {
+  font-family: "Lobster", cursive;
+}
 
-  .main-menu {
-    height: 100%;
-  }
+.main-menu {
+  height: 100%;
+  margin-right: 200px;
+}
 
-  .main-menu li {
-    height: 100%;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
+.main-menu li {
+  height: 100%;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  /*.dropdown-content a:hover {
-  background-color: #f1f1f1;
+.dropdown-content a {
   color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/*.dropdown-content a:hover {
+background-color: #f1f1f1;
+color: black;
 }*/
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  /* end nav styles */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* end nav styles */
+
 
   /* header styles */
 

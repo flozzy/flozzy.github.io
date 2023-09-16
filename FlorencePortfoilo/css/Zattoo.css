@@ -30,11 +30,6 @@ html {
   #contact {
     margin-left: 100px;
   }
-  .section {
-    padding: 20px;
-    margin: 25px;
-  }
-
   nav a {
     text-decoration: none;
   }
@@ -44,7 +39,7 @@ html {
     padding-right: 200px;
   }
   .shop img {
-    width: 80%;
+    width: 50%;
   }
   .picshop {
     margin-top: 40px;
@@ -54,19 +49,11 @@ html {
     text-align: center;
   }
 
-  ul.main-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow-x: auto;
-    font-family: "Lato", sans-serif;
-  }
-
   .main-menu a:link,
   .main-menu a:visited {
     color: black;
     padding: 10px 20px;
+    padding-right: 20px;
     text-align: center;
     text-decoration: none;
     display: flex;
@@ -74,11 +61,17 @@ html {
     height: 100%;
   }
 
+
   .main-menu a:hover,
   .main-menu a:active {
     background-color: rgba(158, 86, 151, 0.418);
     color: rgb(255, 255, 255);
   }
+
+  * {
+    box-sizing: border-box;
+  }
+
 
   .checkbn {
     color: rgb(90, 3, 64);
@@ -94,8 +87,8 @@ html {
     box-sizing: border-box;
   }
 
-  /* nav styles */
-  nav {
+   /* nav styles */
+   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,7 +113,7 @@ html {
   }
 
   .logo {
-    margin: 5px 50px 10px 50px;
+    margin: 5px 50px 10px 300px;
   }
 
   .logo a {
@@ -134,6 +127,7 @@ html {
 
   .main-menu {
     height: 100%;
+    margin-right: 200px;
   }
 
   .main-menu li {
@@ -180,12 +174,15 @@ html {
 
   h2 {
     font-family: "Julius Sans One", sans-serif;
+    
   }
   h2 {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
   p {
-    font-size: 1.2em;
+    font-size: 1em;
+    padding-left: 370px;
+    padding-right: 370px;
   }
   .content {
     text-align: center;
@@ -195,8 +192,7 @@ html {
   .img2 img {
     background-color: #1ba0a4;
     padding: 10px;
-
-    width: 80%;
+    width: 60%;
   }
   .img3 img,
   .img4 img,
@@ -211,7 +207,7 @@ html {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    width: 80%;
+    width: 60%;
   }
 }
 

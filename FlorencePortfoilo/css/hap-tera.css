@@ -31,21 +31,27 @@ html {
   #contact {
     margin-left: 100px;
   }
-  .section {
-    padding: 20px;
-    margin: 25px;
-  }
+ 
 
   nav a {
     text-decoration: none;
   }
 
   #greeting {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 400px;
+    padding-right: 400px;
   }
   .shop img {
-    width: 70%;
+    width: 63.2%;
+  }
+  .shop1 img,
+  .shop2 img 
+   {
+    width: 95%;
+  }
+  .shoping {
+    display: flex;
+    padding-top: 30px;
   }
   .picshop {
     margin-top: 40px;
@@ -59,39 +65,25 @@ html {
     font-family: "Lato", sans-serif;
   }
 
-  ul.main-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow-x: auto;
-    font-family: "Lato", sans-serif;
-  }
+ 
 
   .main-menu a:link,
   .main-menu a:visited {
     color: black;
     padding: 10px 20px;
+    padding-right: 20px;
     text-align: center;
     text-decoration: none;
     display: flex;
     align-items: center;
     height: 100%;
   }
-  #greeting span {
-    color: blue;
-  }
+
 
   .main-menu a:hover,
   .main-menu a:active {
     background-color: rgba(158, 86, 151, 0.418);
     color: rgb(255, 255, 255);
-  }
-  #check {
-    display: none;
-  }
-  .checkbn {
-    display: none;
   }
 
   * {
@@ -110,11 +102,11 @@ html {
     width: 100%;
     top: 0;
     /**
-           * This height needs to be the same value as the
-           * value of the padding-top which is applied on the body.
-           * This is needed so that the navigation content and the body
-           * content do not collied with each other.
-           */
+       * This height needs to be the same value as the
+       * value of the padding-top which is applied on the body.
+       * This is needed so that the navigation content and the body
+       * content do not collied with each other.
+       */
     height: 50px;
   }
 
@@ -124,7 +116,7 @@ html {
   }
 
   .logo {
-    margin: 5px 50px 10px 50px;
+    margin: 5px 50px 10px 300px;
   }
 
   .logo a {
@@ -138,6 +130,7 @@ html {
 
   .main-menu {
     height: 100%;
+    margin-right: 200px;
   }
 
   .main-menu li {
@@ -204,37 +197,44 @@ html {
     padding: 5px;
     background-color: rgb(252, 230, 247);
   }
-  .section {
-    padding: 20px;
-    margin: 25px;
-  }
+  
   h2 {
     font-family: "Julius Sans One", sans-serif;
   }
   h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .content {
-    padding-right: 100px;
-    padding-left: 200px;
+    display: block;
+    margin: 0 auto;
+    width: 1300px;
+    text-align: center;
+  
   }
   .img2,
   .img3,
   .img4,
   .img5,
   .img6,
+  .img7,
+  .img8,
+  .img9,
+  .img10,
+  .img11,
+  .img12,
+  .img13,
+  .img14,
   .Proto {
-    margin-top: 5%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     width: 90%;
-    background-color: #ca752f;
-    padding-right: 10px;
-    padding-left: 10px;
+    background-color: #dfa736;
+    padding-right: 20px;
+    padding-left: 20px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
   }
   .img2 img,
@@ -242,17 +242,25 @@ html {
   .img4 img,
   .img5 img,
   .img6 img,
+  .img7 img,
+  .img8 img,
+  .img9 img,
+  .img10 img,
+  .img11 img,
+  .img12 img,
+  .img13 img,
+  .img14 img,
   video {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
-
     width: 100%;
     text-align: center;
   }
-  div.dec {
+  div.desc {
     text-align: left;
     padding-bottom: 10px;
   }
+
 }
 
 /* for phones*/

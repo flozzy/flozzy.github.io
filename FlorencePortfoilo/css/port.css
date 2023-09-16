@@ -19,14 +19,21 @@ html {
   nav a {
     text-decoration: none;
   }
-
+ 
+  #contact {
+    margin-right: 100px;
+    margin-left: 100px;
+    color: black;
+    padding: 5px;
+    background-color: rgb(252, 230, 247);
+  }
   #greeting {
-    flex: 70%;
-    margin-left: 50px;
+    padding-left: 480px;
+    padding-right: 460px;
   }
 
   .shop img {
-    width: 70%;
+    width: 40%;
   }
   .shop {
     flex: 40%;
@@ -44,12 +51,14 @@ html {
   .main-menu a:visited {
     color: black;
     padding: 10px 20px;
+    padding-right: 20px;
     text-align: center;
     text-decoration: none;
     display: flex;
     align-items: center;
     height: 100%;
   }
+
 
   .main-menu a:hover,
   .main-menu a:active {
@@ -64,103 +73,102 @@ html {
     display: none;
   }
   /* nav styles */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 10;
-    background: #faf3f7;
+ nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background: #faf3f7;
 
-    width: 100%;
-    top: 0;
-    /**
-         * This height needs to be the same value as the
-         * value of the padding-top which is applied on the body.
-         * This is needed so that the navigation content and the body
-         * content do not collied with each other.
-         */
-    height: 50px;
-  }
+  width: 100%;
+  top: 0;
+  /**
+     * This height needs to be the same value as the
+     * value of the padding-top which is applied on the body.
+     * This is needed so that the navigation content and the body
+     * content do not collied with each other.
+     */
+  height: 50px;
+}
 
-  nav * {
-    margin: 0;
-    padding: 0;
-  }
+nav * {
+  margin: 0;
+  padding: 0;
+}
 
-  .logo {
-    margin: 5px 50px 10px 50px;
-  }
+.logo {
+  margin: 5px 50px 10px 300px;
+}
 
-  .logo a {
-    cursor: pointer;
-    color: rgb(90, 3, 64);
-  }
+.logo a {
+  cursor: pointer;
+  color: rgb(90, 3, 64);
+}
 
-  .logo h2 {
-    font-family: "Lobster", cursive;
-  }
+.logo h2 {
+  font-family: "Lobster", cursive;
+}
 
-  .main-menu {
-    height: 100%;
-  }
+.main-menu {
+  height: 100%;
+  margin-right: 200px;
+}
 
-  .main-menu li {
-    height: 100%;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
+.main-menu li {
+  height: 100%;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
 
-  /*.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    color: black;
-  }*/
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  /* end nav styles */
+/*.dropdown-content a:hover {
+background-color: #f1f1f1;
+color: black;
+}*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* end nav styles */
 
   div a {
     text-decoration: none;
     color: black;
   }
 
-  #contact {
-    margin-right: 100px;
-    margin-left: 0px;
-    color: black;
-    padding: 10px;
-    background-color: rgb(252, 230, 247);
-  }
+
 
   h2 {
     font-family: "Julius Sans One", sans-serif;
   }
   h2 {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
   p {
-    font-size: 1.2em;
+    font-size: 1em;
+    
   }
 
   .content {
-    padding-right: 100px;
-    padding-left: 200px;
+    padding-left: 20%;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
   }
   .img2,
   .img3,
@@ -177,7 +185,7 @@ html {
   .Proto {
     text-align: center;
     margin-bottom: 60px;
-    width: 90%;
+    width: 60%;
     background-color: #78b1fc;
     padding-right: 10px;
     padding-left: 10px;

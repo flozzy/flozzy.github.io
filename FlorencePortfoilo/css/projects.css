@@ -31,24 +31,16 @@ html {
   }
 
   #greeting {
-    margin-left: 160px;
+    margin-left: 360px;
     position: relative;
     font-size: 1.7em;
-  }
-
-  ul.main-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow-x: auto;
-    font-family: "Lato", sans-serif;
   }
 
   .main-menu a:link,
   .main-menu a:visited {
     color: black;
     padding: 10px 20px;
+    padding-right: 20px;
     text-align: center;
     text-decoration: none;
     display: flex;
@@ -60,6 +52,10 @@ html {
   .main-menu a:active {
     background-color: rgba(158, 86, 151, 0.418);
     color: rgb(255, 255, 255);
+  }
+
+  * {
+    box-sizing: border-box;
   }
   .checkbn {
     color: rgb(90, 3, 64);
@@ -82,14 +78,15 @@ html {
     position: fixed;
     z-index: 10;
     background: #faf3f7;
+
     width: 100%;
     top: 0;
     /**
-   * This height needs to be the same value as the
-   * value of the padding-top which is applied on the body.
-   * This is needed so that the navigation content and the body
-   * content do not collied with each other.
-   */
+       * This height needs to be the same value as the
+       * value of the padding-top which is applied on the body.
+       * This is needed so that the navigation content and the body
+       * content do not collied with each other.
+       */
     height: 50px;
   }
 
@@ -99,7 +96,7 @@ html {
   }
 
   .logo {
-    margin: 5px 50px 10px 50px;
+    margin: 5px 50px 10px 300px;
   }
 
   .logo a {
@@ -113,6 +110,7 @@ html {
 
   .main-menu {
     height: 100%;
+    margin-right: 200px;
   }
 
   .main-menu li {
@@ -181,7 +179,7 @@ html {
   .img3,
   .img4,
   .img5 {
-    width: 50%;
+    width: 40%;
     margin-bottom: 20px;
   }
   img:hover {

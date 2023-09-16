@@ -24,13 +24,13 @@ html {
   }
   #greeting {
     flex: 60%;
-    margin-left: 30px;
+    margin-left: 90px;
     margin-top: 70px;
   }
 
   .shop img {
     flex: 40%;
-    width: 400px;
+    width: 360px;
   }
   .picshop {
     margin-top: 40px;
@@ -43,12 +43,14 @@ html {
   .main-menu a:visited {
     color: black;
     padding: 10px 20px;
+    padding-right: 20px;
     text-align: center;
     text-decoration: none;
     display: flex;
     align-items: center;
     height: 100%;
   }
+
 
   .main-menu a:hover,
   .main-menu a:active {
@@ -86,7 +88,7 @@ html {
   }
 
   .logo {
-    margin: 5px 50px 10px 50px;
+    margin: 5px 50px 10px 300px;
   }
 
   .logo a {
@@ -100,6 +102,7 @@ html {
 
   .main-menu {
     height: 100%;
+    margin-right: 200px;
   }
 
   .main-menu li {
@@ -156,8 +159,11 @@ html {
   }
 
   .content {
-    padding-right: 100px;
-    padding-left: 200px;
+    display: block;
+    margin: 0 auto;
+    width: 1300px;
+    text-align: center;
+  
   }
   .img2,
   .img3,
@@ -171,13 +177,14 @@ html {
   .img11,
   .img12,
   .img13,
+  .img14,
   .Proto {
     text-align: center;
     margin-bottom: 60px;
     width: 90%;
     background-color: #fdbc91;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
   }
   .img2 img,
@@ -192,8 +199,9 @@ html {
   .img11 img,
   .img12 img,
   .img13 img,
+  .img14 img,
   video {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
     width: 100%;
     text-align: center;

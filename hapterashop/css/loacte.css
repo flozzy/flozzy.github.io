@@ -12,7 +12,7 @@ body {
     padding: 1% 1% 1% 1%;
   }
   .logo img {
-    margin-left: 10%;
+    margin-left: 20%;
     width: 5%;
     height: 5%;
   }
@@ -55,6 +55,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 1.3em;
     padding-right: 6%;
+    margin-right: 10%;
   }
   li.right {
     padding-right: 6%;
@@ -85,6 +86,7 @@ body {
   .navbars li .right1 {
     color: #000000;
     display: none;
+    float: right;
   }
 
   .search {
@@ -122,12 +124,14 @@ body {
   }
 
   .wrap {
+    
     width: 30%;
     position: absolute;
-    top: 7%;
-    left: 45%;
+    margin-top: -3.5%;
+    left: 52%;
     transform: translate(-50%, -50%);
   }
+  /* end nav */
   h2 {
     text-align: center;
     margin-left: 0px;
@@ -151,32 +155,58 @@ body {
   }
 
   /* Main column */
+
+.row{
+  display: flex;
+  margin: 0 auto;
+  width: 1200px;
+  text-align: center;
+}
+.locate{
+  display: block;
+  margin: 0 auto;
+  width: 1200px;
+  text-align: center;
+}
   .main {
-    flex: 35%;
+    flex: 55%;
     background-color: rgb(253, 253, 253);
     padding-bottom: 0px;
   }
   .map1 {
     display: none;
   }
-
+.map{
+  width: 600px;
+}
   .pic {
-    flex: 45%;
+    flex: 24%;
     background-color: rgb(253, 253, 253);
-    margin-top: 134px;
+    margin-top: opx;
   }
   .pic img {
-    width: 40%;
+    width: 150px;
     padding: 0px 7px 0px 10px;
   }
-  p {
-    padding-left: 4%;
+
+  .addres{
+    text-align: left;
   }
+
 
   .open {
-    margin-left: 129px;
+    text-align: left;
+    margin-left: 305px;
+  }
+  h1 {
+font-size: 3em;
   }
 
+
+
+
+
+  
   /* Footer */
   #footer {
     padding: 1% 1% 1% 5%;
@@ -189,7 +219,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0%;
+    width: 1400px;
+  margin: 0 auto;
+  margin-left: 150px;
+  text-align: center;
   }
   .left {
     text-decoration: none;
@@ -214,17 +247,20 @@ body {
     flex: 30%;
     width: 100%;
     margin-top: -105px;
+    text-align: left;
     font-size: 0.8em;
   }
   div .contct2 {
     font-weight: lighter;
+    text-align: left;
   }
 
   .right {
     flex: 40%;
     width: 100%;
-    margin-top: 0%;
+    margin-top: -1.5%;
     font-size: 0.8em;
+    text-align: left;
   }
   .paym {
     padding-top: 0.008px;

@@ -5,6 +5,7 @@ html {
 * {
   scroll-behavior: smooth;
 }
+ /* for desktop*/
 @media only screen and (min-width: 768px) {
   body {
     font-family: "Lato", sans-serif;
@@ -58,19 +59,11 @@ html {
     font-family: "Lato", sans-serif;
   }
 
-  ul.main-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
-    overflow-x: auto;
-    font-family: "Lato", sans-serif;
-  }
-
   .main-menu a:link,
   .main-menu a:visited {
     color: black;
     padding: 10px 20px;
+    padding-right: 20px;
     text-align: center;
     text-decoration: none;
     display: flex;
@@ -78,12 +71,16 @@ html {
     height: 100%;
   }
 
+
   .main-menu a:hover,
   .main-menu a:active {
     background-color: rgba(158, 86, 151, 0.418);
     color: rgb(255, 255, 255);
   }
 
+  * {
+    box-sizing: border-box;
+  }
   .checkbn {
     color: rgb(90, 3, 64);
     margin-right: 40px;
@@ -98,78 +95,78 @@ html {
   }
 
   /* nav styles */
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 10;
-    background: #faf3f7;
+ nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  background: #faf3f7;
 
-    width: 100%;
-    top: 0;
-    /**
+  width: 100%;
+  top: 0;
+  /**
      * This height needs to be the same value as the
      * value of the padding-top which is applied on the body.
      * This is needed so that the navigation content and the body
      * content do not collied with each other.
      */
-    height: 50px;
-  }
+  height: 50px;
+}
 
-  nav * {
-    margin: 0;
-    padding: 0;
-  }
+nav * {
+  margin: 0;
+  padding: 0;
+}
 
-  .logo {
-    margin: 5px 50px 10px 50px;
-  }
+.logo {
+  margin: 5px 50px 10px 300px;
+}
 
-  .logo a {
-    cursor: pointer;
-    color: rgb(90, 3, 64);
-  }
+.logo a {
+  cursor: pointer;
+  color: rgb(90, 3, 64);
+}
 
-  .logo h2 {
-    font-family: "Lobster", cursive;
-  }
+.logo h2 {
+  font-family: "Lobster", cursive;
+}
 
-  .main-menu {
-    height: 100%;
-  }
+.main-menu {
+  height: 100%;
+  margin-right: 200px;
+}
 
-  .main-menu li {
-    height: 100%;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
+.main-menu li {
+  height: 100%;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  #greeting span {
-    color: blue;
-  }
-  /*.dropdown-content a:hover {
-  background-color: #f1f1f1;
+.dropdown-content a {
   color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/*.dropdown-content a:hover {
+background-color: #f1f1f1;
+color: black;
 }*/
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  /* end nav styles */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* end nav styles */
+
 
   div a {
     text-decoration: none;
@@ -193,9 +190,12 @@ html {
     font-size: 1.2em;
   }
   .content {
-    padding-right: 100px;
-    padding-left: 200px;
-  }
+      padding-left: 12%;
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      text-align: center;
+    }
   .dec p {
     padding: 4px;
     font-size: 20px;
@@ -239,6 +239,9 @@ html {
     padding-bottom: 10px;
   }
 }
+
+
+
 
 /*phone*/
 @media only screen and (max-width: 768px) {
