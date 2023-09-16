@@ -232,7 +232,7 @@ html {
     padding-bottom: 3px;
   }
   .shop img {
-    width: 60%;
+    width: 50%;
   }
   .picshop {
     text-align: center;
@@ -390,11 +390,11 @@ html {
 
   .content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    text-align: center;
   }
   .ux {
-    padding: 0% 5% 0% 5%;
+    padding: 0% 0% 0% 0%;
   }
   .dec {
     padding: 0% 5% 0% 4%;
@@ -412,13 +412,14 @@ html {
   .img11,
   .img12,
   .img13,
+  .img14,.img13
   .Proto {
     text-align: center;
     margin-bottom: 25px;
     width: 100%;
     background-color: #fdbc91;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
   }
   .img2 img,
@@ -433,8 +434,9 @@ html {
   .img11 img,
   .img12 img,
   .img13 img,
+  .img14 img,
   video {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 10px;
     width: 100%;
     text-align: center;

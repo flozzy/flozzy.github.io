@@ -291,9 +291,17 @@ html {
     padding-right: 20px;
   }
   .shop img {
-    width: 100%;
+    width: 62%;
   }
-
+  .shop1 img,
+  .shop2 img {
+    width: 90%;
+  }
+ 
+  .shoping {
+    display: flex;
+    padding-top: 30px;
+  }
   .picshop {
     margin-top: 10px;
     background-color: #ca752f;
