@@ -325,7 +325,7 @@ body {
   div.gallery3 {
     text-align: center;
     border: 9px solid rgb(255, 255, 255);
-    width: 75%;
+    width: 65%;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.14), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
   }
  
@@ -345,7 +345,7 @@ body {
       align-items: center;
       padding-bottom: 3%;
       margin: 0 auto;
-      width: 1550px;
+      width: 1350px;
       text-align: center;
       
   }
@@ -471,8 +471,6 @@ body {
 
 
 
-
-  s
   /* Footer */
  #footer {
   padding: 1% 1% 1% 5%;
