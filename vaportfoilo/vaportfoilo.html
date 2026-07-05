@@ -1,422 +1,1263 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Florence Chukwuemeka | Professional Virtual Assistant</title>
+    <title>Florence Chukwuemeka | Executive & General Virtual Assistant Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            50: '#f0f5fa',
+                            100: '#e1ebf5',
+                            800: '#142d48',
+                            900: '#0d2137', // Midnight Navy Primary Dark
+                        },
+                        brand: {
+                            50: '#f0fafb',
+                            100: '#daf3f6',
+                            500: '#0a7e8c', // Deep Teal Brand Color
+                            600: '#086874',
+                            700: '#06505a',
+                        },
+                        accent: {
+                            500: '#14b8a6', // Vibrant Teal Accent
+                            600: '#0d9488',
+                            700: '#0f766e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        /* Modern, Clean Design Styles */
-        :root {
-            --primary: #2C3E50;
-            --accent: #16A085;
-            --bg-light: #F8F9FA;
-            --text-dark: #333333;
-            --text-muted: #666666;
+        .animate-fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            color: var(--text-dark);
-            background-color: #ffffff;
-            line-height: 1.6;
-        }
-
-        /* Navigation Bar */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: #ffffff;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 10%;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        /* Hero / Landing Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 0 10%;
-            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('hero-bg.jpg') no-repeat center center/cover;
-            padding-top: 80px;
-        }
-
-        .hero-content {
-            max-width: 600px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        .hero h2 {
-            font-size: 1.5rem;
-            color: var(--accent);
-            margin-bottom: 1.5rem;
-            font-weight: 600;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: #ffffff;
-            padding: 0.8rem 2rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.3s, transform 0.2s;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .btn:hover {
-            background: #117A65;
-            transform: translateY(-2px);
-        }
-
-        /* Section Layouts */
-        section {
-            padding: 6rem 10%;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            color: var(--primary);
-            margin-bottom: 3rem;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: var(--accent);
-            margin: 0.5rem auto 0;
-        }
-
-        /* About Section */
-        .about {
-            background-color: var(--bg-light);
-        }
-
-        .about-container {
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-        }
-
-        .about-img {
-            flex: 1;
-            max-width: 400px;
-        }
-
-        .about-img img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        .about-text {
-            flex: 2;
-        }
-
-        .about-text h3 {
-            font-size: 1.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-
-        .about-text p {
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
-        }
-
-        .highlights {
-            display: flex;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .highlight-item {
-            background: #ffffff;
-            padding: 1.5rem;
-            border-radius: 6px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-            flex: 1;
-            border-top: 3px solid var(--accent);
-        }
-
-        .highlight-item h4 {
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Services Section */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            background: #ffffff;
-            padding: 2.5rem 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid #eee;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            border-color: var(--accent);
-        }
-
-        .service-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-
-        .service-card h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .service-card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        /* Contact Section */
-        .contact {
-            background-color: var(--bg-light);
-        }
-
-        .contact-container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: #ffffff;
-            padding: 3rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--primary);
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--accent);
-        }
-
-        .contact-container .btn {
-            width: 100%;
-        }
-
-        /* Footer */
-        footer {
-            background: var(--primary);
-            color: #ffffff;
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive Layout for Mobile */
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            section { padding: 4rem 5%; }
-            .hero h1 { font-size: 2.2rem; }
-            .about-container { flex-direction: column; gap: 2rem; }
-            .highlights { flex-direction: column; }
-            .contact-container { padding: 2rem 1.5rem; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <nav>
-        <a href="#" class="logo">FC Support</a>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-100 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 group">
+                <span class="w-9 h-9 rounded-xl bg-brand-500 flex items-center justify-center text-white font-extrabold text-lg shadow-md shadow-brand-700/10 group-hover:scale-105 transition-transform">FC</span>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight text-navy-900 block leading-none">Florence C.</span>
+                    <span class="text-[10px] text-brand-500 font-bold tracking-wider uppercase">Executive VA</span>
+                </div>
+            </a>
+            
+            <ul class="hidden md:flex items-center gap-8 font-semibold text-slate-600 text-sm">
+                <li><a href="#" class="hover:text-brand-500 transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-brand-500 transition-colors">About</a></li>
+                <li><a href="#skills" class="hover:text-brand-500 transition-colors">Skills</a></li>
+                <li><a href="#tools" class="hover:text-brand-500 transition-colors">Tech Stack</a></li>
+                <li><a href="#work" class="hover:text-brand-500 transition-colors">Case Studies</a></li>
+                <li><a href="#calculator" class="hover:text-brand-500 transition-colors">Savings ROI</a></li>
+                <li><a href="#contact" class="px-5 py-2.5 bg-brand-500 hover:bg-brand-600 text-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300">Get In Touch</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-navy-900 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-dropdown" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 transition-all duration-200">
+            <a href="#" class="mobile-nav-link block font-semibold text-slate-700 py-2">Home</a>
+            <a href="#about" class="mobile-nav-link block font-semibold text-slate-700 py-2">About</a>
+            <a href="#skills" class="mobile-nav-link block font-semibold text-slate-700 py-2">Skills</a>
+            <a href="#tools" class="mobile-nav-link block font-semibold text-slate-700 py-2">Tech Stack</a>
+            <a href="#work" class="mobile-nav-link block font-semibold text-slate-700 py-2">Case Studies</a>
+            <a href="#calculator" class="mobile-nav-link block font-semibold text-slate-700 py-2">Savings ROI</a>
+            <a href="#contact" class="mobile-nav-link inline-block w-full text-center px-5 py-2.5 bg-brand-500 text-white rounded-lg font-semibold">Get In Touch</a>
+        </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Florence Chukwuemeka</h1>
-            <h2>Executive & General Virtual Assistant</h2>
-            <p>I help entrepreneurs, executives, and growing teams optimize their workflows, reclaim their time, and scale efficiently through high-level remote administrative support.</p>
-            <a href="#contact" class="btn">Work With Me</a>
-        </div>
-    </section>
+    <!-- Hero / Landing Section -->
+    <section class="min-h-screen pt-28 lg:pt-36 pb-20 flex items-center bg-gradient-to-br from-white via-slate-50 to-brand-50/30 px-6 lg:px-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-100/30 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-12 left-10 w-72 h-72 bg-accent-500/10 rounded-full blur-2xl"></div>
 
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-container">
-            <div class="about-img">
-                <img src="profile.jpg" alt="Florence Chukwuemeka Portrait">
-            </div>
-            <div class="about-text">
-                <h3>Your Strategic Remote Partner</h3>
-                <p>With a deep focus on organization, efficiency, and seamless administrative support, I specialize in managing the day-to-day operations that keep businesses moving forward. My goal is simple: handle the complexity so you can focus entirely on growth.</p>
-                <p>Whether it is managing intricate schedules, streamlining client relationships, or tackling complex projects, I bring a reliable, tech-savvy approach to every team I support.</p>
-                
-                <div class="highlights">
-                    <div class="highlight-item">
-                        <h4>Reliable Systems</h4>
-                        <p>Expertise in workflow setup and modern digital workspace tools.</p>
-                    </div>
-                    <div class="highlight-item">
-                        <h4>Proactive Approach</h4>
-                        <p>Anticipating operational administrative gaps before they become bottlenecks.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <h2 class="section-title">What I Do</h2>
-        <div class="services-grid">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
             
-            <div class="service-card">
-                <span class="service-icon">📅</span>
-                <h3>Executive Administration</h3>
-                <p>Calendar management, inbox filtering, travel coordination, and appointment scheduling to keep your day running smoothly.</p>
+            <!-- Left Column: Title & Intro -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-100 text-xs font-bold tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-accent-500 animate-ping"></span>
+                    Available for immediate projects
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-navy-900 leading-[1.1]">
+                    Reclaim Your Time. <br/>
+                    <span class="text-brand-500">Optimize Your Operations.</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl font-bold text-slate-700">
+                    Florence Chukwuemeka
+                </p>
+                <p class="text-md text-brand-500 font-semibold tracking-wider uppercase">
+                    Professional General & Executive Virtual Assistant
+                </p>
+                
+                <p class="text-lg text-slate-600 leading-relaxed max-w-2xl">
+                    Efficient • Reliable • Resourceful. I partner with global entrepreneurs, executives, and growing remote teams to streamline systems, manage communications, and step back from operational bottlenecks.
+                </p>
+
+                <!-- Quick Badge Metadata -->
+                <div class="flex flex-wrap gap-3 text-sm text-slate-600 font-medium">
+                    <span class="px-3.5 py-1.5 bg-white border border-slate-200/80 shadow-xs rounded-full flex items-center gap-2">
+                        <i class="fa-solid fa-clock text-brand-500"></i> GMT, EST & PST Time Zones
+                    </span>
+               
+                </div>
+
+                <!-- Call to Actions -->
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#contact" class="px-7 py-3.5 bg-brand-500 text-white font-bold rounded-xl shadow-lg shadow-brand-700/10 hover:bg-brand-600 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 flex items-center gap-2">
+                        Work With Me <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#work" class="px-7 py-3.5 bg-white border border-slate-200 text-slate-700 font-bold rounded-xl shadow-xs hover:bg-slate-50 transition-all duration-200">
+                        View Work Portfolio
+                    </a>
+                </div>
+
+                <!-- Stats Counter Row -->
+                <div class="grid grid-cols-3 gap-6 pt-10 border-t border-slate-200/80 max-w-xl">
+                    <div>
+                        <p class="text-3xl md:text-4xl font-black text-navy-900">5+</p>
+                        <p class="text-xs text-slate-500 font-bold tracking-wider uppercase mt-1">Years Experience</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl md:text-4xl font-black text-navy-900">200+</p>
+                        <p class="text-xs text-slate-500 font-bold tracking-wider uppercase mt-1">Clients Supported</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl md:text-4xl font-black text-navy-900">98%</p>
+                        <p class="text-xs text-slate-500 font-bold tracking-wider uppercase mt-1">Retention Rate</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="service-card">
-                <span class="service-icon">📈</span>
-                <h3>Project Coordination</h3>
-                <p>Tracking milestones, updating task managers (Asana/Trello/ClickUp), and ensuring team deliverables stay on schedule.</p>
-            </div>
-
-            <div class="service-card">
-                <span class="service-icon">🤝</span>
-                <h3>Client & CRM Management</h3>
-                <p>Handling client inquiries, managing customer pipelines, updating CRM data, and maintaining professional follow-ups.</p>
-            </div>
-
-            <div class="service-card">
-                <span class="service-icon">📊</span>
-                <h3>Data & Document Management</h3>
-                <p>Organizing files, preparing comprehensive reports, managing spreadsheets, and creating data entry frameworks.</p>
+            <!-- Right Column: Workstation Hero Graphic -->
+            <div class="lg:col-span-5 relative flex justify-center">
+                <div class="absolute -inset-2 rounded-[2rem] bg-gradient-to-tr from-brand-500 to-accent-500 opacity-15 blur-2xl"></div>
+                <div class="relative bg-white p-4 rounded-3xl shadow-2xl border border-slate-100 max-w-md lg:max-w-full">
+                    <img 
+                        src="Picture/intropic.jpeg" 
+                        alt="Florence Remote Workstation Layout" 
+                        class="rounded-2xl shadow-inner object-cover aspect-[4/3] w-full"
+                        onerror="this.src='https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80'"
+                    />
+                    <div class="absolute bottom-8 -left-6 bg-navy-900 text-white p-4 rounded-2xl shadow-xl flex items-center gap-3 border border-navy-800">
+                        <div class="w-10 h-10 rounded-xl bg-accent-500 flex items-center justify-center text-white font-bold text-lg"><i class="fa-solid fa-check"></i></div>
+                        <div>
+                          <p class="text-xs text-slate-400 font-medium">Daily Active Rate</p>
+                          <p class="text-sm font-bold text-accent-500">100% On-Time Delivery</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-container">
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Doe" required>
-                </div>
+    <!-- About Me Section -->
+    <section id="about" class="py-24 bg-white px-6 lg:px-12 border-y border-slate-100 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-navy-900 mb-4">About Me</h2>
+                <div class="w-12 h-1 bg-brand-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-slate-500">Discover my background, capabilities, and the robust setup behind my consistent remote workspace.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                <!-- Left Sidebar Card -->
+                <div class="lg:col-span-4 bg-navy-50 p-8 rounded-2xl border border-navy-100 text-center space-y-6">
+                    <div class="relative w-44 h-44 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg">
+                        <img 
+                          src="Picture/IMG_9008.jpeg" 
+                          alt="Florence Chukwuemeka Portrait" 
+                          class="w-full h-full object-cover" 
+                          onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80';"
+                        />
+                    </div>
+                    
+                    <div>
+                        <h3 class="font-extrabold text-2xl text-navy-900">Florence Chukwuemeka</h3>
+                        <p class="text-brand-500 font-bold text-sm tracking-wide uppercase mt-1">Strategic Operations Partner</p>
+                    </div>
+                    
+                    <div class="border-t border-navy-100/60 pt-6 space-y-4 text-left text-sm">
+                        <div class="flex items-start gap-3">
+                            <span class="p-2 bg-brand-50 text-brand-500 rounded-lg shrink-0 font-bold"><i class="fa-solid fa-award"></i></span>
+                            <div>
+                                <p class="font-bold text-navy-900">IT Bachelor’s Degree</p>
+                                <p class="text-slate-500">Nizhny Novgorod Lobachevsky State University, Russia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="p-2 bg-brand-50 text-brand-500 rounded-lg shrink-0 font-bold"><i class="fa-solid fa-comments"></i></span>
+                            <div>
+                                <p class="font-bold text-navy-900">Language Fluency</p>
+                                <p class="text-slate-500">English (Full Bilingual Professional Proficiency)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="p-2 bg-brand-50 text-brand-500 rounded-lg shrink-0 font-bold"><i class="fa-solid fa-bolt"></i></span>
+                            <div>
+                                <p class="font-bold text-navy-900">Redundant Infrastructure</p>
+                                <p class="text-slate-500">High-speed primary fiber connection and solar power backup setup</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="subject">How can I help you?</label>
-                    <input type="text" id="subject" name="subject" placeholder="e.g., Executive Support, Project Tracking">
+                <!-- Right Bio & Core Values -->
+                <div class="lg:col-span-8 space-y-8">
+                    <div class="bg-navy-50 p-8 rounded-2xl border border-navy-100 space-y-6">
+                        <h3 class="text-2xl font-bold text-navy-900">Who I Am & My Commitment</h3>
+                        <p class="text-slate-600 leading-relaxed text-lg">
+                            I am an organized, details-oriented, and tech-savvy General Virtual Assistant with a strong academic background in Information Technology. For over half a decade, I have partnered with international entrepreneurs, busy executives, and fast-paced tech startups to handle daily administrative loads.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed text-lg">
+                            By structuring secure inbox handling, keeping calendars meticulously aligned, and integrating automated workflows, I give business leaders back the headspace they need to drive company growth and secure funding.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed text-lg">
+                            Maintaining data absolute confidentiality, delivery accuracy, and systematic progress reports form the non-negotiable core of my client engagement values.
+                        </p>
+                    </div>
+
+                    <!-- Sub-grid of key differentiators -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-xl border border-slate-200/60 shadow-xs">
+                            <h4 class="font-extrabold text-md text-brand-500 mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-accent-500 shrink-0"></i> Proactive Problem-Solver
+                            </h4>
+                            <p class="text-sm text-slate-500 leading-relaxed">I don't just wait for instructions. I actively anticipate operational gaps and suggest customized automation before bottlenecks take place.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200/60 shadow-xs">
+                            <h4 class="font-extrabold text-md text-brand-500 mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-accent-500 shrink-0"></i> Tech-First Mindset
+                            </h4>
+                            <p class="text-sm text-slate-500 leading-relaxed">I deeply understand modern API connections, AI prompting strategies, and workflow automation (Zapier/Make) to squeeze hours of waste out of every work week.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200/60 shadow-xs">
+                            <h4 class="font-extrabold text-md text-brand-500 mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-accent-500 shrink-0"></i> Transparent Communication
+                            </h4>
+                            <p class="text-sm text-slate-500 leading-relaxed">Regular status reports, well-structured boards, and clear follow-up checklists mean you will always know exactly what is done and when.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200/60 shadow-xs">
+                            <h4 class="font-extrabold text-md text-brand-500 mb-2 flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-accent-500 shrink-0"></i> Strict Security & Integrity
+                            </h4>
+                            <p class="text-sm text-slate-500 leading-relaxed">Your passwords, client lead lists, financials, and strategic documents are secured behind enterprise encryption standards (LastPass) with zero leak risk.</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="message">Project Details</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Tell me briefly about your business needs..." required></textarea>
-                </div>
-                
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+
+            </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Core Skills Section -->
+    <section id="skills" class="py-24 bg-slate-50 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-navy-900 mb-4">Core Skills & Expertise</h2>
+                <div class="w-12 h-1 bg-brand-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-slate-500">A structured outline of operational pillars I deliver to global executive teams.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Administrative Card -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-xs hover:border-brand-500 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-500 flex items-center justify-center text-xl mb-6"><i class="fa-solid fa-briefcase"></i></div>
+                    <h3 class="font-extrabold text-lg text-navy-900 mb-4">Administrative Excellence</h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Email & Inbox Zero Strategy</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Advanced Calendar Scheduling</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Complex Travel & Visa Logistics</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> High-Quality PDF & Doc Creation</li>
+                    </ul>
+                </div>
+
+                <!-- Communication Card -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-xs hover:border-brand-500 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-500 flex items-center justify-center text-xl mb-6"><i class="fa-solid fa-comments"></i></div>
+                    <h3 class="font-extrabold text-lg text-navy-900 mb-4">Communication Support</h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Client Correspondence & Follow-ups</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Social Media Scheduling & Uploads</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Content Copy Editing & Optimization</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Professional Executive Ghostwriting</li>
+                    </ul>
+                </div>
+
+                <!-- Research & Data Analysis -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-xs hover:border-brand-500 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-500 flex items-center justify-center text-xl mb-6"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3 class="font-extrabold text-lg text-navy-900 mb-4">Research & Data Intelligence</h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Market Analysis & Competitor Audits</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Structured Lead Generation Lists</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> High-Integrity Data Cleaning</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Report Aggregation & Synthesis</li>
+                    </ul>
+                </div>
+
+                <!-- Project Coordination -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-xs hover:border-brand-500 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-500 flex items-center justify-center text-xl mb-6"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3 class="font-extrabold text-lg text-navy-900 mb-4">Project Coordination</h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Kanban Boards & Task Setup</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Deadline Alerts & Deliverable Tracking</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Presentation Deck Building</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Client Onboarding System Workflows</li>
+                    </ul>
+                </div>
+
+                <!-- Tech & Automation -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-xs hover:border-brand-500 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-500 flex items-center justify-center text-xl mb-6"><i class="fa-solid fa-microchip"></i></div>
+                    <h3 class="font-extrabold text-lg text-navy-900 mb-4">Tech Setup & Automation</h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Zapier & Make Automated Integrations</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> CRM Pipeline Adjustments & Updates</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> AI Prompt Engineering & Support</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Cloud File Organization (Drive/Box)</li>
+                    </ul>
+                </div>
+
+                <!-- Customer Support -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-xs hover:border-brand-500 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-500 flex items-center justify-center text-xl mb-6"><i class="fa-solid fa-headset"></i></div>
+                    <h3 class="font-extrabold text-lg text-navy-900 mb-4">Customer Support Flow</h3>
+                    <ul class="space-y-3 text-slate-600 text-sm">
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Live Chat & Ticket Monitoring</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> FAQ Library & Knowledge Base Design</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Ticket Prioritization & Escalation</li>
+                        <li class="flex items-center gap-2 font-medium"><span class="w-1.5 h-1.5 bg-brand-500 rounded-full"></span> Retention Audit Processes</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Tech Stack -->
+    <section id="tools" class="py-24 bg-white px-6 lg:px-12 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-navy-900 mb-4">Tools & Technology Stack</h2>
+                <div class="w-12 h-1 bg-brand-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-slate-500">I use these systems daily to automate tasks and ensure flawless operational precision.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Group 1: Workspace & Collab -->
+                <div class="bg-navy-50 p-6 rounded-2xl border border-navy-100 space-y-4">
+                    <h4 class="font-extrabold text-navy-900 pb-3 border-b border-navy-100/60 flex items-center gap-2">
+                        <i class="fa-solid fa-layer-group text-brand-500"></i> Project Workspace
+                    </h4>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Asana</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Trello</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Notion</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">ClickUp</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Monday.com</span>
+                    </div>
+                </div>
+
+                <!-- Group 2: Productivity & Office -->
+                <div class="bg-navy-50 p-6 rounded-2xl border border-navy-100 space-y-4">
+                    <h4 class="font-extrabold text-navy-900 pb-3 border-b border-navy-100/60 flex items-center gap-2">
+                        <i class="fa-solid fa-database text-brand-500"></i> Productivity & Cloud
+                    </h4>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Google Workspace</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Microsoft 365</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Airtable</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Calendly</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">LastPass</span>
+                    </div>
+                </div>
+
+                <!-- Group 3: CRMs & Analytics -->
+                <div class="bg-navy-50 p-6 rounded-2xl border border-navy-100 space-y-4">
+                    <h4 class="font-extrabold text-navy-900 pb-3 border-b border-navy-100/60 flex items-center gap-2">
+                        <i class="fa-solid fa-magnifying-glass text-brand-500"></i> CRM & Analytics
+                    </h4>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">HubSpot</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Salesforce</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Pipedrive</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Zoho CRM</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">LinkedIn Sales Nav</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Google Analytics</span>
+                    </div>
+                </div>
+
+                <!-- Group 4: Comms -->
+                <div class="bg-navy-50 p-6 rounded-2xl border border-navy-100 space-y-4">
+                    <h4 class="font-extrabold text-navy-900 pb-3 border-b border-navy-100/60 flex items-center gap-2">
+                        <i class="fa-solid fa-comments text-brand-500"></i> Communication
+                    </h4>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Gmail / Outlook</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Slack / Discord</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Zoom / Teams</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Loom</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Intercom</span>
+                    </div>
+                </div>
+
+                <!-- Group 5: Automation & AI -->
+                <div class="bg-navy-50 p-6 rounded-2xl border border-navy-100 space-y-4">
+                    <h4 class="font-extrabold text-navy-900 pb-3 border-b border-navy-100/60 flex items-center gap-2">
+                        <i class="fa-solid fa-microchip text-brand-500"></i> Automation & AI
+                    </h4>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Zapier</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Make (Integromat)</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">ChatGPT</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Claude AI</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Notion AI</span>
+                    </div>
+                </div>
+
+                <!-- Group 6: Design -->
+                <div class="bg-navy-50 p-6 rounded-2xl border border-navy-100 space-y-4">
+                    <h4 class="font-extrabold text-navy-900 pb-3 border-b border-navy-100/60 flex items-center gap-2">
+                        <i class="fa-solid fa-sliders text-brand-500"></i> Design & Copy
+                    </h4>
+                    <div class="flex flex-wrap gap-2 pt-1">
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Canva</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Adobe Express</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Figma</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">Mailchimp</span>
+                        <span class="px-3 py-1.5 bg-white border border-slate-200 rounded-lg text-xs font-semibold text-slate-700 shadow-2xs">WordPress</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 text-center text-sm font-bold text-brand-500">
+                💡 Quick Adaptability Guarantee: Happy to master any custom systems your operations team already deploys.
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies / Interactive Dashboard -->
+    <section id="work" class="py-24 bg-slate-50 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-navy-900 mb-4">My Work & Case Studies</h2>
+                <p class="text-lg text-slate-500">Explore real interactive dashboard representations showing workflows built for international executive clients.</p>
+                <div class="w-12 h-1 bg-brand-500 mx-auto rounded-full mt-6"></div>
+            </div>
+
+            <!-- Tab Control Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Column Tabs Button Panel -->
+                <div class="lg:col-span-4 flex lg:flex-col gap-2 overflow-x-auto lg:whitespace-normal pb-4 lg:pb-0 bg-navy-50/80 p-2 rounded-2xl border border-navy-100/40 sticky top-20 z-10">
+                    <button onclick="switchTab('tab1')" id="btn-tab1" class="tab-btn w-full text-left px-4 py-3.5 rounded-xl text-sm font-bold tracking-tight whitespace-nowrap lg:whitespace-normal transition-all duration-200 bg-brand-500 text-white shadow-md shadow-brand-700/10">
+                        01. Inbox Restructuring
+                    </button>
+                    <button onclick="switchTab('tab2')" id="btn-tab2" class="tab-btn w-full text-left px-4 py-3.5 rounded-xl text-sm font-bold tracking-tight whitespace-nowrap lg:whitespace-normal transition-all duration-200 text-slate-600 hover:bg-white hover:text-navy-900">
+                        02. Research & Logistics
+                    </button>
+                    <button onclick="switchTab('tab3')" id="btn-tab3" class="tab-btn w-full text-left px-4 py-3.5 rounded-xl text-sm font-bold tracking-tight whitespace-nowrap lg:whitespace-normal transition-all duration-200 text-slate-600 hover:bg-white hover:text-navy-900">
+                        03. Calendar Restructuring
+                    </button>
+                    <button onclick="switchTab('tab4')" id="btn-tab4" class="tab-btn w-full text-left px-4 py-3.5 rounded-xl text-sm font-bold tracking-tight whitespace-nowrap lg:whitespace-normal transition-all duration-200 text-slate-600 hover:bg-white hover:text-navy-900">
+                        04. Competitor Landscapes
+                    </button>
+                    <button onclick="switchTab('tab5')" id="btn-tab5" class="tab-btn w-full text-left px-4 py-3.5 rounded-xl text-sm font-bold tracking-tight whitespace-nowrap lg:whitespace-normal transition-all duration-200 text-slate-600 hover:bg-white hover:text-navy-900">
+                        05. CRM Data Cleansing
+                    </button>
+                    <button onclick="switchTab('tab6')" id="btn-tab6" class="tab-btn w-full text-left px-4 py-3.5 rounded-xl text-sm font-bold tracking-tight whitespace-nowrap lg:whitespace-normal transition-all duration-200 text-slate-600 hover:bg-white hover:text-navy-900">
+                        06. Interaction Lifecycle
+                    </button>
+                    <button onclick="switchTab('tab7')" id="btn-tab7" class="tab-btn w-full text-left px-4 py-3.5 rounded-xl text-sm font-bold tracking-tight whitespace-nowrap lg:whitespace-normal transition-all duration-200 text-slate-600 hover:bg-white hover:text-navy-900">
+                        07. Operations Optimization
+                    </button>
+                </div>
+
+                <!-- Right Display Panel -->
+                <div class="lg:col-span-8 bg-white border border-slate-200/80 rounded-3xl p-6 lg:p-10 shadow-sm min-h-[550px] relative overflow-hidden flex flex-col justify-between">
+                  
+                    <!-- Tab 1 content -->
+                    <div id="content-tab1" class="tab-content space-y-6 animate-fade-in">
+                        <div class="flex flex-col md:flex-row justify-between md:items-center gap-4">
+                            <div>
+                                <h3 class="text-2xl font-extrabold text-navy-900">Email & Inbox Overhaul</h3>
+                                <p class="text-brand-500 font-bold text-xs tracking-wider uppercase mt-1">Client: E-Commerce Startup (50+ Staff) • Duration: 3 Months</p>
+                            </div>
+                            <span class="px-3 py-1 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-full text-xs font-bold self-start">Completed Workflow</span>
+                        </div>
+                        
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Designed color-coded tag structures, filtered outbound queries, and produced 40+ customized text templates, lowering inbox support response delay from 48 hours down to under 4 hours.
+                        </p>
+
+                        <!-- Gmail Sim Simulator -->
+                        <div class="bg-navy-900 text-slate-200 rounded-xl overflow-hidden border border-navy-800 text-xs shadow-xl font-mono">
+                            <div class="bg-navy-950 border-b border-navy-800 px-4 py-3 flex justify-between items-center">
+                                <div class="flex items-center gap-1.5">
+                                    <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                                    <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+                                    <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                                    <span class="text-slate-500 ml-2 text-[10px]">mail.google.com/mail/u/0/</span>
+                                </div>
+                                <span class="text-slate-400 font-bold text-[10px]">Florence VA Gmail Setup</span>
+                            </div>
+                            
+                            <div class="grid grid-cols-12 min-h-[220px]">
+                                <div class="col-span-3 bg-navy-950/50 p-3 border-r border-navy-800/60 space-y-4">
+                                    <button class="w-full py-2 bg-brand-500 hover:bg-brand-600 text-white rounded-lg font-bold">✏ Compose</button>
+                                    <div class="space-y-1 text-slate-400">
+                                        <p class="font-bold text-white flex justify-between"><span>Inbox</span><span>24</span></p>
+                                        <p>Starred</p>
+                                        <p>Sent</p>
+                                    </div>
+                                    <div class="pt-2 border-t border-navy-800">
+                                        <p class="text-[9px] uppercase tracking-wider text-slate-500 font-black mb-1">Labels</p>
+                                        <div class="space-y-1.5 text-[10px]">
+                                            <p class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-red-500"></span> Urgent</p>
+                                            <p class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-yellow-500"></span> Follow-up</p>
+                                            <p class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-accent-500"></span> Done</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-span-9 p-2 divide-y divide-navy-800">
+                                    <div class="p-2.5 flex justify-between items-center hover:bg-navy-800/30 rounded transition-colors">
+                                        <div class="flex items-center gap-2">
+                                            <span class="w-2 h-2 rounded-full bg-accent-500"></span>
+                                            <span class="font-bold text-slate-100">Sarah M. (CEO)</span>
+                                            <span class="px-1.5 py-0.5 rounded text-[8px] font-bold uppercase bg-red-100 text-red-800 border border-red-200">Urgent</span>
+                                            <span class="text-slate-400 max-w-[180px] md:max-w-xs truncate">RE: Q4 Campaign Brief</span>
+                                        </div>
+                                        <span class="text-slate-500 text-[10px]">9:41 AM</span>
+                                    </div>
+                                    <div class="p-2.5 flex justify-between items-center hover:bg-navy-800/30 rounded transition-colors">
+                                        <div class="flex items-center gap-2">
+                                            <span class="w-2 h-2 rounded-full bg-transparent"></span>
+                                            <span class="font-bold text-slate-100">TechCo Billing</span>
+                                            <span class="px-1.5 py-0.5 rounded text-[8px] font-bold uppercase bg-amber-100 text-amber-800 border border-amber-200">Follow-up</span>
+                                            <span class="text-slate-400 max-w-[180px] md:max-w-xs truncate">Invoice Status Lookup #4892</span>
+                                        </div>
+                                        <span class="text-slate-500 text-[10px]">8:15 AM</span>
+                                    </div>
+                                    <div class="p-2.5 flex justify-between items-center hover:bg-navy-800/30 rounded transition-colors">
+                                        <div class="flex items-center gap-2">
+                                            <span class="w-2 h-2 rounded-full bg-transparent"></span>
+                                            <span class="font-bold text-slate-100">Ben K. (Ops)</span>
+                                            <span class="px-1.5 py-0.5 rounded text-[8px] font-bold uppercase bg-emerald-100 text-emerald-800 border border-emerald-200">Done</span>
+                                            <span class="text-slate-400 max-w-[180px] md:max-w-xs truncate">Meeting confirmed for Friday</span>
+                                        </div>
+                                        <span class="text-slate-500 text-[10px]">Yesterday</span>
+                                    </div>
+                                    <div class="p-2.5 flex justify-between items-center hover:bg-navy-800/30 rounded transition-colors">
+                                        <div class="flex items-center gap-2">
+                                            <span class="w-2 h-2 rounded-full bg-accent-500"></span>
+                                            <span class="font-bold text-slate-100">Client Hub Support</span>
+                                            <span class="px-1.5 py-0.5 rounded text-[8px] font-bold uppercase bg-blue-100 text-blue-800 border border-blue-200">Client</span>
+                                            <span class="text-slate-400 max-w-[180px] md:max-w-xs truncate">New support ticket #1047</span>
+                                        </div>
+                                        <span class="text-slate-500 text-[10px]">Yesterday</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                            <div class="p-3 bg-navy-50 rounded-xl border border-navy-100">
+                                <span class="block text-2xl font-black text-brand-500">92%</span>
+                                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Response ↓</span>
+                            </div>
+                            <div class="p-3 bg-navy-50 rounded-xl border border-navy-100">
+                                <span class="block text-2xl font-black text-brand-500">40+</span>
+                                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Templates</span>
+                            </div>
+                            <div class="p-3 bg-navy-50 rounded-xl border border-navy-100">
+                                <span class="block text-2xl font-black text-brand-500">3</span>
+                                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Inboxes Done</span>
+                            </div>
+                            <div class="p-3 bg-navy-50 rounded-xl border border-navy-100">
+                                <span class="block text-2xl font-black text-brand-500">100%</span>
+                                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Satisfaction</span>
+                            </div>
+                        </div>
+
+                        <p class="text-xs italic text-slate-500 bg-brand-50/50 p-3 rounded-lg border-l-4 border-brand-500">
+                            "Florence transformed how our team communicates. Absolute game-changer." — CEO, Nomek holdings
+                        </p>
+                    </div>
+
+                    <!-- Tab 2 content -->
+                    <div id="content-tab2" class="tab-content hidden space-y-6 animate-fade-in">
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-navy-900">Research & Travel Coordination</h3>
+                            <p class="text-brand-500 font-bold text-xs tracking-wider uppercase mt-1">Brief: 10-City Roadshow Across 3 Continents • Support: Startup Founder</p>
+                        </div>
+                        
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Sourced visa requirements, booked 34 intercontinental flights with buffer schedules, coordinated hotels, and generated a 12-page background brief on prospective local venture capitals.
+                        </p>
+
+                        <!-- Asana Task Board Simulator -->
+                        <div class="bg-navy-900 rounded-xl border border-navy-800 overflow-hidden font-mono text-[11px] text-slate-200">
+                            <div class="bg-navy-950 px-4 py-3 border-b border-navy-800 flex justify-between items-center">
+                                <span class="font-bold text-slate-400">app.asana.com/0/roadshow-2024</span>
+                                <span class="text-brand-500 font-bold text-[10px]">10-City Roadshow Project</span>
+                            </div>
+                            
+                            <div class="p-3 grid grid-cols-3 gap-3 bg-navy-950/30 min-h-[190px]">
+                                <div class="bg-navy-900 p-2.5 rounded-lg border border-navy-800/80 space-y-2">
+                                    <p class="font-bold text-white border-b border-navy-800 pb-1 flex justify-between"><span>To Do</span><span class="text-accent-500">2</span></p>
+                                    <div class="p-2 bg-navy-950 rounded border border-navy-800/60">
+                                        <p class="font-bold text-slate-200">Book SFO → LHR flights</p>
+                                        <p class="text-[8px] text-red-400 mt-1">Due Oct 12</p>
+                                    </div>
+                                    <div class="p-2 bg-navy-950 rounded border border-navy-800/60">
+                                        <p class="font-bold text-slate-200">Confirm hotel: London</p>
+                                        <p class="text-[8px] text-slate-500 mt-1">Due Oct 15</p>
+                                    </div>
+                                </div>
+
+                                <div class="bg-navy-900 p-2.5 rounded-lg border border-navy-800/80 space-y-2">
+                                    <p class="font-bold text-white border-b border-navy-800 pb-1 flex justify-between"><span>In Progress</span><span class="text-yellow-450 text-yellow-500">2</span></p>
+                                    <div class="p-2 bg-navy-950 rounded border border-navy-800/60">
+                                        <p class="font-bold text-slate-200">NYC investor briefing list</p>
+                                        <p class="text-[8px] text-yellow-500 mt-1">Due Oct 12</p>
+                                    </div>
+                                    <div class="p-2 bg-navy-950 rounded border border-navy-800/60">
+                                        <p class="font-bold text-slate-200">Visa processing</p>
+                                        <p class="text-[8px] text-slate-500 mt-1">Due Oct 20</p>
+                                    </div>
+                                </div>
+
+                                <div class="bg-navy-900 p-2.5 rounded-lg border border-navy-800/80 space-y-2">
+                                    <p class="font-bold text-white border-b border-navy-800 pb-1 flex justify-between"><span>Completed</span><span class="text-accent-500">✓</span></p>
+                                    <div class="p-2 bg-navy-950/80 rounded border border-emerald-950 text-slate-400">
+                                        <p class="font-bold line-through text-slate-500">12-Page Research report</p>
+                                        <p class="text-[8px] text-accent-500 mt-1">Done</p>
+                                    </div>
+                                    <div class="p-2 bg-navy-950/80 rounded border border-emerald-950 text-slate-400">
+                                        <p class="font-bold line-through text-slate-500">Blocked out calendars</p>
+                                        <p class="text-[8px] text-accent-500 mt-1">Done</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                            <div class="p-3 bg-navy-50 rounded-xl border border-navy-100">
+                                <span class="block text-2xl font-black text-brand-500">10</span>
+                                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Global Cities</span>
+                            </div>
+                            <div class="p-3 bg-navy-50 rounded-xl border border-navy-100">
+                                <span class="block text-2xl font-black text-brand-500">34</span>
+                                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Flights Booked</span>
+                            </div>
+                            <div class="p-3 bg-navy-50 rounded-xl border border-navy-100">
+                                <span class="block text-2xl font-black text-brand-500">12p</span>
+                                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Insight Report</span>
+                            </div>
+                            <div class="p-3 bg-navy-50 rounded-xl border border-navy-100">
+                                <span class="block text-2xl font-black text-brand-500">Zero</span>
+                                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider">Meeting Overlaps</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3 content -->
+                    <div id="content-tab3" class="tab-content hidden space-y-6 animate-fade-in">
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-navy-900">Calendar Restructuring</h3>
+                            <p class="text-brand-500 font-bold text-xs tracking-wider uppercase mt-1">Client: Multi-Business Founder • Objective: Eliminating Double-Bookings</p>
+                        </div>
+                        
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Synced multiple overlapping calendars across 3 discrete businesses. Instituted automated Calendly link mapping, buffer parameters, and delivered customized 7:00 AM WhatsApp summaries daily.
+                        </p>
+
+                        <!-- Google Calendar Simulator -->
+                        <div class="bg-navy-900 rounded-xl border border-navy-800 overflow-hidden font-mono text-[11px] text-slate-200">
+                            <div class="bg-navy-950 px-4 py-3 border-b border-navy-800 flex justify-between items-center">
+                                <span class="font-bold text-slate-400">calendar.google.com</span>
+                                <span class="text-brand-500 font-bold text-[10px]">Weekly Master Agenda View</span>
+                            </div>
+                            
+                            <div class="grid grid-cols-5 text-center bg-navy-950/40 border-b border-navy-800 py-2 font-bold text-slate-400 text-[10px]">
+                                <div>Mon 14</div>
+                                <div class="text-brand-500 font-extrabold">Tue 15</div>
+                                <div>Wed 16</div>
+                                <div>Thu 17</div>
+                                <div>Fri 18</div>
+                            </div>
+                            
+                            <div class="grid grid-cols-5 min-h-[170px] bg-navy-900 divide-x divide-navy-800 p-1 text-[9px] font-sans">
+                                <div class="p-1 space-y-1">
+                                    <div class="p-1.5 bg-brand-50 border-l-2 border-brand-500 text-brand-700 rounded font-semibold">9AM: Team Standup</div>
+                                </div>
+                                <div class="p-1 space-y-1 bg-navy-950/20">
+                                    <div class="p-1.5 bg-amber-950 border-l-2 border-amber-500 text-amber-150 text-amber-500 rounded font-semibold">10AM: VC Call Prep</div>
+                                    <div class="p-1 bg-navy-800 text-slate-400 rounded text-center py-1">Blocked Lunch</div>
+                                </div>
+                                <div class="p-1 space-y-1">
+                                    <div class="p-1.5 bg-blue-950 border-l-2 border-blue-500 text-blue-100 rounded font-semibold">11AM: Client Kickoff</div>
+                                </div>
+                                <div class="p-1 space-y-1">
+                                    <div class="p-1.5 bg-brand-50 border-l-2 border-brand-500 text-brand-700 rounded font-semibold">2PM: Focus Mode</div>
+                                </div>
+                                <div class="p-1 space-y-1">
+                                    <div class="p-1.5 bg-blue-950 border-l-2 border-blue-500 text-blue-100 rounded font-semibold">1PM: Strategy Audit</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-xs italic text-slate-500 bg-brand-50/50 p-3 rounded-lg border-l-4 border-brand-500">
+                            "Zero scheduling conflicts in 6 months — our team has never been more organized." — Founder, TechLaunch SA
+                        </p>
+                    </div>
+
+                    <!-- Tab 4 content -->
+                    <div id="content-tab4" class="tab-content hidden space-y-6 animate-fade-in">
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-navy-900">Competitive Market Deep-Dive</h3>
+                            <p class="text-brand-500 font-bold text-xs tracking-wider uppercase mt-1">SaaS Startup • Sourced: Crunchbase, Statista, G2, LinkedIn Sales Navigator</p>
+                        </div>
+                        
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Evaluated 12 direct market competitors across core functions, pricing metrics, and AI technology stacks, delivering an executive briefing document 48 hours ahead of investor presentation deadlines.
+                        </p>
+
+                        <!-- Competitor Matrix Simulator -->
+                        <div class="bg-navy-900 rounded-xl border border-navy-800 overflow-hidden font-mono text-[11px] text-slate-200">
+                            <div class="bg-navy-950 px-4 py-3 border-b border-navy-800 flex justify-between items-center">
+                                <span class="font-bold text-slate-400">COMPETITIVE BRIEFING EXTRACT</span>
+                                <span class="text-brand-500 font-bold text-[10px]">18-Page Deliverable</span>
+                            </div>
+                            
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left">
+                                    <thead>
+                                        <tr class="bg-navy-950/60 border-b border-navy-800 text-[10px] text-slate-400 font-bold uppercase tracking-wider">
+                                            <th class="p-3">Competitor</th>
+                                            <th class="p-3">Segment</th>
+                                            <th class="p-3">Pricing</th>
+                                            <th class="p-3">AI Support</th>
+                                            <th class="p-3">Threat</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-navy-850 font-medium text-slate-300">
+                                        <tr>
+                                            <td class="p-3 font-bold text-white">Salesforce</td>
+                                            <td class="p-3">Enterprise</td>
+                                            <td class="p-3">$$$</td>
+                                            <td class="p-3 text-accent-500">✓✓✓</td>
+                                            <td class="p-3"><span class="px-2 py-0.5 bg-red-900/40 text-red-400 border border-red-950 rounded text-[9px] font-bold uppercase">🔴 High</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 font-bold text-white">HubSpot</td>
+                                            <td class="p-3">SMB</td>
+                                            <td class="p-3">$$</td>
+                                            <td class="p-3 text-accent-500">✓✓</td>
+                                            <td class="p-3"><span class="px-2 py-0.5 bg-yellow-900/40 text-yellow-450 text-yellow-500 border border-yellow-950 rounded text-[9px] font-bold uppercase">🟡 Med</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 font-bold text-white">Close CRM</td>
+                                            <td class="p-3">Startup</td>
+                                            <td class="p-3">$$</td>
+                                            <td class="p-3 text-accent-500">✓✓</td>
+                                            <td class="p-3"><span class="px-2 py-0.5 bg-yellow-900/40 text-yellow-450 text-yellow-500 border border-yellow-950 rounded text-[9px] font-bold uppercase">🟡 Med</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-3 font-bold text-white">Zoho CRM</td>
+                                            <td class="p-3">Mid-market</td>
+                                            <td class="p-3">$</td>
+                                            <td class="p-3 text-accent-500">✓</td>
+                                            <td class="p-3"><span class="px-2 py-0.5 bg-orange-900/40 text-orange-400 border border-orange-950 rounded text-[9px] font-bold uppercase">🟠 Med-High</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 5 content -->
+                    <div id="content-tab5" class="tab-content hidden space-y-6 animate-fade-in">
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-navy-900">CRM Data Cleaning</h3>
+                            <p class="text-brand-500 font-bold text-xs tracking-wider uppercase mt-1">Client: Real Estate Agency • Tool: Google Sheets Deduplication Formulas</p>
+                        </div>
+                        
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Scrubbed, normalized, and formatted over 2,400 raw lead contacts. Discovered and removed 340 duplicates, standardizing telephone fields into a perfectly structured HubSpot CRM import file.
+                        </p>
+
+                        <!-- Sheets Duplicate Removal Simulator -->
+                        <div class="bg-navy-900 rounded-xl border border-navy-800 overflow-hidden font-mono text-[11px] text-slate-200">
+                            <div class="bg-navy-950 px-4 py-3 border-b border-navy-800 flex justify-between items-center">
+                                <span class="font-bold text-slate-400">Contact_DB_Cleaned_v3.xlsx</span>
+                                <button 
+                                    id="run-cleaning-btn"
+                                    onclick="handleCleanSheet()"
+                                    class="px-3 py-1 bg-brand-500 hover:bg-brand-600 text-white rounded font-bold transition-all duration-200 text-[10px]"
+                                >
+                                    ⚡ Run Cleaning Script
+                                </button>
+                            </div>
+                            
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left">
+                                    <thead>
+                                        <tr class="bg-navy-950/40 text-slate-400 border-b border-navy-800 font-bold">
+                                            <th class="p-2 border-r border-navy-800">ID</th>
+                                            <th class="p-2 border-r border-navy-800">Name</th>
+                                            <th class="p-2 border-r border-navy-800">Email Address</th>
+                                            <th class="p-2 border-r border-navy-800">Phone</th>
+                                            <th class="p-2">Status Label</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="sheets-tbody" class="divide-y divide-navy-850">
+                                        <!-- Will be rendered dynamically via Javascript below -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 6 content -->
+                    <div id="content-tab6" class="tab-content hidden space-y-6 animate-fade-in">
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-navy-900">CRM Lifecycle & Support Flows</h3>
+                            <p class="text-brand-500 font-bold text-xs tracking-wider uppercase mt-1">Performance Metric: High Volume Ticket Prioritization</p>
+                        </div>
+                        
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Monitored 60–90 customer questions daily, handled escalations with direct ownership, and drafted automated templates that improved first-contact satisfaction indices and cut churn.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="p-4 bg-navy-50 border border-navy-100 rounded-xl space-y-2">
+                                <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-500 flex items-center justify-center font-bold text-sm">1</div>
+                                <h4 class="font-bold text-navy-900 text-sm">Consistent Daily Flow</h4>
+                                <p class="text-xs text-slate-500 leading-relaxed">Processing client interactions with 100% adherence to standard support SLA procedures.</p>
+                            </div>
+                            <div class="p-4 bg-navy-50 border border-navy-100 rounded-xl space-y-2">
+                                <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-500 flex items-center justify-center font-bold text-sm">2</div>
+                                <h4 class="font-bold text-navy-900 text-sm">Friction Resolution</h4>
+                                <p class="text-xs text-slate-500 leading-relaxed">Identifying key customer friction points and escalating technical faults cleanly with detail reports.</p>
+                            </div>
+                            <div class="p-4 bg-navy-50 border border-navy-100 rounded-xl space-y-2">
+                                <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-500 flex items-center justify-center font-bold text-sm">3</div>
+                                <h4 class="font-bold text-navy-900 text-sm">SLA Optimization</h4>
+                                <p class="text-xs text-slate-500 leading-relaxed">Drafting FAQs and creating template macros to save average handling cycles by 40%.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 7 content -->
+                    <div id="content-tab7" class="tab-content hidden space-y-6 animate-fade-in">
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-navy-900">Operations & General Admin Excellence</h3>
+                            <p class="text-brand-500 font-bold text-xs tracking-wider uppercase mt-1">General Operations Focus: Freeing Up Executive Headspace</p>
+                        </div>
+                        
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Managed all administrative operational functions so startup directors and executives could focus purely on fundraising, venture presentation briefs, and product development cycles.
+                        </p>
+
+                        <div class="bg-navy-50 border border-navy-100 rounded-2xl p-5 space-y-3.5 text-sm">
+                            <p class="font-extrabold text-navy-900 text-sm uppercase tracking-wider">Florence VA Proven Key Performance Metrics:</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="flex items-start gap-2 text-slate-600">
+                                    <span class="p-1 rounded bg-brand-100 text-brand-500 shrink-0 font-bold text-xs"><i class="fa-solid fa-check"></i></span>
+                                    <span class="text-xs leading-relaxed">Processed 200+ daily emails with 99% same-day rate under Inbox Zero parameters.</span>
+                                </div>
+                                <div class="flex items-start gap-2 text-slate-600">
+                                    <span class="p-1 rounded bg-brand-100 text-brand-500 shrink-0 font-bold text-xs"><i class="fa-solid fa-check"></i></span>
+                                    <span class="text-xs leading-relaxed">Coordinated 50+ meetings monthly across 4 time zones with zero overlap conflicts.</span>
+                                </div>
+                                <div class="flex items-start gap-2 text-slate-600">
+                                    <span class="p-1 rounded bg-brand-100 text-brand-500 shrink-0 font-bold text-xs"><i class="fa-solid fa-check"></i></span>
+                                    <span class="text-xs leading-relaxed">Constructed automated CRM pathways in HubSpot, shrinking average lead replies from 4h to 15m.</span>
+                                </div>
+                                <div class="flex items-start gap-2 text-slate-600">
+                                    <span class="p-1 rounded bg-brand-100 text-brand-500 shrink-0 font-bold text-xs"><i class="fa-solid fa-check"></i></span>
+                                    <span class="text-xs leading-relaxed">Maintained monthly expenses and $15,000/month executive corporate credit cards with 100% bookkeeping precision.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Navigation Indicator -->
+                    <div class="border-t border-slate-100 pt-6 mt-8 flex justify-between items-center text-xs text-slate-400">
+                        <span>Selected Slide Representation</span>
+                        <span class="font-bold text-brand-500">Florence Chukwuemeka VA Portfolio</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI / Savings Calculator Section -->
+    <section id="calculator" class="py-24 bg-navy-900 text-white px-6 lg:px-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-80 h-80 bg-brand-700/40 rounded-full blur-3xl"></div>
+        <div class="max-w-5xl mx-auto relative z-10">
+          
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-black mb-4">Calculate Your ROI & Time Savings</h2>
+                <p class="text-brand-100">See how many operating cycles and capital you reclaim by delegating admin work to Florence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center bg-navy-800 p-8 lg:p-12 rounded-3xl border border-navy-900 shadow-xl">
+                
+                <!-- Slider Control Column -->
+                <div class="md:col-span-7 space-y-6">
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold uppercase tracking-wider text-brand-100">Hours spent on repetitive admin work / week</label>
+                        <div class="text-5xl font-black text-white">
+                            <span id="slider-hours-label">15</span> 
+                            <span class="text-xl font-medium text-brand-100">Hours</span>
+                        </div>
+                    </div>
+                  
+                    <input 
+                        type="range" 
+                        min="5" 
+                        max="40" 
+                        value="15" 
+                        id="hours-slider"
+                        oninput="updateROICalculator(this.value)"
+                        class="w-full h-2.5 bg-navy-900 rounded-lg appearance-none cursor-pointer accent-emerald-400"
+                    />
+                  
+                    <p class="text-sm text-brand-100 leading-relaxed">
+                        *Repetitive tasks include: sorting through inbox chaos, booking schedules, building basic decks, chasing duplicate records, and updating project timelines.
+                    </p>
+                </div>
+
+                <!-- Results Column -->
+                <div class="md:col-span-5 bg-navy-900 p-6 rounded-2xl border border-navy-800 text-center space-y-6">
+                    <div>
+                        <p class="text-[10px] font-bold tracking-wider uppercase text-brand-100">Time Reclaimed / Year</p>
+                        <p id="roi-hours-reclaimed" class="text-4xl font-extrabold text-white mt-1">780 Hours</p>
+                    </div>
+                  
+                    <div class="border-t border-brand-700 pt-4">
+                        <p class="text-[10px] font-bold tracking-wider uppercase text-brand-100">Opportunity Value Gained*</p>
+                        <p id="roi-value-gained" class="text-4xl font-extrabold text-accent-500 mt-1">$27,300</p>
+                    </div>
+
+                    <a href="#contact" class="block w-full py-3 bg-accent-500 hover:bg-accent-600 text-navy-900 font-bold rounded-xl transition-all duration-200 text-sm shadow-md">
+                        Delegate & Reclaim My Time
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Checklist Banner -->
+    <section class="py-20 bg-navy-900 text-white px-6">
+        <div class="max-w-5xl mx-auto text-center space-y-6">
+            <h2 class="text-3xl font-black">Ready to Scale Your Daily Operations?</h2>
+            <p class="text-slate-400 text-lg max-w-xl mx-auto">
+                Get structured systems, accurate execution, and reliable communication support every working day.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="mailto:flochuks.va@gmail.com" class="px-6 py-3.5 bg-brand-500 text-white rounded-xl hover:bg-brand-600 font-bold flex items-center gap-2 transition-all"><i class="fa-solid fa-envelope"></i> Email Florence</a>
+                <a href="https://www.linkedin.com/in/florence-chukwuemeka-va" target="_blank" class="px-6 py-3.5 bg-navy-800 hover:bg-navy-900 text-slate-200 rounded-xl font-bold flex items-center gap-2 transition-all"><i class="fa-brands fa-linkedin"></i> View LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-white px-6 lg:px-12 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-navy-900 mb-4">Get In Touch</h2>
+                <div class="w-12 h-1 bg-brand-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-slate-500">I would love to learn more about your team operations, current bottlenecks, and how I can help you scale.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-5xl mx-auto">
+                
+                <!-- Left Contact Card -->
+                <div class="lg:col-span-5 bg-navy-50 p-8 rounded-2xl border border-navy-100 space-y-8">
+                    <div>
+                        <h3 class="font-extrabold text-xl text-navy-900 mb-2">Let's Connect</h3>
+                        <p class="text-sm text-slate-500">Reach out directly via email, connect on LinkedIn, or fill out the dashboard on the right.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <span class="w-11 h-11 rounded-xl bg-brand-50 text-brand-500 flex items-center justify-center font-bold shadow-xs"><i class="fa-solid fa-envelope"></i></span>
+                            <div>
+                                <p class="text-[10px] text-slate-400 font-black uppercase tracking-wider">Email Address</p>
+                                <a href="mailto:flochuks.va@gmail.com" class="text-sm font-bold text-slate-800 hover:text-brand-500">flochuks.va@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center gap-4">
+                            <span class="w-11 h-11 rounded-xl bg-brand-50 text-brand-500 flex items-center justify-center font-bold shadow-xs"><i class="fa-brands fa-linkedin-in"></i></span>
+                            <div>
+                                <p class="text-[10px] text-slate-400 font-black uppercase tracking-wider">LinkedIn Profile</p>
+                                <a href="https://www.linkedin.com/in/florence-chukwuemeka-va" target="_blank" class="text-sm font-bold text-slate-800 hover:text-brand-500">linkedin.com/in/florence-chukwuemeka-va</a>
+                            </div>
+                        </div>
+
+                     
+                    </div>
+
+                    <div class="p-4 bg-brand-50 text-brand-750 text-brand-600 rounded-xl text-xs font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-clock"></i> Supported Timezones: GMT, EST, PST, CET.
+                    </div>
+                </div>
+
+                <!-- Right Contact Form Container -->
+                <div class="lg:col-span-7 bg-navy-50 p-8 rounded-2xl border border-navy-100 relative">
+                    
+                    <!-- Form Success State Overlay -->
+                    <div id="form-success-overlay" class="hidden absolute inset-0 bg-white/95 flex flex-col items-center justify-center text-center p-6 rounded-2xl z-20">
+                        <div class="w-16 h-16 rounded-full bg-brand-50 text-brand-500 flex items-center justify-center text-3xl font-bold mb-4">✓</div>
+                        <h3 class="font-extrabold text-xl text-navy-950">Thank You!</h3>
+                        <p class="text-slate-500 mt-2 max-w-sm">Your message was transmitted successfully. Florence will reply to you within 4-12 business hours.</p>
+                        <button 
+                            onclick="resetFormState()"
+                            class="mt-6 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-bold text-xs"
+                        >
+                            Send Another Message
+                        </button>
+                    </div>
+
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-[10px] font-black text-slate-400 uppercase tracking-wider mb-2" for="name">Your Name</label>
+                                <input 
+                                  type="text" 
+                                  id="name" 
+                                  required
+                                  placeholder="John Doe" 
+                                  class="w-full px-4 py-3 bg-white border border-slate-200 focus:border-brand-500 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-500 transition-colors"
+                                />
+                            </div>
+                            <div>
+                                <label class="block text-[10px] font-black text-slate-400 uppercase tracking-wider mb-2" for="email">Email Address</label>
+                                <input 
+                                  type="email" 
+                                  id="email" 
+                                  required
+                                  placeholder="john@example.com" 
+                                  class="w-full px-4 py-3 bg-white border border-slate-200 focus:border-brand-500 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-500 transition-colors"
+                                />
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-[10px] font-black text-slate-400 uppercase tracking-wider mb-2" for="subject">Subject</label>
+                            <input 
+                              type="text" 
+                              id="subject" 
+                              required
+                              placeholder="e.g., General Admin Support, Calendar Systems Setup" 
+                              class="w-full px-4 py-3 bg-white border border-slate-200 focus:border-brand-500 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-500 transition-colors"
+                            />
+                        </div>
+
+                        <div>
+                            <label class="block text-[10px] font-black text-slate-400 uppercase tracking-wider mb-2" for="message">Message Details</label>
+                            <textarea 
+                              id="message" 
+                              rows="4" 
+                              required
+                              placeholder="Tell me briefly about your business operations, bottlenecks, or tasks you'd like to delegate..." 
+                              class="w-full px-4 py-3 bg-white border border-slate-200 focus:border-brand-500 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-brand-500 transition-colors"
+                            ></textarea>
+                        </div>
+
+                        <button 
+                          type="submit" 
+                          class="w-full py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-bold rounded-xl shadow-md transition-all duration-200 flex items-center justify-center gap-2"
+                        >
+                          <i class="fa-solid fa-paper-plane text-xs"></i> Send Secure Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 py-12 text-center text-slate-500 border-t border-navy-800 text-xs font-semibold">
         <p>&copy; 2026 Florence Chukwuemeka. All rights reserved.</p>
+        <p class="mt-2 text-slate-600">Efficient • Reliable • Resourceful. Empowering executives globally.</p>
     </footer>
 
+    <!-- JavaScript Controller Logic -->
     <script>
-        console.log("Portfolio expanded template successfully loaded.");
+        // Interactive state database for Spreadsheet Cleaning Simulation
+        let sheetsData = [
+            { id: 1001, firstName: 'Sarah', lastName: 'Mitchell', email: 's.mitchell@gmail.com', status: 'Active', clean: true },
+            { id: 1002, firstName: 'James', lastName: 'Okafor', email: 'j.okafor@outlook.com', status: 'Active', clean: true },
+            { id: 1003, firstName: 'Priya', lastName: 'Naidoo', email: 'p.naidoo@email.co.za', status: 'Review Needed', clean: false },
+            { id: 1004, firstName: 'Carlos', lastName: 'Ferreira', email: 'c.ferreira@gmail.com', status: 'Duplicate Deleted', clean: false },
+            { id: 1005, firstName: 'Fatima', lastName: 'Hendricks', email: 'f.hendricks@icloud.com', status: 'Active', clean: true }
+        ];
+
+        // Mobile dropdown navigation toggle handler
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileDrop = document.getElementById('mobile-dropdown');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileDrop.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileDrop.classList.add('hidden');
+            });
+        });
+
+        // Tab Switching Engine
+        function switchTab(tabId) {
+            // Hide all tab views
+            const views = document.querySelectorAll('.tab-content');
+            views.forEach(v => v.classList.add('hidden'));
+
+            // Remove active styles from buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.className = "tab-btn w-full text-left px-4 py-3.5 rounded-xl text-sm font-bold tracking-tight whitespace-nowrap lg:whitespace-normal transition-all duration-200 text-slate-600 hover:bg-white hover:text-navy-900";
+            });
+
+            // Show selected view
+            const selectedView = document.getElementById('content-' + tabId);
+            if(selectedView) {
+                selectedView.classList.remove('hidden');
+            }
+
+            // Apply selected styling to the target tab button
+            const selectedBtn = document.getElementById('btn-' + tabId);
+            if(selectedBtn) {
+                selectedBtn.className = "tab-btn w-full text-left px-4 py-3.5 rounded-xl text-sm font-bold tracking-tight whitespace-nowrap lg:whitespace-normal transition-all duration-200 bg-brand-500 text-white shadow-md shadow-brand-700/10";
+            }
+        }
+
+        // Render Sheets Database rows dynamically
+        function renderSheetsTable() {
+            const tbody = document.getElementById('sheets-tbody');
+            if(!tbody) return;
+            tbody.innerHTML = '';
+            
+            sheetsData.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-navy-800/20 border-b border-navy-800/20";
+                
+                const badgeStyle = row.clean 
+                    ? 'bg-emerald-950 text-emerald-400 border border-emerald-900' 
+                    : 'bg-red-950 text-red-400 border border-red-900';
+
+                tr.innerHTML = `
+                    <td class="p-2 border-r border-navy-800 bg-navy-950/10">${row.id}</td>
+                    <td class="p-2 border-r border-navy-800 text-white font-bold">${row.firstName} ${row.lastName}</td>
+                    <td class="p-2 border-r border-navy-800">${row.email}</td>
+                    <td class="p-2 border-r border-navy-800">+27 82 345 6789</td>
+                    <td class="p-2">
+                        <span class="px-2 py-0.5 rounded text-[9px] font-bold ${badgeStyle}">
+                            ${row.status}
+                        </span>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Run spreadsheet duplicate cleaning logic simulator
+        function handleCleanSheet() {
+            sheetsData = sheetsData.map(row => {
+                if (row.id === 1003) return { ...row, status: 'Active', clean: true };
+                if (row.id === 1004) return { ...row, status: 'Cleaned', clean: true };
+                return row;
+            });
+            renderSheetsTable();
+            const cleanBtn = document.getElementById('run-cleaning-btn');
+            if(cleanBtn) {
+                cleanBtn.innerHTML = "✓ Database Sanitized!";
+                cleanBtn.className = "px-3 py-1 bg-accent-500 hover:bg-accent-600 text-white rounded font-bold text-[10px]";
+            }
+        }
+
+        // ROI dynamic math engine
+        function updateROICalculator(hours) {
+            const hoursLabel = document.getElementById('slider-hours-label');
+            const hoursReclaimedField = document.getElementById('roi-hours-reclaimed');
+            const savingsValueField = document.getElementById('roi-value-gained');
+
+            const reclaimedPerYear = hours * 52;
+            const savingsValue = reclaimedPerYear * 35; // Assuming $35/hr opportunity cost equivalent
+
+            if(hoursLabel) hoursLabel.innerText = hours;
+            if(hoursReclaimedField) hoursReclaimedField.innerText = reclaimedPerYear.toLocaleString() + " Hours";
+            if(savingsValueField) savingsValueField.innerText = "$" + savingsValue.toLocaleString();
+        }
+
+        // Contact Form processing simulator
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const overlay = document.getElementById('form-success-overlay');
+            if(overlay) {
+                overlay.classList.remove('hidden');
+            }
+        }
+
+        function resetFormState() {
+            const overlay = document.getElementById('form-success-overlay');
+            const form = document.getElementById('contact-form');
+            if(overlay) overlay.classList.add('hidden');
+            if(form) form.reset();
+        }
+
+        // Startup triggers on DOM load
+        window.onload = function() {
+            renderSheetsTable();
+            console.log("Florence Portfolio application with updated custom color theme initialized.");
+        };
     </script>
 </body>
 </html>
