@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Young Mothers, Inc. | Donate Now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2da482;         /* Brand Green */
+            --primary-hover: #238368;   
+            --secondary: #f06454;       /* Brand Coral */
+            --secondary-hover: #d94f40; 
+            --zeffy-light-bg: #e4f3ee;  
+            --text-main: #1e332c;       
+            --text-light: #52665e;
+            --card-bg: #ffffff;
+            --border-light: #ceded2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff; /* Full page background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Full Width Header Container */
+        header {
+            width: 100%;
+            background-color: var(--primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+            padding-left: 60px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        header .brand-container {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Logo Placeholder & Image Styles */
+        .header-logo-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-height: 70px;
+            padding-left: 90px;
+        }
+
+        .header-logo-img {
+            max-height: 85px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin-right: 40px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 1.1rem;
+            transition: opacity 0.2s ease;
+            opacity: 0.95;
+            white-space: nowrap;
+        }
+
+        header nav a:hover {
+            opacity: 1;
+            text-shadow: 0 0 1px #ffffff;
+        }
+
+        header nav .header-donate-btn {
+            background-color: var(--secondary);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 40px;
+            height: 100%;
+            transition: background-color 0.2s ease;
+        }
+
+        header nav .header-donate-btn:hover {
+            background-color: var(--secondary-hover);
+        }
+
+        .main-wrapper {
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        /* Layout Container */
+        .donation-container {
+            display: flex;
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Left Column: Narrative Overlay Panel */
+        .impact-panel {
+            flex: 1.1;
+            padding: 45px;
+            display: flex;
+            flex-direction: column;
+            background: #ffffff;
+        }
+
+        .story-card-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            margin-bottom: 25px;
+        }
+
+        .story-card-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .story-text-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
+            color: #ffffff;
+            padding: 40px 30px 30px 30px;
+        }
+
+        .story-text-overlay h1 {
+            font-size: 1.6rem;
+            line-height: 1.3;
+            margin-bottom: 12px;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            font-weight: 600;
+        }
+
+        .story-text-overlay p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #e2e8f0;
+            opacity: 0.95;
+        }
+
+        .panel-mission-statement {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: var(--text-main);
+            background-color: #f7fdfb;
+            border-left: 3px solid var(--primary);
+            padding: 15px 18px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .panel-sub-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .impact-panel .mission-text {
+            font-size: 0.85rem;
+            font-style: normal;
+            color: var(--primary);
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: auto; 
+        }
+
+        /* Right Column Form Panel */
+        .right-container {
+            flex: 1.3;
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid #e2e8f0;
+            background: #ffffff;
+        }
+
+        .form-panel {
+            padding: 45px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mission-intro-block {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--border-light);
+        }
+
+        .mission-intro-block h2 {
+            font-size: 1.6rem;
+            color: var(--text-main);
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .mission-intro-block .subtitle {
+            font-size: 1.05rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .mission-sentence-wrapper {
+            line-height: 1.5;
+        }
+        
+        .inline-info-btn {
+            background: var(--zeffy-light-bg);
+            border: 1px solid #b3e2d3;
+            color: var(--primary-hover);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            transition: all 0.2s ease;
+        }
+
+        .inline-info-btn:hover {
+            background: var(--primary);
+            color: #ffffff;
+            border-color: var(--primary);
+        }
+
+        /* Modal Overlay Window Component */
+        .info-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(12, 43, 32, 0.5);
+            backdrop-filter: blur(4px);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            padding: 20px;
+        }
+
+        .info-modal-card {
+            background: #ffffff;
+            max-width: 650px;
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            padding: 35px;
+            position: relative;
+            animation: modalFadeIn 0.3s ease;
+        }
+
+        @keyframes modalFadeIn {
+            from { transform: translateY(15px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #f1f8f5;
+            border: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-light);
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+
+        .modal-close-btn:hover {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .info-modal-card h4 {
+            font-size: 1.3rem;
+            color: var(--text-main);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .info-modal-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--text-light);
+            margin-bottom: 16px;
+        }
+
+        .modal-tier-list {
+            background-color: #f7fdfb;
+            border: 1px solid var(--border-light);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .modal-tier-item {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--text-main);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .modal-tier-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .modal-tier-item strong {
+            color: var(--primary);
+            font-size: 1rem;
+            min-width: 50px;
+            display: inline-block;
+        }
+
+        .form-panel h3.section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 16px;
+        }
+
+        /* Frequency Toggle Switch */
+        .frequency-toggle {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #f1f8f5;
+            padding: 6px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        .freq-btn {
+            background: transparent;
+            border: none;
+            padding: 14px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-light);
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .freq-btn.active {
+            background-color: #a4ebd5; 
+            color: #0c2b20;
+            border: 1px solid #79dec0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .freq-btn i {
+            color: var(--secondary);
+        }
+
+        /* Amount Tiers Pill Grid */
+        .donation-tiers {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .tier-card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-light);
+            border-radius: 10px;
+            padding: 16px 5px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--text-main);
+            transition: all 0.2s ease;
+        }
+
+        .tier-card:hover {
+            background-color: #f7fdfb;
+            border-color: #a4ebd5;
+        }
+
+        .tier-card.active {
+            background-color: var(--primary); 
+            border-color: var(--primary);
+            color: #ffffff;
+        }
+
+        .custom-amount-wrapper {
+            margin-bottom: 18px;
+            width: 100%;
+        }
+
+        .input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--border-light);
+            border-radius: 10px;
+            padding: 4px 16px;
+            background: #ffffff;
+        }
+
+        .input-container:focus-within {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 1px var(--primary);
+        }
+
+        .currency-symbol {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-right: 12px;
+        }
+
+        #custom-amount {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: var(--text-main);
+            padding: 10px 0;
+        }
+
+        .dynamic-impact-desc {
+            background-color: #fafdfc;
+            border-left: 3px solid var(--primary);
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            line-height: 1.45;
+            color: var(--text-main);
+            margin-bottom: 24px;
+            min-height: 54px;
+        }
+
+        .info-box {
+            background-color: var(--zeffy-light-bg);
+            border-radius: 10px;
+            padding: 15px 18px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #16362a;
+            margin-bottom: 14px;
+            line-height: 1.4;
+        }
+
+        .info-box i {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-top: 2px;
+        }
+
+        .info-box p span {
+            font-weight: 700;
+            color: #0b1f18;
+        }
+
+        .cta-button {
+            background: var(--primary); 
+            color: white;
+            border: none;
+            padding: 18px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 12px rgba(45, 164, 130, 0.15);
+        }
+
+        .cta-button:hover {
+            background: var(--primary-hover);
+        }
+
+        /* Footer Section Styling */
+        footer.site-footer {
+            background-color: #2da482;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+
+        .footer-card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 1200px;
+            padding: 60px 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            border-radius: 0;
+        }
+
+        .footer-col-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-col-left h3 {
+            font-size: 1.75rem;
+            color: #111111;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .footer-col-left .tagline {
+            font-size: 1.05rem;
+            color: #222222;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .footer-col-left .email-info {
+            font-size: 1rem;
+            color: #222222;
+            margin-bottom: 45px;
+        }
+
+        .footer-col-left .email-info strong {
+            font-weight: 700;
+        }
+
+        .footer-col-left h4 {
+            font-size: 1.5rem;
+            color: #111111;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .social-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-2px);
+        }
+
+        .social-icon.instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            border-radius: 10px;
+        }
+
+        .social-icon.facebook {
+            background-color: #1877f2;
+        }
+
+        .social-icon.linkedin {
+            background-color: #0077b5;
+            border-radius: 4px;
+        }
+
+        .social-icon.youtube {
+            background-color: #ff0000;
+            border-radius: 6px;
+        }
+
+        .social-icon.x-twitter {
+            background-color: #000000;
+        }
+
+        .footer-col-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-col-right h3 {
+            font-size: 2.1rem;
+            color: #111111;
+            font-weight: 400;
+            line-height: 1.25;
+            margin-bottom: 30px;
+        }
+
+        .footer-col-right p {
+            font-size: 1.05rem;
+            color: #222222;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 440px;
+        }
+
+        .newsletter-btn {
+            background-color: #ee6853;
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: none;
+            padding: 12px 36px;
+            cursor: pointer;
+            border-radius: 2px;
+            transition: background-color 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .newsletter-btn:hover {
+            background-color: #d95541;
+        }
+
+        .footer-bottom-bar {
+            width: 100%;
+            background-color: #2da482;
+            text-align: center;
+            padding: 16px 20px 24px 20px;
+            color: #ffffff;
+            font-size: 0.85rem;
+            opacity: 0.95;
+        }
+
+        .footer-bottom-bar a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Responsive Layout Overrides */
+        @media (max-width: 1024px) {
+            header { padding-left: 20px; height: auto; flex-direction: column; align-items: flex-start; gap: 15px; }
+            header nav { width: 100%; justify-content: space-between; }
+            header nav ul { gap: 18px; margin-right: 20px; }
+            header nav .header-donate-btn { padding: 15px 30px; }
+            .donation-container { flex-direction: column; }
+            .right-container { border-left: none; border-top: 1px solid #e2e8f0; }
+            .footer-card { grid-template-columns: 1fr; gap: 40px; padding: 40px 30px; }
+        }
+
+        @media (max-width: 650px) {
+            header nav ul { display: none; }
+            header nav { justify-content: flex-end; }
+            header nav .header-donate-btn { width: 100%; }
+            .donation-tiers { grid-template-columns: repeat(2, 1fr); }
+            .impact-panel, .form-panel { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Full-Width Header Structure with Logo Image Placement -->
+    <header>
+        <div class="brand-container">
+            <a href="#" class="header-logo-placeholder">
+                <!-- Replace 'YOUR_LOGO_IMAGE_URL_HERE' with your actual image path or URL -->
+                <img class="header-logo-img" src="YMIlogo.jpg" alt="Young Mothers, Inc. Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#programs">Programs</a></li>
+                <li><a href="#events">Events & News</a></li>
+                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <a href="#donate" class="header-donate-btn">Donate</a>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Main Container Workspace Split Frames -->
+        <div class="donation-container">
+            <!-- Left Side Frame: Visual Impact Narrative Overlay Elements -->
+            <div class="impact-panel">
+                <div class="story-card-wrapper">
+ <img src="Mother_holding_infant.jpeg" alt="Supported mother holding young child">                    
+                    <div class="story-text-overlay">
+                        <h1>EMPOWERING YOUNG MOTHERS:<br>SARAH'S JOURNEY</h1>
+                        <p>
+                            Sarah joined our program while pregnant and homeless. Today, she is a confident mother, thriving in her studies and providing for her daughter with our support.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="panel-mission-statement">
+I was raised by a young mother myself, and I know the isolation so many young mothers face. That's why I created Young Mothers, Inc. a place for the love, guidance, and support I once needed myself.
+<p> Kamille Bundy, Founder & Executive Director </p>                </div>
+
+                <img src="YMIlogo1.jpeg" alt="Mentorship and support gathering at Young Mothers Inc." class="panel-sub-image" onerror="this.src='https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=600&auto=format&fit=crop';">
+
+                <div class="mission-text">
+                    SUPPORTING MOTHERS, STRENGTHENING FUTURES.
+                </div>
+            </div>
+
+            <!-- Right Side Frame: Form Processing Workspace -->
+            <div class="right-container">
+                <div class="form-panel">
+                    
+                    <div class="mission-intro-block">
+                        <h2>MAKE A DIFFERENCE TODAY</h2>
+                        <div class="subtitle">By supporting mothers</div>
+                        
+                        <div class="mission-sentence-wrapper">
+                            <span style="font-size: 0.95rem; color: var(--text-light); font-weight: 500;">Our Mission.
+
+Young Mothers, Inc. educates, mentors, and supports young mothers on their journey to becoming self-sufficient for themselves and their families. As a 501(c)(3) organization, we go beyond referrals offering hands-on assistance that helps young women build self-esteem, gain practical skills, and achieve lasting independence.
+Your donation directly funds these efforts, giving young mothers the tools and support they need to create a stable, hopeful future for themselves and their children.
+</span>
+                            <button class="inline-info-btn" id="open-info-modal"><i class="fas fa-info-circle"></i> More Info</button>
+                        </div>
+                    </div>
+
+                    <h3 class="section-title">Choose an amount:</h3>
+                    
+                    <div class="frequency-toggle">
+                        <button class="freq-btn active" id="btn-onetime">One-time</button>
+                        <button class="freq-btn" id="btn-monthly"><i class="fas fa-heart"></i> Monthly</button>
+                    </div>
+
+                    <div class="donation-tiers">
+                        <div class="tier-card" data-amount="10">$10</div>
+                        <div class="tier-card" data-amount="25">$25</div>
+                        <div class="tier-card active" data-amount="50">$50</div>
+                        <div class="tier-card" data-amount="75">$75</div>
+                    </div>
+
+                    <div class="custom-amount-wrapper">
+                        <div class="input-container">
+                            <span class="currency-symbol">$</span>
+                            <input type="text" id="custom-amount" value="50">
+                        </div>
+                    </div>
+
+                    <div class="dynamic-impact-desc" id="impact-description">
+                        Supports 2–3 young mothers with essentials + empowerment resources (supports up to 2 weeks of care and development support).
+                    </div>
+
+                    <div class="info-box">
+                        <i class="fas fa-receipt"></i>
+                        <p>You'll receive a tax receipt for making a donation.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <i class="far fa-lightbulb"></i>
+                        <p><span>Did you know?</span> We fundraise with Zeffy to ensure 100% of your donation goes to our mission!</p>
+                    </div>
+
+                    <button id="submit-donation" class="cta-button">
+                        Continue <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Website Footer Component -->
+    <footer class="site-footer">
+        <div class="footer-card">
+            <!-- Left Column: Org Info & Socials -->
+            <div class="footer-col-left">
+                <h3>Young Mothers, Inc.</h3>
+                <p class="tagline">" A Community Where Every Young Mother is<br>Empowered to Thrive "</p>
+                <p class="email-info"><strong>Email:</strong> admin@youngmothersinc.org</p>
+                
+                <h4>Let's Get Social!</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon x-twitter" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Right Column: Newsletter Callout -->
+            <div class="footer-col-right">
+                <h3>Subscribe to our<br>Newsletter</h3>
+                <p>Join Young Mothers, Inc. in over 13 years of empowering young mothers and their children in the DMV region. Sign up for our monthly newsletter to see how we drive positive change and promote self-sufficiency in the community. Stay connected!</p>
+                <a href="#signup" class="newsletter-btn">Sign Up!</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            © 2026 by Young Mothers, Inc. Powered and secured by <a href="https://www.wix.com" target="_blank" rel="noopener">Wix</a>
+        </div>
+    </footer>
+
+    <!-- Hidden Modular Modal Container -->
+    <div class="info-modal-overlay" id="info-modal">
+        <div class="info-modal-card">
+            <button class="modal-close-btn" id="close-info-modal"><i class="fas fa-times"></i></button>
+            <h4>About Young Mothers, Inc.</h4>
+            
+            <p>We are a 501 (c) 3 federal tax-exempt referral base organization that goes a step further by providing hands on assistance to help young women achieve their positive goals!</p>
+            
+            <p>We promote the empowerment of women by giving them tools to become self-sufficient with high levels of self-esteem and the knowledge necessary to better their situation --- but we need your help. If you’re able, please donate to help us provide important resources to mothers in need.</p>
+            
+            <div class="modal-tier-list">
+                <div class="modal-tier-item"><strong>$10</strong> ➔ 1 young mother supports up to 1 week of basic essentials)</div>
+                <div class="modal-tier-item"><strong>$25</strong> ➔ Provides essential care and self-care items for 1–2 young mothers (supports up to 1–2 weeks of care)</div>
+                <div class="modal-tier-item"><strong>$50</strong> ➔ Supports 2–3 young mothers with essentials + empowerment resources (supports up to 2 weeks of care and development support)</div>
+                <div class="modal-tier-item"><strong>$75</strong> ➔ Supports 3–4 young mothers with essentials, self-care, and confidence-building services (supports up to 2+ weeks of care and empowerment services)</div>
+                <div class="modal-tier-item"><strong>$100</strong> ➔ Supports 4–6 young mothers with essential care items, self-care resources, and empowerment services (supports up to 2+ weeks of care, confidence-building, and career readiness support)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Active Form & Modal Mechanics Execution Segment -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tierCards = document.querySelectorAll('.tier-card');
+            const customAmountInput = document.getElementById('custom-amount');
+            const freqBtns = document.querySelectorAll('.freq-btn');
+            const impactDesc = document.getElementById('impact-description');
+            
+            const infoModal = document.getElementById('info-modal');
+            const openModalBtn = document.getElementById('open-info-modal');
+            const closeModalBtn = document.getElementById('close-info-modal');
+
+            openModalBtn.addEventListener('click', () => infoModal.style.display = 'flex');
+            closeModalBtn.addEventListener('click', () => infoModal.style.display = 'none');
+            
+            infoModal.addEventListener('click', (e) => {
+                if(e.target === infoModal) infoModal.style.display = 'none';
+            });
+
+            const descriptions = {
+                "10": "1 young mother supports up to 1 week of basic essentials.",
+                "25": "Provides essential care and self-care items for 1–2 young mothers (supports up to 1–2 weeks of care).",
+                "50": "Supports 2–3 young mothers with essentials + empowerment resources (supports up to 2 weeks of care and development support).",
+                "75": "Supports 3–4 young mothers with essentials, self-care, and confidence-building services (supports up to 2+ weeks of care and empowerment services).",
+                "100": "Supports 4–6 young mothers with essential care items, self-care resources, and empowerment services (supports up to 2+ weeks of care, confidence-building, and career readiness support)."
+            };
+
+            function updateDescription(amount) {
+                const cleanAmount = amount.trim();
+                if (descriptions[cleanAmount]) {
+                    impactDesc.textContent = descriptions[cleanAmount];
+                    impactDesc.style.display = "block";
+                } else if (cleanAmount !== "" && !isNaN(cleanAmount) && parseFloat(cleanAmount) > 0) {
+                    impactDesc.textContent = "Your custom donation of $" + cleanAmount + " will go directly toward providing critical resources, mentorship, and self-sufficiency tools to mothers in need.";
+                    impactDesc.style.display = "block";
+                } else {
+                    impactDesc.style.display = "none";
+                }
+            }
+
+            freqBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    freqBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                });
+            });
+
+            tierCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    tierCards.forEach(c => c.classList.remove('active'));
+                    card.classList.add('active');
+                    
+                    const selectedAmount = card.getAttribute('data-amount');
+                    customAmountInput.value = selectedAmount;
+                    updateDescription(selectedAmount);
+                });
+            });
+
+            customAmountInput.addEventListener('input', (e) => {
+                const manualValue = e.target.value.trim();
+                
+                tierCards.forEach(card => {
+                    if (card.getAttribute('data-amount') === manualValue) {
+                        card.classList.add('active');
+                    } else {
+                        card.classList.remove('active');
+                    }
+                });
+                updateDescription(manualValue);
+            });
+        });
+    </script>
+</body>
+</html>
